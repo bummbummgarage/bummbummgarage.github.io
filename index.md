@@ -5,6 +5,7 @@ title: Modules
 
 ## Modules
 
+* [VCO II]({% link modules/vco-II-0.2.3/index.md %})
 * [VCA]({% link modules/vca-0.2/index.md %})
 * [Envelope Generator II]({% link modules/envelope-generator-II-0.1/index.md %})
 * [Exponential Converter]({% link modules/exponential-converter-0.1/index.md %})
