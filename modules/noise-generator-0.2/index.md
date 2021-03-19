@@ -19,7 +19,7 @@ The design is based on ["2tran_wn.gif" by richardc64 via electro-music.com](http
 
 ![](127802718_2479150645727952_3230375602237006437_n.jpg)
 
-### Future Improvements
+### Improvement Potential
 
 While plugging in the oscilloscope for the first time, I just realized the DC bias in the white noise – to be removed in future development. That's why I'm still looking for alternative simple pink noise generating designs.
 

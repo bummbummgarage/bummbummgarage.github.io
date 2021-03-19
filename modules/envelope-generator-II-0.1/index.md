@@ -25,7 +25,7 @@ Envelope Generator that I built for my modular synth drum machine project. It's 
 
 ![](150666393_1599602423762275_3366800752116408752_n.jpg)
 
-### Improvement potential
+### Improvement Potential
 
 Unfortunately the output voltage equals the input voltage in this implementation. That means only +5V coming from my sequencer. That is not sufficient for all my instruments on the drum machine 🤷‍♂️. The snare needs a higher peak of 10 V or more in the envelope.
 
