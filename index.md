@@ -1,5 +1,6 @@
 ---
-my_number: 5
+layout: default
+title: Home
 ---
 
 # Hello World!
