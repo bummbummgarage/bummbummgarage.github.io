@@ -11,9 +11,11 @@ Here's the first Envelope Generator (ADSR) that I built for my drum machine proj
 
 ### Features
 
-* Full stack envelope (attack, decay, sustain and release)
-* Manual trigger
-* 2 outputs (for e.g. VCO pitch and VCA)
+✅ Full stack envelope (attack, decay, sustain and release)
+
+✅ Manual trigger
+
+✅ 2 outputs (for e.g. VCO pitch and VCA)
 
 ### Details
 
