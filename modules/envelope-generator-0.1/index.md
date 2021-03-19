@@ -5,7 +5,7 @@ title: Envelope Generator
 
 ## Envelope Generator
 
-*Version 0.1 from …*
+*Version 0.1 from September 2020*
 
 ![](120343094_3458159520910993_5205335999587442971_n.jpg)
 
@@ -33,7 +33,7 @@ The only downer is that sustain is probably not 100% stable. You can hear it a f
 
 ### Links
 
-* [Video Demo](Bumm Bumm Garage EnvGen 0.1 Video Demo.mp4)
+* [Video Demo](Bumm Bumm Garage EnvGen 0.1 Video Demo 720p.mp4)
 
 * [Schematic (PDF)](Bumm Bumm Garage EnvGen 0.1 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage EnvGen 0.1 StripboardLayout.pdf)

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Exponential Converter 0.1
+title: Exponential Converter
 ---
 
 ## Exponential Converter
 
-*Version 0.1*
+*Version 0.1 from February 2021*
 
 ![](154388090_471161937385519_3133007917346548765_n.jpg)
 

@@ -5,7 +5,7 @@ title: Envelope Generator II
 
 ## Envelope Generator II
 
-*Version 0.1 from …*
+*Version 0.1 from February 2021*
 
 ![](150886302_121161163246069_6775219902744277767_n.jpg)
 
@@ -31,7 +31,7 @@ Unfortunately the output voltage equals the input voltage in this implementation
 
 ### Links
 
-* [Video Demo](Bumm Bumm Garage EG II 0.1 Video Demo.mp4)
+* [Video Demo](Bumm Bumm Garage EG II 0.1 Video Demo 640p.mp4)
 * [Schematic (PDF)](Bumm Bumm Garage EG II V0.1 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage EG II V0.1 Stripboard Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage EnvGen II V0.1 Panel.pdf)
