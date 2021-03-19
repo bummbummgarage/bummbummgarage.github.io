@@ -3,12 +3,12 @@ layout: default
 title: Home
 ---
 
-# Hello World!
+## Hello World!
 
 * sdfsd
 * dfsdfsdf
 * {{ page.my_number }}
 
 
-## Second Heading
+### Second Heading
 * More of that text
