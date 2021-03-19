@@ -1,0 +1,9 @@
+Noise generator that I built for my modular synth drum machine project. It includes white and pink noise for the basis of hi-hats and a snare drum. The circuit needs at least +/-12V to run.
+
+Swipe to see a demo, some detailled photos, the schematic and stripboard layout.
+
+While plugging in the oscilloscope for the first time, I just realized the DC bias in the white noise – to be removed in future development. That's why I'm still looking for alternative simple pink noise generating designs. 
+
+Please let me know when you have some 😌
+
+#synthdiy #diysynth #sdiy #diymodularsynth #diysynthesizer #diyelectronics

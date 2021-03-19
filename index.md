@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Modules
 ---
 
 ## Modules
@@ -9,3 +9,4 @@ title: Home
 
 * VCO II 0.1.1
 * VCO 0.1
+
