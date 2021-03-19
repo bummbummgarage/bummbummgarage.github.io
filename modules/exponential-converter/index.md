@@ -3,7 +3,9 @@ layout: default
 title: Exponential Converter 0.1
 ---
 
-## Exponential Converter 0.1
+## Exponential Converter
+
+*Version 0.1*
 
 ![](154388090_471161937385519_3133007917346548765_n.jpg)
 
