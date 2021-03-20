@@ -13,11 +13,9 @@ Envelope Generator that I built for my modular synth drum machine project. It's 
 
 ### Features
 
-✅ Attack and release
-
-✅ 2 outputs (for e.g. VCO pitch and VCA)
-
-✅ Visual indication a.k.a. LED
+* ✅ Attack and release
+* ✅ 2 outputs (for e.g. VCO pitch and VCA)
+* ✅ Visual indication a.k.a. LED
 
 ### Details
 
