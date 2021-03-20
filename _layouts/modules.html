@@ -1,13 +1,23 @@
 		
+
+
 {% include header.html active_item="modules" %}
 
-{{ content }}
+<h2>Modules</h2>
 
-<br>
-<h4 class="is-center">And there's more to come!</h4>
-<p>
-	<a href="https://www.instagram.com/bumm.bumm.garage/" class="button primary outline is-full-width">Follow me on Instagram</a>
-</p>
-<p class="is-center">I will keep you posted 💬</p>
+<ul>
+{% for module in site.data.modules %}
+  <li>
+  	{% if module.has_index_md == "1" %}
+    <a href='{{ module.name | replace: " ", "-" | downcase }}'>
+    {% endif %}
+    {{ module.name }}
+   	{% if module.has_index_md %}
+    </a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
 
 {% include footer.html %}
