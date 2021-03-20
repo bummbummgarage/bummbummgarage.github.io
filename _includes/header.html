@@ -7,6 +7,19 @@
 	<title>{{ page.title }} | {{ site.title }}</title>
 	<link rel="stylesheet" href="/assets/css/chota.min.css">
 	<style type="text/css">
+		:root {
+			--color-primary: #24920F;
+			--color-secondary: #F13F57;
+		}
+		body {
+			background-color: rgba(255, 220, 0, 0.3);
+		}
+		h1,h2,h3,h4 {
+			color: var(--color-secondary);
+		}
+		thead {
+			border-bottom-color: var(--color-secondary);
+		}
 		body > .container {
 			max-width: 640px;
 		}
@@ -16,6 +29,7 @@
 			line-height: 1.5;
 			margin-top: 1.5em;
 			margin-bottom: 1.5em;
+			color: var(--color-secondary);
 		}
 		.nav .brand img {
 			max-height: 10rem;
