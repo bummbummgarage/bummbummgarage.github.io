@@ -24,5 +24,7 @@ Gate to Trigger Converter that I built for my drum machine project. I realized t
 * [Schematic (PDF)](Bumm Bumm Garage Gate to Trigger Converter 0.1 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage Gate to Trigger Converter Stripboard 0.1 Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage Gate to Trigger Converter Stripboard 0.1 Panel.pdf)
-* [Feedback on Instagram](https://www.instagram.com/p/CFrUifjhRo_/)
-* [Feedback on Reddit](https://www.reddit.com/r/synthdiy/comments/j19mxy/gate_to_trigger_converter/)
+
+### Improvement Potential
+
+See the comments on [Instagram](https://www.instagram.com/p/CFrUifjhRo_/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/j19mxy/gate_to_trigger_converter/).

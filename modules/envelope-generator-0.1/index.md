@@ -13,11 +13,9 @@ Here's the first Envelope Generator (ADSR) that I built for my drum machine proj
 
 ### Features
 
-✅ Full stack envelope (attack, decay, sustain and release)
-
-✅ Manual trigger
-
-✅ 2 outputs (for e.g. VCO pitch and VCA)
+* ✅ Full stack envelope (attack, decay, sustain and release)
+* ✅ Manual trigger
+* ✅ 2 outputs (for e.g. VCO pitch and VCA)
 
 ### Details
 
@@ -27,16 +25,17 @@ Here's the first Envelope Generator (ADSR) that I built for my drum machine proj
 
 ![](120502642_807393879997170_6119586835084667851_n.jpg)
 
-### Improvement Potential
-
-The only downer is that sustain is probably not 100% stable. You can hear it a few milliseconds after the tone starts (pitch goes down). Fortunately that's not a show stopper for my drum machine project, because I mostly just need some decay and release.
-
 ### Links
 
 * [Video Demo](Bumm Bumm Garage EnvGen 0.1 Video Demo 720p.mp4)
-
 * [Schematic (PDF)](Bumm Bumm Garage EnvGen 0.1 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage EnvGen 0.1 StripboardLayout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage EnvGen 0.1 Panel.pdf)
 * [Feedback on Instagram](https://www.instagram.com/p/CFw7gsPBfNJ/)
-* [Feedback on Reddit](https://www.reddit.com/r/synthdiy/comments/j2nl4z/envelope_generator_adsr_in_eurorack_format_on/)
+
+### Improvement Potential
+
+Sustain is probably not 100% stable. You can hear it a few milliseconds after the tone starts (pitch goes down). Fortunately that's not a show stopper for my drum machine project, because I mostly just need some decay and release.
+
+Also see the comments on [Instagram](https://www.instagram.com/p/CFw7gsPBfNJ/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/j2nl4z/envelope_generator_adsr_in_eurorack_format_on/).
+

@@ -9,7 +9,7 @@ title: Sequencer
 
 ![](121736146_988187851592777_9139359872235283236_n.jpg)
 
-Step sequencer that I built for my drum machine project. It's based on an Arduino Nano Every.
+Step sequencer with gates and triggers that I built for my drum machine project. It's based on an Arduino Nano Every.
 
 ### Features
 
@@ -33,8 +33,6 @@ Step sequencer that I built for my drum machine project. It's based on an Arduin
 * [Stripboard Layout (PDF)](Bumm Bumm Garage Sequencer 0.1 Stripboard Layout.pdf)
 * [Arduino Sketch (Code)](https://github.com/bummbummgarage/bummbummgarage.github.io/blob/main/modules/sequencer-0.1/Bumm%20Bumm%20Garage%20Sequencer%200.1.ino)
 * [Front Panel (PDF)](Bumm Bumm Garage Sequencer 0.1 Panel.pdf)
-* [Feedback on Instagram](https://www.instagram.com/p/CGXFEG8herM/)
-* [Feedback on Reddit](https://www.reddit.com/r/synthdiy/comments/jbl6rk/8_steps_3_tracks_sequencer_based_on_arduino/)
 
 ### User Manual
 
@@ -44,3 +42,7 @@ Step sequencer that I built for my drum machine project. It's based on an Arduin
 4. Use an external CV: Plug it in the track jack.
 5. Start steps at position 1 (step display is running): Push the steps button once.
 6. Choose a predefined track pattern: Hold the according track button for two seconds to enter the mode, push it once to skip through the patterns, leave it for two seconds to activate the current pattern.
+
+### Improvement Potential
+
+See the comments on [Instagram](https://www.instagram.com/p/CGXFEG8herM/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/jbl6rk/8_steps_3_tracks_sequencer_based_on_arduino/).

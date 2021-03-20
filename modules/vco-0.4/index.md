@@ -13,13 +13,10 @@ VCO that I pulled together for my drum machine project. It's based on a former s
 
 ### Features
 
-✅ Square, triangle and sine wave
-
-✅ Variable frequency range (30 Hz to 13 kHz)
-
-✅ CV input with variable attenuation
-
-✅ Variable DC
+* ✅ Square, triangle and sine wave
+* ✅ Variable frequency range (30 Hz to 13 kHz)
+* ✅ CV input with variable attenuation
+* ✅ Variable DC
 
 ### Details
 
@@ -37,6 +34,7 @@ I found a thankful way to assemble the stripboard and the front panel by using t
 * [Schematic (PDF)](Bumm Bumm Garage VCO 0.4 Schematic.pdf) – Please don't mind that the circuitry index (e.g. "Input adjust") components index (e.g. "R3") start with numbers higher than 1. This due to the fact that I removed the integrated power supply unit from the former standalone version.
 * [Stripboard Layout (PDF)](Bumm Bumm Garage VCO 0.4 Stripboard Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage VCO 0.4 Panel.pdf)
-* [Feedback on Instagram](https://www.instagram.com/p/CFeNJiRBGOw/)
-* [Feedback on Reddit](https://www.reddit.com/r/synthdiy/comments/iy6adt/eurorack_vco_square_triangle_sine_on_stripboard/)
 
+### Improvement Potential
+
+See the comments on [Instagram](https://www.instagram.com/p/CFeNJiRBGOw/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/iy6adt/eurorack_vco_square_triangle_sine_on_stripboard/).

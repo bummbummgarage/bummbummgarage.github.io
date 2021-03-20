@@ -25,6 +25,8 @@ The design is based on ["Vactrol VCA" by Kristian Blåsol](https://www.dropbox.c
 * [Schematic (PDF)](Bumm Bumm Garage VCA V0.2 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage VCA V0.2 Stripboard Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage VCA 0.2 Panel.pdf)
-* [Feedback on Instagram](https://www.instagram.com/p/CLrdUU6Boba/)
-* [Feedback on Reddit](https://www.reddit.com/r/synthdiy/comments/lreytp/simple_vca_in_eurorack_format_on_stripboard/)
+
+### Improvement Potential
+
+See the comments on [Instagram](https://www.instagram.com/p/CLrdUU6Boba/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/lreytp/simple_vca_in_eurorack_format_on_stripboard/).
 
