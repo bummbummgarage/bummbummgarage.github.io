@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: module
 title: Gate to Trigger Converter
 
 ---
