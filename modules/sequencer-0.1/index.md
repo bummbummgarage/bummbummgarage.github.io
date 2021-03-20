@@ -31,7 +31,7 @@ Step sequencer that I built for my drum machine project. It's based on an Arduin
 * [Video Demo](Bumm Bumm Garage Sequencer 0.1 Video Demo 720p.mp4)
 * [Schematic (PDF)](Bumm Bumm Garage Sequencer 0.1 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage Sequencer 0.1 Stripboard Layout.pdf)
-* [Arduino Sketch (Code)](Bumm Bumm Garage Sequencer 0.1.ino)
+* [Arduino Sketch (Code)](https://github.com/bummbummgarage/bummbummgarage.github.io/blob/main/modules/sequencer-0.1/Bumm%20Bumm%20Garage%20Sequencer%200.1.ino)
 * [Front Panel (PDF)](Bumm Bumm Garage Sequencer 0.1 Panel.pdf)
 * [Feedback on Instagram](https://www.instagram.com/p/CGXFEG8herM/)
 * [Feedback on Reddit](https://www.reddit.com/r/synthdiy/comments/jbl6rk/8_steps_3_tracks_sequencer_based_on_arduino/)
