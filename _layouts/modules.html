@@ -1,4 +1,4 @@
-		
+    
 
 
 {% include header.html active_item="modules" %}
@@ -8,11 +8,11 @@
 <ul>
 {% for module in site.data.modules %}
   <li>
-  	{% if module.has_index_md == "1" %}
+    {% if module.has_index_md == "1" %}
     <a href='{{ module.name | replace: " ", "-" | downcase }}'>
     {% endif %}
     {{ module.name }}
-   	{% if module.has_index_md %}
+    {% if module.has_index_md %}
     </a>
     {% endif %}
   </li>

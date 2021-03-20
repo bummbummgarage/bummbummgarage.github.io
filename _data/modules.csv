@@ -3,8 +3,10 @@ Case 0.1,0
 Case II 0.2,0
 Envelope Generator 0.1,1
 Envelope Generator II 0.1,1
-Envelope Generator II 0.2,0
+Envelope Generator II 0.2.1,0
 Exponential Converter 0.1,1
+Clock 0.1,0
+Clock 0.2,0
 Gate to Trigger Converter 0.1,1
 High Pass Filter 0.1,0
 Mixer 0.1,0
