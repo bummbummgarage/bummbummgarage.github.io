@@ -12,6 +12,7 @@ Here are the modules that I built. You will find **video demos**, **schematics**
 | [Exponential Converter]({% link modules/exponential-converter-0.1/index.md %}) | 0.1     |
 | [Gate to Trigger Converter]({% link modules/gate-to-trigger-converter-0.1/index.md %}) | 0.1     |
 | [Noise Generator]({% link modules/noise-generator-0.2/index.md %}) | 0.2     |
+| [Sequencer]({% link modules/sequencer-0.1/index.md %})       | 0.1     |
 | [VCA]({% link modules/vca-0.1/index.md %})                   | 0.1     |
 | [VCA]({% link modules/vca-0.2/index.md %})                   | 0.2     |
 | [VCO]({% link modules/vco-0.4/index.md %})                   | 0.4     |
