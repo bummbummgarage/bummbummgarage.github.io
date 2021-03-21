@@ -13,7 +13,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 
 | Section   | Module                                                       | Finished |
 | --------- | ------------------------------------------------------------ | :------: |
-| Beat      | Clock 0.2                                                    |    ✅     |
+| Conductor | Clock 0.2                                                    |    ✅     |
 |           | [Gate to Trigger Converter 0.1](/modules/gate-to-trigger-converter-0.1) |    ✅     |
 |           | [Sequencer 0.1](/modules/sequencer-0.1)                      |    ✅     |
 | Bass Drum | Envelope Generator II 0.2.1                                  |    ✅     |
