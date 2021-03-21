@@ -1,0 +1,8 @@
+VCO II 0.2.3
+
+Freq Bereich: 0 - 3.5 KHz
+SQU: Vpp= 10,5V, 0 to +10,5V
+TRI: Vpp= 10V, -5 to +5V
+
+Current Draw:
++17mA (+12V), -7 mA (-12V)
