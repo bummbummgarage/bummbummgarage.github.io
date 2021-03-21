@@ -19,13 +19,13 @@ It's based on a design by Robin Mitchell in ["DIY Synth Series Part 1 — The Ex
 
 To find transistors with the same HFE, you have to match them. I used the instructions described in ["Transistor matching" by Kassutronics](https://kassu2000.blogspot.com/2015/10/transistor-matching.html) 👍
 
-For the calibration I build a testing circuit with different voltage inputs (set by trimpots) and checked the output with a multimeter. You can see a photo of that and the resulting chart below. With the trimmers I set it to peak at 8 volts input because my EGs have a maximum output of 8 volts.
+For the calibration I build a testing circuit with different voltage inputs (set by trimpots) and checked the output with a multimeter. You can see a photo of that and the resulting chart below. With the trimmers I set it to peak at ~10 volts input because this is where the CV of my envelope generators peak.
 
 ![](154071496_785706842365955_7819474831100190743_n.jpg)
 
 ![](153647548_2848334918766242_4271693317320118724_n.jpg)
 
-![](153722211_776406696317840_1074722605393827019_n.jpg)
+![](chart.png)
 
 ## Links
 
