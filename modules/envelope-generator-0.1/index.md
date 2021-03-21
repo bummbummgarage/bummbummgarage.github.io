@@ -1,6 +1,8 @@
 ---
 layout: module
-title: Envelope Generator
+title: Envelope Generator 0.1
+description: Here's the first Envelope Generator (ADSR) that I built for my drum machine project.
+image: modules/envelope-generator-0.1/120343094_3458159520910993_5205335999587442971_n.jpg
 ---
 
 # Envelope Generator

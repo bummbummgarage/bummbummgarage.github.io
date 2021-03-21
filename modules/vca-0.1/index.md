@@ -1,6 +1,8 @@
 ---
 layout: module
-title: VCA
+title: VCA 0.1
+description: VCA that I built for my drum machine project. It's very simple.
+image: modules/vca-0.1/126015022_380369819866411_1883062082916193714_n.jpg
 ---
 
 # VCA

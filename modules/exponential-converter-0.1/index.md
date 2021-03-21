@@ -1,6 +1,8 @@
 ---
 layout: module
-title: Exponential Converter
+title: Exponential Converter 0.1
+description: Exponential Converter that I built for my modular synth drum machine project.
+image: modules/exponential-converter-0.1/154388090_471161937385519_3133007917346548765_n.jpg
 ---
 
 # Exponential Converter

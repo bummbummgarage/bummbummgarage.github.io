@@ -1,6 +1,8 @@
 ---
 layout: module
-title: Envelope Generator II
+title: Envelope Generator II 0.1
+description: Envelope Generator that I built for my modular synth drum machine project.
+image: modules/envelope-generator-ii-0.1/150886302_121161163246069_6775219902744277767_n.jpg
 ---
 
 # Envelope Generator II

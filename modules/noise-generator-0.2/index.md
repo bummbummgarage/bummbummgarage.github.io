@@ -1,6 +1,8 @@
 ---
 layout: module
-title: Noise Generator
+title: Noise Generator 0.2
+description: Noise generator that I built for my modular synth drum machine project.
+image: modules/noise-generator-0.2/127847106_201614441532627_72816323489811047_n.jpg
 ---
 
 # Noise Generator

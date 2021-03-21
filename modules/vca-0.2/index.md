@@ -1,6 +1,8 @@
 ---
 layout: module
-title: VCA
+title: VCA 0.2
+description: VCA that I built for my modular synth drum machine project. It's the second and simpliest VCA in my system.
+image: modules/vca-0.2/153180515_182987476582838_2630144230978475653_n.jpg
 ---
 
 # VCA

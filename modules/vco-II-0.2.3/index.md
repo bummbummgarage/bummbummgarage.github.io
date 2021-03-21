@@ -1,6 +1,8 @@
 ---
 layout: module
-title: VCO II
+title: VCO II 0.2.3
+description: VCO that I built for my modular synth drum machine project. It's based on two LM358 and one TL072, deadly simple.
+image: modules/vco-ii-0.2.3/160017333_213328790578242_8465238797184565485_n.jpg
 ---
 
 # VCO II

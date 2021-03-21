@@ -1,7 +1,8 @@
 ---
 layout: module
-title: Gate to Trigger Converter
-
+title: Gate to Trigger Converter 0.1
+description: Gate to Trigger Converter that I built for my drum machine project.
+image: modules/gate-to-trigger-converter-0.1/120194220_674661776766592_1671963204764866363_n.jpg
 ---
 
 # Gate to Trigger Converter

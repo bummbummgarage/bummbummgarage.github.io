@@ -1,6 +1,8 @@
 ---
 layout: module
-title: VCO 
+title: VCO 0.4
+description: VCO that I pulled together for my drum machine project. 
+image: modules/vco-0.4/120069748_171071121269591_6942984310127158100_n.jpg
 ---
 
 # VCO

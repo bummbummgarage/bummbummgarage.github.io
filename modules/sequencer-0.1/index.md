@@ -1,6 +1,8 @@
 ---
 layout: module
-title: Sequencer
+title: Sequencer 0.1
+description: Step sequencer with gates and triggers that I built for my drum machine project.
+image: modules/sequencer-0.1/121736146_988187851592777_9139359872235283236_n.jpg
 ---
 
 # Sequencer
