@@ -31,6 +31,9 @@ social:
     - https://www.instagram.com/bumm.bumm.garage
 
 # Build settings
+whitelist:  # See by default whitelisted plugins: https://pages.github.com/versions/
+  - jekyll-analytics  
+
 plugins:
   - jekyll-analytics
   - jekyll-seo-tag
