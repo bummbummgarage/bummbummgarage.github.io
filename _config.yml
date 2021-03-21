@@ -27,8 +27,8 @@ title: Bumm Bumm Garage
 url: "https://bummbummgarage.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-# plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-analytics
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -49,3 +49,8 @@ url: "https://bummbummgarage.github.io/" # the base hostname & protocol for your
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+jekyll_analytics:       # Docs: https://github.com/hendrikschneider/jekyll-analytics
+  GoogleAnalytics:      # Add, if you want to track with Google Analytics
+    id: UA-192714552-1  # Required - replace with your tracking id
+    anonymizeIp: true   # Optional - Default: false - set to true for anonymized tracking
