@@ -3,7 +3,7 @@ layout: module
 title: VCO 
 ---
 
-## VCO
+# VCO
 
 *Version 0.4 from September 2020*
 
@@ -11,14 +11,14 @@ title: VCO
 
 VCO that I pulled together for my drum machine project. It's based on a former standalone version and now migrated to Eurorack format since I decided to go into this direction.
 
-### Features
+## Features
 
 * ✅ Square, triangle and sine wave
 * ✅ Variable frequency range (30 Hz to 13 kHz)
 * ✅ CV input with variable attenuation
 * ✅ Variable DC
 
-### Details
+## Details
 
 I found a thankful way to assemble the stripboard and the front panel by using the interface components, like the potis and audio jacks (Doepfer style).
 
@@ -28,13 +28,13 @@ I found a thankful way to assemble the stripboard and the front panel by using t
 
 ![](119948956_622572921628447_8042321751980002205_n.jpg)
 
-### Links
+## Links
 
 * [Video Demo](Bumm Bumm Garage VCO 0.4 Video Demo 720p.mp4)
 * [Schematic (PDF)](Bumm Bumm Garage VCO 0.4 Schematic.pdf) – Please don't mind that the circuitry index (e.g. "Input adjust") components index (e.g. "R3") start with numbers higher than 1. This due to the fact that I removed the integrated power supply unit from the former standalone version.
 * [Stripboard Layout (PDF)](Bumm Bumm Garage VCO 0.4 Stripboard Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage VCO 0.4 Panel.pdf)
 
-### Improvement Potential
+## Improvement Potential
 
 See the comments on [Instagram](https://www.instagram.com/p/CFeNJiRBGOw/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/iy6adt/eurorack_vco_square_triangle_sine_on_stripboard/).

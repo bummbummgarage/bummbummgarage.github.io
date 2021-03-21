@@ -3,19 +3,19 @@ layout: default
 title: Legal Notice
 ---
 
-## Legal Notice
+# Legal Notice
 
-### Information pursuant to Sect. 5 German Telemedia Act (TMG)
+## Information pursuant to Sect. 5 German Telemedia Act (TMG)
 
 Steffen Lohaus
 Endersstraße 41
 04177 Leipzig
 
-### Contact
+## Contact
 
 Email: steffenlohaus@gmail.com
 
-### Person responsible for editorial
+## Person responsible for editorial
 
 Steffen Lohaus
 

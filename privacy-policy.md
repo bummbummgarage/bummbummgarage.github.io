@@ -3,45 +3,45 @@ layout: default
 title: Privacy Policy
 ---
 
-## Privacy Policy
+# Privacy Policy
 
-### 1. An overview of data protection
+## 1. An overview of data protection
 
-#### General information
+### General information
 
 The following information will provide you with an easy to navigate overview of what will happen with your personal data when you visit this website. The term “personal data” comprises all data that can be used to personally identify you. For detailed information about the subject matter of data protection, please consult our Data Protection Declaration, which we have included beneath this copy.
 
-#### Data recording on this website
+### Data recording on this website
 
-##### Who is the responsible party for the recording of data on this website (i.e., the “controller”)?
+#### Who is the responsible party for the recording of data on this website (i.e., the “controller”)?
 
 The data on this website is processed by the operator of the website, whose contact information is available under section “Information about the responsible party (referred to as the “controller” in the GDPR)” in this Privacy Policy.
 
-##### How do we record your data?
+#### How do we record your data?
 
 We collect your data as a result of your sharing of your data with us. This may, for instance be information you enter into our contact form.
 
 Other data shall be recorded by our IT systems automatically or after you consent to its recording during your website visit. This data comprises primarily technical information (e.g., web browser, operating system, or time the site was accessed). This information is recorded automatically when you access this website.
 
-##### What are the purposes we use your data for?
+#### What are the purposes we use your data for?
 
 A portion of the information is generated to guarantee the error free provision of the website. Other data may be used to analyze your user patterns.
 
-##### What rights do you have as far as your information is concerned?
+#### What rights do you have as far as your information is concerned?
 
 You have the right to receive information about the source, recipients, and purposes of your archived personal data at any time without having to pay a fee for such disclosures. You also have the right to demand that your data are rectified or eradicated. If you have consented to data processing, you have the option to revoke this consent at any time, which shall affect all future data processing. Moreover, you have the right to demand that the processing of your data be restricted under certain circumstances. Furthermore, you have the right to log a complaint with the competent supervising agency.
 
 Please do not hesitate to contact us at any time if you have questions about this or any other data protection related issues.
 
-#### Analysis tools and tools provided by third parties
+### Analysis tools and tools provided by third parties
 
 There is a possibility that your browsing patterns will be statistically analyzed when your visit this website. Such analyses are performed primarily with what we refer to as analysis programs.
 
 For detailed information about these analysis programs please consult our Data Protection Declaration below.
 
-### 2. Hosting and Content Delivery Networks (CDN)
+## 2. Hosting and Content Delivery Networks (CDN)
 
-#### External Hosting
+### External Hosting
 
 This website is hosted by an external service provider (host). Personal data collected on this website are stored on the servers of the host. These may include, but are not limited to, IP addresses, contact requests, metadata and communications, contract information, contact information, names, web page access, and other data generated through a web site.
 
@@ -56,9 +56,9 @@ GitHub Inc.
 San Francisco, CA 94107
 United States
 
-### 3. General information and mandatory information
+## 3. General information and mandatory information
 
-#### Data protection
+### Data protection
 
 The operators of this website and its pages take the protection of your personal data very seriously. Hence, we handle your personal data as confidential information and in compliance with the statutory data protection regulations and this Data Protection Declaration.
 
@@ -66,7 +66,7 @@ Whenever you use this website, a variety of personal information will be collect
 
 We herewith advise you that the transmission of data via the Internet (i.e., through e-mail communications) may be prone to security gaps. It is not possible to completely protect data against third-party access.
 
-#### Information about the responsible party (referred to as the “controller” in the GDPR)
+### Information about the responsible party (referred to as the “controller” in the GDPR)
 
 The data processing controller on this website is:
 
@@ -77,43 +77,43 @@ E-mail: [E-Mail-Adresse der verantwortlichen Stelle]
 
 The controller is the natural person or legal entity that single-handedly or jointly with others makes decisions as to the purposes of and resources for the processing of personal data (e.g., names, e-mail addresses, etc.).
 
-#### Storage duration
+### Storage duration
 
 Unless a more specific storage period has been specified in this privacy policy, your personal data will remain with us until the purpose for which it was collected no longer applies. If you assert a justified request for deletion or revoke your consent to data processing, your data will be deleted, unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial law retention periods); in the latter case, the deletion will take place after these reasons cease to apply.
 
-#### Information on data transfer to the USA and other non-EU countries
+### Information on data transfer to the USA and other non-EU countries
 
 Among other things, tools of companies domiciled in the United States or other from a data protection perspective non-secure non-EU countries, are integrated into our website. If these tools are active, your personal data may potentially be transferred to these non-EU countries and may be processed there. We must point out that in these countries, a data protection level that is comparable to that in the EU cannot be guaranteed. For instance, U.S. enterprises are under a mandate to release personal data to the security agencies and you as the data subject do not have any litigation options to defend yourself in court. Hence, it cannot be ruled out that U.S. agencies (e.g., the Secret Service) may process, analyze, and permanently archive your personal data for surveillance purposes. We have no control over these processing activities.
 
-#### Revocation of your consent to the processing of data
+### Revocation of your consent to the processing of data
 
 A wide range of data processing transactions are possible only subject to your express consent. You can also revoke at any time any consent you have already given us. This shall be without prejudice to the lawfulness of any data collection that occurred prior to your revocation.
 
-#### Right to object to the collection of data in special cases; right to object to direct advertising (Art. 21 GDPR)
+### Right to object to the collection of data in special cases; right to object to direct advertising (Art. 21 GDPR)
 
 IN THE EVENT THAT DATA ARE PROCESSED ON THE BASIS OF ART. 6 SECT. 1 LIT. E OR F GDPR, YOU HAVE THE RIGHT TO AT ANY TIME OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA BASED ON GROUNDS ARISING FROM YOUR UNIQUE SITUATION. THIS ALSO APPLIES TO ANY PROFILING BASED ON THESE PROVISIONS. TO DETERMINE THE LEGAL BASIS, ON WHICH ANY PROCESSING OF DATA IS BASED, PLEASE CONSULT THIS DATA PROTECTION DECLARATION. IF YOU LOG AN OBJECTION, WE WILL NO LONGER PROCESS YOUR AFFECTED PERSONAL DATA, UNLESS WE ARE IN A POSITION TO PRESENT COMPELLING PROTECTION WORTHY GROUNDS FOR THE PROCESSING OF YOUR DATA, THAT OUTWEIGH YOUR INTERESTS, RIGHTS AND FREEDOMS OR IF THE PURPOSE OF THE PROCESSING IS THE CLAIMING, EXERCISING OR DEFENCE OF LEGAL ENTITLEMENTS (OBJECTION PURSUANT TO ART. 21 SECT. 1 GDPR).
 
 IF YOUR PERSONAL DATA IS BEING PROCESSED IN ORDER TO ENGAGE IN DIRECT ADVERTISING, YOU HAVE THE RIGHT TO AT ANY TIME OBJECT TO THE PROCESSING OF YOUR AFFECTED PERSONAL DATA FOR THE PURPOSES OF SUCH ADVERTISING. THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS AFFILIATED WITH SUCH DIRECT ADVERTISING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT ADVERTISING PURPOSES (OBJECTION PURSUANT TO ART. 21 SECT. 2 GDPR).
 
-#### Right to log a complaint with the competent supervisory agency
+### Right to log a complaint with the competent supervisory agency
 
 In the event of violations of the GDPR, data subjects are entitled to log a complaint with a supervisory agency, in particular in the member state where they usually maintain their domicile, place of work or at the place where the alleged violation occurred. The right to log a complaint is in effect regardless of any other administrative or court proceedings available as legal recourses.
 
-#### Right to data portability
+### Right to data portability
 
 You have the right to demand that we hand over any data we automatically process on the basis of your consent or in order to fulfil a contract be handed over to you or a third party in a commonly used, machine readable format. If you should demand the direct transfer of the data to another controller, this will be done only if it is technically feasible.
 
-#### SSL and/or TLS encryption
+### SSL and/or TLS encryption
 
 For security reasons and to protect the transmission of confidential content, such as purchase orders or inquiries you submit to us as the website operator, this website uses either an SSL or a TLS encryption program. You can recognize an encrypted connection by checking whether the address line of the browser switches from “http://” to “https://” and also by the appearance of the lock icon in the browser line.
 
 If the SSL or TLS encryption is activated, data you transmit to us cannot be read by third parties.
 
-#### Information about, rectification and eradication of data
+### Information about, rectification and eradication of data
 
 Within the scope of the applicable statutory provisions, you have the right to at any time demand information about your archived personal data, their source and recipients as well as the purpose of the processing of your data. You may also have a right to have your data rectified or eradicated. If you have questions about this subject matter or any other questions about personal data, please do not hesitate to contact us at any time.
 
-#### Right to demand processing restrictions
+### Right to demand processing restrictions
 
 You have the right to demand the imposition of restrictions as far as the processing of your personal data is concerned. To do so, you may contact us at any time. The right to demand restriction of processing applies in the following cases:
 
@@ -124,9 +124,9 @@ You have the right to demand the imposition of restrictions as far as the proces
 
 If you have restricted the processing of your personal data, these data – with the exception of their archiving – may be processed only subject to your consent or to claim, exercise or defend legal entitlements or to protect the rights of other natural persons or legal entities or for important public interest reasons cited by the European Union or a member state of the EU.
 
-### 4. Recording of data on this website
+## 4. Recording of data on this website
 
-#### Cookies
+### Cookies
 
 Our websites and pages use what the industry refers to as “cookies.” Cookies are small text files that do not cause any damage to your device. They are either stored temporarily for the duration of a session (session cookies) or they are permanently archived on your device (permanent cookies). Session cookies are automatically deleted once you terminate your visit. Permanent cookies remain archived on your device until you actively delete them, or they are automatically eradicated by your web browser.
 
@@ -140,7 +140,7 @@ You have the option to set up your browser in such a manner that you will be not
 
 In the event that third-party cookies are used or if cookies are used for analytical purposes, we will separately notify you in conjunction with this Data Protection Policy and, if applicable, ask for your consent.
 
-#### Cookie Consent with Consent Manager Provider
+### Cookie Consent with Consent Manager Provider
 
 Our website uses the Consent Manager Provider cookie consent technology to obtain your consent to the storage of certain cookies on your device and data protection legislation compliant documentation of the former. The party offering this technology is Jaohawi AB, Håltegelvägen 1b, 72348 Västerås, Sweden, website: [https://www.consentmanager.de](https://www.consentmanager.de/) (hereinafter referred to as “Consent Manager Provider”).
 
@@ -150,7 +150,7 @@ Moreover, Consent Manager Provider shall store a cookie in your browser to be ab
 
 Consent Manager Provider uses cookies to obtain the declarations of consent mandated by law. The legal basis for the use of such cookies is Art. 6 Sect. 1 Sentence 1 lit. c GDPR.
 
-#### Server log files
+### Server log files
 
 The provider of this website and its pages automatically collects and stores information in so-called server log files, which your browser communicates to us automatically. The information comprises:
 
@@ -165,9 +165,9 @@ This data is not merged with other data sources.
 
 This data is recorded on the basis of Art. 6 Sect. 1 lit. f GDPR. The operator of the website has a legitimate interest in the technically error free depiction and the optimization of the operator’s website. In order to achieve this, server log files must be recorded.
 
-### 5. Analysis tools and advertising
+## 5. Analysis tools and advertising
 
-#### Google Analytics
+### Google Analytics
 
 This website uses functions of the web analysis service Google Analytics. The provider of this service is Google Ireland Limited (“Google”), Gordon House, Barrow Street, Dublin 4, Ireland.
 
@@ -177,22 +177,22 @@ Google Analytics uses technologies that make the recognition of the user for the
 
 This analysis tool is used on the basis of Art. 6 Sect. 1 lit. f GDPR. The operator of this website has a legitimate interest in the analysis of user patterns to optimize both, the services offered online and the operator’s advertising activities. If a corresponding agreement has been requested (e.g., an agreement to the storage of cookies), the processing takes place exclusively on the basis of Art. 6 para. 1 lit. a GDPR; the agreement can be revoked at any time.
 
-Data transmission to the US is based on the Standard Contractual Clauses (SCC) of the European Commission. Details can be found here: [https://privacy.google.com/businesses/controllerterms/mccs/](https://privacy.google.com/businesses/controllerterms/mccs/).
+Data transmission to the US is based on the Standard Contractual Clauses (SCC) of the European Commission. Details can be found here: https://privacy.google.com/businesses/controllerterms/mccs/.
 
-##### IP anonymization
+#### IP anonymization
 
 On this website, we have activated the IP anonymization function. As a result, your IP address will be abbreviated by Google within the member states of the European Union or in other states that have ratified the Convention on the European Economic Area prior to its transmission to the United States. The full IP address will be transmitted to one of Google’s servers in the United States and abbreviated there only in exceptional cases. On behalf of the operator of this website, Google shall use this information to analyze your use of this website to generate reports on website activities and to render other services to the operator of this website that are related to the use of the website and the Internet. The IP address transmitted in conjunction with Google Analytics from your browser shall not be merged with other data in Google’s possession.
 
-##### Browser plug-in
+#### Browser plug-in
 
-You can prevent the recording and processing of your data by Google by downloading and installing the browser plugin available under the following link: [https://tools.google.com/dlpage/gaoptout?hl=en](https://tools.google.com/dlpage/gaoptout?hl=en).
+You can prevent the recording and processing of your data by Google by downloading and installing the browser plugin available under the following link: https://tools.google.com/dlpage/gaoptout?hl=en.
 
-For more information about the handling of user data by Google Analytics, please consult Google’s Data Privacy Declaration at: [https://support.google.com/analytics/answer/6004245?hl=en](https://support.google.com/analytics/answer/6004245?hl=en).
+For more information about the handling of user data by Google Analytics, please consult Google’s Data Privacy Declaration at: https://support.google.com/analytics/answer/6004245?hl=en.
 
-##### Contract data processing
+#### Contract data processing
 
 We have executed a contract data processing agreement with Google and are implementing the stringent provisions of the German data protection agencies to the fullest when using Google Analytics.
 
-##### Archiving period
+#### Archiving period
 
-Data on the user or incident level stored by Google linked to cookies, user IDs or advertising IDs (e.g., DoubleClick cookies, Android advertising ID) will be anonymized or deleted after 14 month. For details, please click the following link: [https://support.google.com/analytics/answer/7667196?hl=en](https://support.google.com/analytics/answer/7667196?hl=en)
+Data on the user or incident level stored by Google linked to cookies, user IDs or advertising IDs (e.g., DoubleClick cookies, Android advertising ID) will be anonymized or deleted after 14 month. For details, please click the following link: https://support.google.com/analytics/answer/7667196?hl=en

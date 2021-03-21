@@ -3,7 +3,7 @@ layout: module
 title: Envelope Generator II
 ---
 
-## Envelope Generator II
+# Envelope Generator II
 
 *Version 0.1 from February 2021*
 
@@ -11,26 +11,26 @@ title: Envelope Generator II
 
 Envelope Generator that I built for my modular synth drum machine project. It's based on the ["Simple DIY Envelope Generator" by Look Mum No Computer](https://www.lookmumnocomputer.com/simple-envelope-generator) 🥳
 
-### Features
+## Features
 
 * ✅ Attack and release
 * ✅ 2 outputs (for e.g. VCO pitch and VCA)
 * ✅ Visual indication a.k.a. LED
 
-### Details
+## Details
 
 ![](150686505_1061008931049450_3967264325330952442_n.jpg)
 
 ![](150666393_1599602423762275_3366800752116408752_n.jpg)
 
-### Links
+## Links
 
 * [Video Demo](Bumm Bumm Garage EG II 0.1 Video Demo 640p.mp4)
 * [Schematic (PDF)](Bumm Bumm Garage EG II V0.1 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage EG II V0.1 Stripboard Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage EnvGen II V0.1 Panel.pdf)
 
-### Improvement Potential
+## Improvement Potential
 
 Unfortunately the output voltage equals the input voltage in this implementation. That means only +5V coming from my sequencer. That is not sufficient for all my instruments on the drum machine 🤷‍♂️. The snare needs a higher peak of 10 V or more in the envelope.
 

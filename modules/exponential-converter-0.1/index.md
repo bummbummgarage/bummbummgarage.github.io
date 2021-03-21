@@ -3,7 +3,7 @@ layout: module
 title: Exponential Converter
 ---
 
-## Exponential Converter
+# Exponential Converter
 
 *Version 0.1 from February 2021*
 
@@ -13,7 +13,7 @@ Exponential Converter that I built for my modular synth drum machine project. I 
 
 It's based on a design by Robin Mitchell in ["DIY Synth Series Part 1 — The Exponential VCO"](https://www.allaboutcircuits.com/projects/diy-synth-series-vco/).
 
-### Details
+## Details
 
 To find transistors with the same HFE, you have to match them. I used the instructions described in ["Transistor matching" by Kassutronics](https://kassu2000.blogspot.com/2015/10/transistor-matching.html) 👍
 
@@ -25,13 +25,13 @@ For the calibration I build a testing circuit with different voltage inputs (set
 
 ![](153722211_776406696317840_1074722605393827019_n.jpg)
 
-### Links
+## Links
 
 * [Video Demo](Bumm Bumm Garage Exponential Converter 0.1 Video Demo 640p.mp4)
 * [Schematic (PDF)](Bumm Bumm Garage ExpConv 0.1 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage ExpConv 0.1 Stripboard Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage Exponential Converter 0.1 Panel.pdf)
 
-### Improvement Potential
+## Improvement Potential
 
 See the comments on [Instagram](https://www.instagram.com/p/CLwjxVGh8AB/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/lt0a0m/exponential_converter_in_eurorack_format_on/).

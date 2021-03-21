@@ -3,7 +3,7 @@ layout: module
 title: VCA
 ---
 
-## VCA
+# VCA
 
 *Version 0.2 from February 2021*
 
@@ -13,20 +13,20 @@ VCA that I built for my modular synth drum machine project. It's the second and 
 
 The design is based on ["Vactrol VCA" by Kristian Blåsol](https://www.dropbox.com/s/o6oiyanco8lzmvt/Schematic_Vactrol.pdf).
 
-### Details
+## Details
 
 ![](152798635_151603326780103_2547913298771443805_n.jpg)
 
 ![](153766931_724161221801396_8035976398690150812_n.jpg)
 
-### Links
+## Links
 
 * [Video Demo](Bumm Bumm Garage VCA V0.2 Video Demo 640p.mp4)
 * [Schematic (PDF)](Bumm Bumm Garage VCA V0.2 Schematic.pdf)
 * [Stripboard Layout (PDF)](Bumm Bumm Garage VCA V0.2 Stripboard Layout.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage VCA 0.2 Panel.pdf)
 
-### Improvement Potential
+## Improvement Potential
 
 See the comments on [Instagram](https://www.instagram.com/p/CLrdUU6Boba/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/lreytp/simple_vca_in_eurorack_format_on_stripboard/).
 
