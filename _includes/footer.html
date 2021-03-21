@@ -9,5 +9,9 @@
 			<a href="/privacy-policy">Privacy</a>
 		</div>
 
+		{% if jekyll.environment == "production" %}
+   			{% include analytics.html %}
+		{% endif %}
+
 	</body>
 </html>
