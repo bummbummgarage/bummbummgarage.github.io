@@ -4,7 +4,59 @@
 
 		</div>
 
+		
+		{% if jekyll.environment == "production" %}
+   			{% assign host = site.url %}
+   		{% else %}	
+   			{% assign host = "http://localhost:4000" %}
+		{% endif %}
+
+		<!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+		<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+			cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"light","language":"en","website_name":"Bumm Bumm Garage","cookies_policy_url":"{{ host }}/privacy-policy","change_preferences_selector":"#cookieSettings"});
+			});
+		</script>
+		<style type="text/css">
+			.light.cc_dialog { 
+				max-width: 480px;
+	    		margin: auto;
+	    		background-color: #FFF6BE;
+	    		text-align: center;	
+			}
+			.light.cc_dialog .cc_dialog_headline {
+				color: var(--color-secondary);
+				opacity: .8;
+				font-size: 2em;
+			}
+			.light.cc_dialog .cc_dialog_headline:after {
+				content: " 🍪";
+			}
+			.cc_css_reboot p {
+			    margin-top: 1em;
+			    margin-bottom: 2em;
+			}
+			.light.cc_dialog button.cc_b_ok {
+				min-width: 300px;
+				background: var(--color-primary);
+				padding: 1rem 2.5rem;
+				border-radius: 4px;
+				font-size: 1em;
+				font-weight: normal;
+				margin-bottom: 0.75em;
+			}
+			.light.cc_dialog button.cc_b_cp {
+			    background-color: transparent;
+			    color: var(--color-primary);
+			    font-weight: normal;
+				font-size: 1em;
+			}
+		</style>
+		<!-- End Cookie Consent -->
+
 		<div id="footer" class="container text-right">
+			<a href="#" onclick="return false;" id="cookieSettings">🍪 Settings</a> &middot;
 			<a href="/legal-notice">Legals</a> &middot;
 			<a href="/privacy-policy">Privacy</a>
 		</div>
