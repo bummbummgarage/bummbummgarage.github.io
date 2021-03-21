@@ -140,16 +140,6 @@ You have the option to set up your browser in such a manner that you will be not
 
 In the event that third-party cookies are used or if cookies are used for analytical purposes, we will separately notify you in conjunction with this Data Protection Policy and, if applicable, ask for your consent.
 
-### Cookie Consent with Consent Manager Provider
-
-Our website uses the Consent Manager Provider cookie consent technology to obtain your consent to the storage of certain cookies on your device and data protection legislation compliant documentation of the former. The party offering this technology is Jaohawi AB, Håltegelvägen 1b, 72348 Västerås, Sweden, website: [https://www.consentmanager.de](https://www.consentmanager.de/) (hereinafter referred to as “Consent Manager Provider”).
-
-Whenever you visit our website, a connection with the Consent Manager Provider’s servers will be established to obtain your consent and other declarations regarding the use of cookies.
-
-Moreover, Consent Manager Provider shall store a cookie in your browser to be able to allocate your declaration(s) of consent or any revocations of the former. The data that are recorded in this manner shall be stored until you ask us to eradicate them, delete the Consent Manager Provider cookie or until the purpose for archiving the data no longer exists. This shall be without prejudice to any mandatory legal retention periods.
-
-Consent Manager Provider uses cookies to obtain the declarations of consent mandated by law. The legal basis for the use of such cookies is Art. 6 Sect. 1 Sentence 1 lit. c GDPR.
-
 ### Server log files
 
 The provider of this website and its pages automatically collects and stores information in so-called server log files, which your browser communicates to us automatically. The information comprises:
