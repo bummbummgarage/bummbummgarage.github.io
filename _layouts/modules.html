@@ -7,7 +7,7 @@
 {% for module in site.data.modules %}
   <li>
     {% if module.has_index_md == "1" %}
-    <a href='{{ module.name | replace: " ", "-" | downcase }}'>
+    <a href='{{ module.name | replace: " ", "-" | downcase }}'>
     {% endif %}
     {{ module.name }}
     {% if module.has_index_md %}
