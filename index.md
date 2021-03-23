@@ -30,7 +30,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 | Hi-Hat    | [Envelope Generator II 0.1](/modules/envelope-generator-ii-0.1) |    ✅     |
 |           | Noise Generator 0.3                                          |          |
 |           | HPF                                                          |          |
-| Mixing    | Mixer 0.1                                                    |          |
+| Mixing    | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
 | Housing   | Case II 0.2                                                  |    ✅     |
 |           | Power Supply Unit II 0.1                                     |    ✅     |
 |           | Power Distribution Board 0.1                                 |    ✅     |
