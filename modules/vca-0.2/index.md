@@ -30,7 +30,7 @@ The design is based on ["Vactrol VCA" by Kristian Blåsol](https://www.dropbox.c
 
 ## Improvement Potential
 
-There some distortion in the output. Furthermore the design doesn't work with negative voltages. Fortunately sufficient enough for the sounds of my drum machine project.
+There some distortion in the output. Furthermore the design doesn't work with negative voltages. Fortunately sufficient enough for the sounds of my drum machine project 👍🏻
 
 Also see the comments on [Instagram](https://www.instagram.com/p/CLrdUU6Boba/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/lreytp/simple_vca_in_eurorack_format_on_stripboard/).
 
