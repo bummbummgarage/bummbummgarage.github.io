@@ -27,7 +27,7 @@ The schematic is based on ["Introduction to Op-Amps - Part 2" by Jens Moller on 
 
 ![](164360689_169070371612264_2588453398237662331_n.jpg)
 
-The pots I use here are from Piher (PC-16 series), the jack sockets are from Lumberg (part number 1502 03).
+The pots I use here are from Piher (PC-16 series), the jack sockets are from Lumberg (part number 1502 03) and the switches are from RND Electronics (ON-ON, SPDT).
 
 The module can easily be extended with channels. Copy the according part in the schematic and stripboard layout, connect the lines and nothing will stop you 🚀
 
@@ -42,4 +42,5 @@ The module can easily be extended with channels. Copy the according part in the 
 
 All in all, the controls at the front are very tight. Unmuting the channels is easy because it is a downward movement with the finger. Muting takes some practice.
 
-<!-- Comment links -->
+Also see the comments on [Instagram](https://www.instagram.com/p/CMxVuXAh2HL/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mbnqt3/4_channel_mixer_in_eurorack_format_on_stripboard/).
+
