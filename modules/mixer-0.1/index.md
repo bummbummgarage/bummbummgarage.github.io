@@ -40,7 +40,7 @@ The module can easily be extended with channels. Copy the according part in the 
 
 ## Improvement Potential
 
-Make it an active mixer with one OpAmp per channel. This way each channel is buffered and independent from the others. ["Multi channel audio mixer circuit using LM3900" by April Jay](https://circuitmaker.com/Projects/Details/April-Jay/Multi-channel-audio-mixer-circuit-using-LM3900) would be a starting point. Delete the preset potentiometer and replace the gain loop’s resistor by a potentiometer. Thanks for the hint, TC!
+Make it an active mixer with one OpAmp per channel. This way each channel is buffered and independent from the others. ["Multi channel audio mixer circuit using LM3900" by April Jay](https://circuitmaker.com/Projects/Details/April-Jay/Multi-channel-audio-mixer-circuit-using-LM3900) would be a starting point. Delete the preset potentiometer and replace the gain loop’s resistor by a potentiometer. Thanks for the hint, Thibault!
 
 All in all, the controls at the front are very tight. Unmuting the channels is easy because it is a downward movement with the finger. Muting takes some practice.
 
