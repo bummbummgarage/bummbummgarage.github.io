@@ -1,0 +1,24 @@
+Instagram video optimization
+
+What I inspected:
+Sizes: 640 x 504, 720 x 568
+Bitrate: 630 kBit/s, 460 kBit/s, 530 kBit/s, 590 kBit/s
+Frames/s: 30
+
+1. HEIGHT
+ffmpeg -i input.mp4 -vf scale=-1:504 output_1_height.mp4
+
+2. ASPECT RATIO
+ffmpeg -i output_1_height.mp4 -filter:v "crop=640:504" output_2_aspect_ratio.mp4
+
+3. CODECS: H.264, AAC Audio
+ffmpeg -i output_2_aspect_ratio.mp4 -vcodec libx264 -acodec aac output_3_codec.mp4
+
+4. BITRATE
+ffmpeg -i output_3_codec.mp4 -b:v 600k -b:a 192k output_4_bitrate.mp4
+
+5. FRAMERATE
+ffmpeg -i output_4_bitrate.mp4 -r 30 Video-Demo.mp4
+
+6. REMOVE all temporary files
+rm output_1_height.mp4 output_2_aspect_ratio.mp4 output_3_codec.mp4 output_4_bitrate.mp4
