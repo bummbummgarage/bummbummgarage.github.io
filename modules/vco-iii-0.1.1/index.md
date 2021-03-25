@@ -17,9 +17,8 @@ VCO that I built for my modular synth drum machine project. It’s based on two 
 ## Features
 
 - ✅ Square and triangle wave
+- ✅ Frequency range from 0 Hz to 3.5 kHz
 - ✅ FM input with variable attenuation
-
-<!-- ✅ Frequency range from 0 Hz to X.X kHz -->
 
 ## Details
 
