@@ -19,7 +19,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 | Bass Drum | Envelope Generator II 0.2.1                                  |    ✅     |
 |           | [VCO III 0.1.1](/modules/vco-iii-0.1.1/) <!-- Docs in Progress --> |          |
 |           | LPF                                                          |          |
-| Snare     | Splitter <!-- Maybe not needed, mit den Splitter Kabeln -->  |          |
+| Snare     | Splitter                                                     |          |
 |           | [Envelope Generator 0.1](/modules/envelope-generator-0.1)    |    ✅     |
 |           | [Exponential Converter 0.1](/modules/exponential-converter-0.1) |    ✅     |
 |           | [VCO II 0.2.3](/modules/vco-ii-0.2.3)                        |    ✅     |
