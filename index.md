@@ -17,7 +17,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | [Gate to Trigger Converter 0.1](/modules/gate-to-trigger-converter-0.1) |    ✅     |
 |           | [Sequencer 0.1](/modules/sequencer-0.1)                      |    ✅     |
 | Bass Drum | Envelope Generator II 0.2.1                                  |    ✅     |
-|           | [VCO III 0.1.1](/modules/vco-iii-0.1.1/) <!-- Docs in Progress --> |          |
+|           | [VCO III 0.1.1](/modules/vco-iii-0.1.1/)                     |    ✅     |
 |           | LPF                                                          |          |
 | Snare     | Splitter                                                     |          |
 |           | [Envelope Generator 0.1](/modules/envelope-generator-0.1)    |    ✅     |
