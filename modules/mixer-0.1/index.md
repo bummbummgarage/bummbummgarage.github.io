@@ -27,7 +27,7 @@ The schematic is based on ["Introduction to Op-Amps - Part 2" by Jens Moller on 
 
 ![](164360689_169070371612264_2588453398237662331_n.jpg)
 
-The pots I use here are from Piher (PC-16 series), the jack sockets are from Lumberg (part number 1502 03) and the switches are from RND Electronics (ON-ON, SPDT).
+The potis I use here are from Piher (PC-16 series), the jack sockets are from Lumberg (part number 1502 03) and the switches are from RND Electronics (ON-ON, SPDT).
 
 The module can easily be extended with channels. Copy the according part in the schematic and stripboard layout, connect the lines and nothing will stop you 🚀
 

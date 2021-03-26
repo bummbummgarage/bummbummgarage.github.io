@@ -29,12 +29,11 @@ This is the successor of VCO II 0.2.3. I added a NOT gate before the last output
 
 ![](IMG_7944.jpg)
 
-<!-- + Components -->
+The potis I use here are type WH148 and the jack sockets are from Cliff (FCR1281).
 
 ## Links
 
-<!-- + Video Demo -->
-
+* [Video Demo](Bumm-Bumm-Garage-VCO-III-0.1.1-Video-Demo.mp4)
 * [Schematic (PDF)](Bumm Bumm Garage VCO III 0.1 Schematic.pdf)
 * [PCB Bottom Layer (PDF)](Bumm Bumm Garage VCO III 0.1.1 PCB Bottom Layer.pdf)
 * [Front Panel (PDF)](Bumm Bumm Garage VCO III Panel.pdf)
