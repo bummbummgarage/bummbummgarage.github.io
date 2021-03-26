@@ -21,7 +21,7 @@ VCO that I built for my modular synth drum machine project. It’s based on two 
 
 ## Details
 
-This is the successor of VCO II 0.2.3. I added a NOT gate before the last output of the square wave. This way both waves are no longer out of phase. Also, the output of the square wave now has no DC bias at 0 Hz 👍🏻
+This is the successor of VCO II 0.2.3. I added a NOT gate before the last output of the square wave. This way both waves are no longer out of phase. Also, the output of the square wave is now 0V at 0 Hz (before it was HIGH) 👍🏻
 
 ![](IMG_7942.jpg)
 
