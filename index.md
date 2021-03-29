@@ -18,7 +18,6 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | [Sequencer 0.1](/modules/sequencer-0.1)                      |    ✅     |
 | Bass Drum | Envelope Generator II 0.2.1                                  |    ✅     |
 |           | [VCO III 0.1.1](/modules/vco-iii-0.1.1/)                     |    ✅     |
-|           | LPF                                                          |          |
 | Snare     | Splitter                                                     |          |
 |           | [Envelope Generator 0.1](/modules/envelope-generator-0.1)    |    ✅     |
 |           | [Exponential Converter 0.1](/modules/exponential-converter-0.1) |    ✅     |
@@ -29,8 +28,8 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | [VCA 0.2](/modules/vca-0.2)                                  |    ✅     |
 | Hi-Hat    | [Envelope Generator II 0.1](/modules/envelope-generator-ii-0.1) |    ✅     |
 |           | Noise Generator 0.3 <!-- Schematics done -->                 |          |
-|           | HPF <!-- Assembly in Progress -->                            |          |
-| Mixing    | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
+| Mixing    | Filter <!-- Schematics and Stripboard Layout in Progress --> |          |
+|           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
 | Housing   | Case II 0.2                                                  |    ✅     |
 |           | Power Supply Unit II 0.1                                     |    ✅     |
 |           | Power Distribution Board 0.1                                 |    ✅     |
