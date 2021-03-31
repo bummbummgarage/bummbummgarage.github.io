@@ -297,33 +297,6 @@
       <colorCode>NONE</colorCode>
       <shape>Standard</shape>
     </diylc.passive.Resistor>
-    <diylc.passive.RadialElectrolytic>
-      <name>C2</name>
-      <alpha>127</alpha>
-      <length value="0.25" unit="in"/>
-      <points>
-        <point x="5.7" y="4.4"/>
-        <point x="5.8" y="4.0"/>
-        <point x="5.75" y="4.2"/>
-      </points>
-      <bodyColor hex="6b6dce"/>
-      <borderColor hex="4a4c90"/>
-      <labelColor hex="ffffff"/>
-      <leadColor hex="cccccc"/>
-      <display>NAME</display>
-      <flipStanding>false</flipStanding>
-      <labelOriantation>Directional</labelOriantation>
-      <moveLabel>false</moveLabel>
-      <hideShortLeads>false</hideShortLeads>
-      <pinSpacing value="0.1" unit="in"/>
-      <voltage>_63V</voltage>
-      <markerColor hex="8cacea"/>
-      <tickColor hex="ffffff"/>
-      <polarized>true</polarized>
-      <folded>false</folded>
-      <height value="0.4" unit="in"/>
-      <invert>false</invert>
-    </diylc.passive.RadialElectrolytic>
     <diylc.connectivity.HookupWire>
       <name>W12</name>
       <alpha>127</alpha>
@@ -459,6 +432,29 @@
       <colorCode>_4_BAND</colorCode>
       <shape>Standard</shape>
     </diylc.passive.Resistor>
+    <diylc.passive.RadialCeramicDiskCapacitor>
+      <name>C2</name>
+      <alpha>127</alpha>
+      <length value="0.25" unit="in"/>
+      <width value="0.125" unit="in"/>
+      <points>
+        <point x="5.8" y="4.0"/>
+        <point x="5.7" y="4.4"/>
+        <point x="5.75" y="4.2"/>
+      </points>
+      <bodyColor hex="f0e68c"/>
+      <borderColor hex="a8a162"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <pinSpacing value="0.1" unit="in"/>
+      <value value="10.0" unit="nF"/>
+      <voltage>_63V</voltage>
+    </diylc.passive.RadialCeramicDiskCapacitor>
     <diylc.misc.WrapLabel>
       <name>L1</name>
       <controlPoints>
