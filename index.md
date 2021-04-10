@@ -26,9 +26,10 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | [Noise Generator 0.2](/modules/noise-generator-0.2)          |    ✅     |
 |           | [VCA 0.2](/modules/vca-0.2)                                  |    ✅     |
 | Hi-Hat    | [Envelope Generator II 0.1](/modules/envelope-generator-ii-0.1) |    ✅     |
-|           | Noise Generator 0.3 <!-- Schematics done -->                 |          |
+|           | Noise Generator 0.3 <!-- Stripboard Layout in Progress (check Connections) --> |          |
 | Mixing    | Filter <!-- Assembly in Progress (labels missing) -->        |          |
 |           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
 | Housing   | Case II 0.2                                                  |    ✅     |
 |           | Power Supply Unit II 0.1                                     |    ✅     |
 |           | Power Distribution Board 0.1                                 |    ✅     |
+
