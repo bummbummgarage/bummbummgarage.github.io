@@ -4,7 +4,7 @@
 */
 
 // General
-const bool debug = true; // Enables the Serial print in several functions.
+const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
 const int pushButtonDelay = 50; // The time a button will be muted after last change.
 const int longPress = 2000; // The time to trigger secondary actions on buttons.
 
@@ -45,43 +45,16 @@ const bool tracksPredefinedPattern[tracksPatternCount][stepsCount] = { // Predef
 };
 int tracksPatternPreview[tracksCount]; // Which pattern is previewed (select mode) per track.
 
-/*
-  // Pixels & Display
-  #include <Adafruit_NeoPixel.h>
-  #ifdef __AVR__
-  #include <avr/power.h>
-  #endif
-  #define PIN 12
-  Adafruit_NeoPixel pixels((stepsCount * (tracksCount + 1)), PIN, NEO_GRB + NEO_KHZ800);
-
-  const int pixelBrightness = 10;
-  const int stepsPixelRBright = 255;
-  const int stepsPixelRLight = 64;
-  const int stepsPixelROff = 0;
-  const int stepsPixelG = 0;
-  const int stepsPixelB = 0;
-
-  const int tracksPixelR = 0;
-  const int tracksPixelGBright = 255;
-  const int tracksPixelGLight = 64;
-  const int tracksPixelGOff = 0;
-  const int tracksPixelB = 0;
-*/
-
 // Display
 #include <ShiftRegister74HC595.h> // ShiftRegister74HC595 Library, Docs: https://timodenk.com/blog/shift-register-arduino-library/
 
-const int ledMatrixRowsShiftRegisters = 1; // number of shift registers attached in series
+const int ledMatrixRowsShiftRegisters = 1; // Number of shift registers attached in series.
 const int ledMatrixRowsDataPin = 12; // DS
 const int ledMatrixRowsLatchPin = 11; // STCP
 const int ledMatrixRowsClockPin = 8; // SHCP
 ShiftRegister74HC595<ledMatrixRowsShiftRegisters> ledMatrixRows(ledMatrixRowsDataPin, ledMatrixRowsClockPin, ledMatrixRowsLatchPin);
 
-const int ledMatrixColsShiftRegisters = 1; // number of shift registers attached in series
-int ledMatrixColsDataPin = 7; // DS
-int ledMatrixColsLatchPin = 4; // STCP
-int ledMatrixColsClockPin = 3; // SHCP
-ShiftRegister74HC595<ledMatrixColsShiftRegisters> ledMatrixCols(ledMatrixColsDataPin, ledMatrixColsClockPin, ledMatrixColsLatchPin);
+const int ledMatrixColsPins [ ( tracksCount + 1 ) ] = { 7, 5, 4, 3 }; // The pins to control the LED matrix columns (right to left).
 
 const int flashTime = 300; // How many milliseconds a flash lasts.
 const int slowPulseTime = 1000; // How long one slow pulse cycle lasts.
@@ -110,14 +83,15 @@ void setup() {
     setTracksMode(t, 0); // Set all tracks to mode 0;
   }
 
-  /*
-    // Adafruit Pixels
-    #if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
-    clock_prescale_set(clock_div_1);
-    #endif
-    pixels.begin();
-    pixels.setBrightness(pixelBrightness);
-  */
+  // LED MATRIX
+  // Rows
+  pinMode(ledMatrixRowsDataPin, OUTPUT); // Tracks outputs.
+  pinMode(ledMatrixRowsLatchPin, OUTPUT); // Tracks outputs.
+  pinMode(ledMatrixRowsLatchPin, OUTPUT); // Tracks outputs.
+  // Columns
+  for (int c = 0; c < ( tracksCount + 1 ); c++) {
+    pinMode(ledMatrixColsPins[c], OUTPUT);
+  }
 
 }
 
@@ -306,32 +280,29 @@ void loop() {
      ------------------------------------------------------------------------
   */
 
-  // Adafruit Pixel Docs: https://github.com/adafruit/Adafruit_NeoPixel
-  // pixels.clear(); // All pixels off at the beginning of the loop.
-
   // STEPS
 
   for (int p = 0; p < stepsCount; p++) { // Walking through all the pixels of the steps.
 
-    // int red = stepsPixelROff;
-
     // ALL MODES: A new mode just got entered --> flash.
     if ( millis() - stepsModeChangeLog < flashTime ) {
 
-      clearLEDMatrix();
-      ledMatrixRows.setAllHigh();
-      ledMatrixCols.set(0, LOW);
+      // Lightning the row LEDs designated to the steps in the matrix:
+      clearLEDMatrix(); // Turn off all LEDs
+      ledMatrixRows.setAllHigh(); // Put voltage on all rows. This is brighter than setting single LEDs.
+      ledMatrixColSet(0, LOW); // Place ground on the column of the step LEDs.
 
     }
 
     // MODE 0: Walk through the steps and light the corresponding pixel.
     if ( stepsMode == 0 ) {
-      if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Double blink is done.
+      if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Initial mode flash is done.
         if ( p == stepsPosition - 1 ) {
 
-          clearLEDMatrix();
-          ledMatrixRows.set(p, HIGH);
-          ledMatrixCols.set(0, LOW);
+          // Lightning the particular step LED in the matrix:
+          clearLEDMatrix(); // Turn off all LEDs
+          ledMatrixRows.set(p, HIGH); // Put voltage on the rows of this step.
+          ledMatrixColSet(0, LOW); // Place ground on the column of the step LEDs.
 
         }
       }
@@ -339,12 +310,13 @@ void loop() {
 
     // MODE 1: Walk through the steps and light the corresponding pixel.
     if ( stepsMode == 1 ) { // Shine brighter when there is acutally current floating out.
-      if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Double blink is done.
+      if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Initial mode flash is done.
         if ( p == stepsPosition - 1 ) {
 
-          clearLEDMatrix();
-          ledMatrixRows.set(p, HIGH);
-          ledMatrixCols.set(0, LOW);
+          // Lightning the particular step LED in the matrix:
+          clearLEDMatrix(); // Turn off all LEDs
+          ledMatrixRows.set(p, HIGH); // Put voltage on the rows of this step.
+          ledMatrixColSet(0, LOW); // Place ground on the column of the step LEDs.
 
         }
       }
@@ -356,12 +328,11 @@ void loop() {
       // Scenario 1: Not tapped yet, already blinked yet --> pulsate.
       if ( tapCount == 0 && ( millis() > stepsModeChangeLog + flashTime ) ) {
 
-        // red = pulsateColor( stepsModeChangeLog, stepsPixelRLight, stepsPixelROff );
-
-        int ledState = pulsateColor( stepsModeChangeLog, HIGH, LOW );
-        clearLEDMatrix();
-        ledMatrixRows.set(p, ledState);
-        ledMatrixCols.set(0, LOW);
+        // Lightning the step LEDs in the matrix:
+        int ledState = pulsateColor( stepsModeChangeLog, HIGH, LOW ); // Calculating the state (on or off).
+        clearLEDMatrix(); // Turn off all LEDs
+        ledMatrixRows.set(p, ledState); // Put voltage on the rows of this step.
+        ledMatrixColSet(0, LOW); // Place ground on the column of the step LEDs.
 
       }
 
@@ -384,11 +355,13 @@ void loop() {
         }
         if ( p <= t ) {
 
-          clearLEDMatrix();
-          ledMatrixRows.set(p, HIGH);
-          ledMatrixCols.set(0, LOW);
+          // Lightning the particular step LED in the matrix:
+          clearLEDMatrix(); // Turn off all LEDs
+          ledMatrixRows.set(p, HIGH); // Put voltage on the rows of this step.
+          ledMatrixColSet(0, LOW); // Place ground on the column of the step LEDs.
 
         }
+
       }
 
     }
@@ -402,11 +375,12 @@ void loop() {
 
     for (int p = ( ( t + 1 ) * stepsCount ) ; p < ( ( t + 2 ) * stepsCount ); p++) { // Walk through all pixels of the current track.
 
-      // int green = tracksPixelGOff;
+      if ( millis() < flashTime ) { // Flash all LEDs when Arduino has booted.
 
-      if ( millis() < flashTime ) {
-
-        // green = tracksPixelGBright; // Flash in initial setup (Arduino start).
+        // Lightning the row LEDs designated to this track in the matrix:
+        clearLEDMatrix(); // Turn off all LEDs
+        ledMatrixRows.setAllHigh(); // Put voltage on all rows. This is brighter than setting single LEDs.
+        ledMatrixColSet( ( t + 1 ) , LOW); // Place ground on the column of the step LEDs.
 
       } else {
 
@@ -414,51 +388,23 @@ void loop() {
 
         if ( tracksPattern[t][s] == true ) {
 
-          if ( millis() - tracksModeChangeLog[t] < flashTime ) { // Flashlight all active steps to the beginning.
+          // MODE 0: Illuminate all the active steps.
+          if ( tracksMode[t] == 0 ) {
 
-            // green = tracksPixelGBright;
+            clearLEDMatrix(); // Turn off all LEDs
+            ledMatrixRows.set( s , HIGH); // Put voltage on the row of this step.
+            ledMatrixColSet( ( t + 1 ) , LOW); // Put ground on the column of this track.
 
-          } else {
+          }
 
-            // MODE 0: Illuminate all the active steps.
-            if ( tracksMode[t] == 0 ) {
+          // MODE 1: Pattern select --> Blink the steps of the currently viewed predefined pattern.
+          if ( tracksMode[t] == 1 ) {
 
-              // green = tracksPixelGLight; // Light by default.
-
-              
-              clearLEDMatrix();
-              ledMatrixRows.set( s , HIGH);
-              ledMatrixCols.set( ( t + 1 ) , LOW);
-
-
-              /*
-                if ( s == stepsPosition - 1 ) {
-
-                // Steps mode 0: Bright when CV in.
-                if ( stepsMode == 0 && stepsCVIn == 1 ) {
-
-                  // green = tracksPixelGBright;
-
-                }
-
-                // Steps mode 1: Bright in the trigger time.
-                if ( stepsMode == 1 && ( millis() < ( stepsChangeLog + triggerTime ) ) ) {
-
-                  // green = tracksPixelGBright;
-
-                }
-
-                }
-              */
-
-            }
-
-            // MODE 1: Pattern select --> Blink the steps of the currently viewed predefined pattern.
-            if ( tracksMode[t] == 1 ) {
-
-              // green = pulsateColor( tracksPatternChangeLog[t], tracksPixelGLight, tracksPixelGOff );
-
-            }
+            // Lightning the track LEDs of the pattern in the matrix:
+            int ledState = pulsateColor( stepsModeChangeLog, HIGH, LOW ); // Calculating the state (on or off).
+            clearLEDMatrix(); // Turn off all LEDs
+            ledMatrixRows.set( s , ledState); // Put voltage on the rows of this step.
+            ledMatrixColSet( ( t + 1 ) , LOW); // Place ground on the column of the step LEDs.
 
           }
 
@@ -466,13 +412,9 @@ void loop() {
 
       }
 
-      // pixels.setPixelColor( p , pixels.Color( tracksPixelR, green, tracksPixelB ) );
-
     }
 
   }
-
-  // pixels.show(); // Showing all pixels (with the defined settings).
 
 
   /* ------------------------------------------------------------------------
@@ -495,7 +437,7 @@ void loop() {
         if ( stepsMode == 0 && stepsCVIn == 1 ) {
           digitalWrite(tracksOutputPin[t], HIGH);
         }
-        // Steps mode 1: Bright in the trigger time.
+        // Steps mode 1: High in the trigger time.
         if ( stepsMode == 1 && ( millis() < ( stepsChangeLog + triggerTime ) ) ) {
           digitalWrite(tracksOutputPin[t], HIGH);
         }
@@ -530,7 +472,7 @@ bool checkPushButton( int pin, bool currentState, long changeLog ) { // If HIGH 
 }
 
 // Pulsate – Returns a value for a certain time since start.
-int pulsateColor( long start, int light, int off ) {
+int pulsateColor( long start, int on, int off ) {
   int r;
   // What's the fraction of pulses since initiated?
   double m = 0;
@@ -541,7 +483,7 @@ int pulsateColor( long start, int light, int off ) {
   }
   double f = m / (double)(slowPulseTime); // Factor
   if ( f < 0.5 ) {
-    r = light;
+    r = on;
   } else {
     r = off;
   }
@@ -551,7 +493,19 @@ int pulsateColor( long start, int light, int off ) {
 // Clear LED matrix
 void clearLEDMatrix() {
   ledMatrixRows.setAllLow();
-  ledMatrixCols.setAllHigh();
+  ledMatrixColsSetAllHigh();
+}
+
+// Set the states of the columns in the LED matrix.
+void ledMatrixColSet (int column, int state) {
+  digitalWrite( ledMatrixColsPins[column], state); // Reset output.
+}
+
+// Set all columns to HIGH (which turns the LEDs off).
+void ledMatrixColsSetAllHigh() {
+  for (int c = 0; c < ( tracksCount + 1 ); c++) { // Walk through the columns (tracks + steps).
+    ledMatrixColSet (c, HIGH);
+  }
 }
 
 
@@ -654,8 +608,8 @@ void setTracksMode(int track, int mode) {
   }
 }
 
-// Set the pattern step for a track.
-void setTracksPattern( int track, int step, bool state) {
+// Set the pattern for a track.
+void setTracksPattern( int track, int step, bool state ) {
   tracksPattern[ track ][ step ] = state;
   tracksPatternChangeLog[track] = millis();
   if ( debug == true ) {
@@ -664,7 +618,8 @@ void setTracksPattern( int track, int step, bool state) {
     Serial.print("][");
     Serial.print(step);
     Serial.print("]: ");
-    Serial.println(state);
+    Serial.print(state);
+    Serial.print(" at ");
     Serial.println(millis());
   }
 }
@@ -682,7 +637,7 @@ void applyTracksPattern(int track, int pattern) {
   }
 }
 
-// Icreases and resets the integer of the currently viewed pattern.
+// Icreases or resets the integer of the currently viewed pattern.
 void increaseTracksPreviewPattern(int track) {
   if ( tracksPatternPreview[track] < ( tracksPatternCount - 1 ) ) {
     tracksPatternPreview[track]++;
