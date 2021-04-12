@@ -1,14 +1,21 @@
 # TODOs
 
-* Steps: External CV Walkthrough checken.
-* External output testen
-* Strom mit allem noch mal messen (gesamt).
 * Schematic bauen.
-* Was ist nun mit Minus Voltage am Input?
+* Frontend gestalten und bestellen.
+* PCB bauen und bestellen.
+* Was ist nun mit Minus Voltage am Input? Hält die Diode das ab --> ggf mal ohne Pin Anschluss messen.
+* Random Patterns mit rein programmieren :)
+* Gibt es weitere Fav Zener Dioiden neben der benutzten 1N4733A?
 
-* Random Patterns mit rein :)
 
 
+## Fragen
+
+| Frage                                                        | Antwort                               |
+| ------------------------------------------------------------ | ------------------------------------- |
+| Trigger mit Oscilloscope testen                              | 4 V circa.                            |
+| Funktioneren die Output Jacks auch geerdet, wenn nicht angeschlossen? | Ja, alles gut --> Erden am Switch Pin |
+|                                                              |                                       |
 
 
 

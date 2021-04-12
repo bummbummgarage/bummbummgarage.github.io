@@ -109,7 +109,7 @@ void loop() {
   // STEPS
 
   // CV jack
-  bool stepsJackConnection = checkStepsJackConnection(); // 0 or 1, depending on a cable plugged in or not.
+  bool stepsJackConnection = checkStepsJackConnection(); // Depending on a cable plugged in (1) or not (0).
 
   // Push button.
   bool s = checkPushButton( stepsPushButtonPin, stepsPushButton, stepsPushButtonChangeLog ); // 0 or 1.
@@ -297,10 +297,12 @@ void loop() {
     // MODE 0: Walk through the steps and light the corresponding pixel.
     if ( stepsMode == 0 ) {
       if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Initial mode flash is done.
+
+        clearLEDMatrix(); // Turn off all LEDs
+        
         if ( p == stepsPosition - 1 ) {
 
           // Lightning the particular step LED in the matrix:
-          clearLEDMatrix(); // Turn off all LEDs
           ledMatrixRows.set(p, HIGH); // Put voltage on the rows of this step.
           ledMatrixColSet(0, LOW); // Place ground on the column of the step LEDs.
 
