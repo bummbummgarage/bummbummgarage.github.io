@@ -15,14 +15,14 @@ long stepsModeChangeLog; // Timestamp log of the latest steps mode change.
 int stepsPosition = 0; // The current position of the steps. 0 means no step active, starts with 1.
 int stepsInterval = 0; // Defines the speed of the internal clock. 0 means clock is not running.
 long stepsChangeLog; // Timestamp log of the latest steps position change.
-const char stepsPushButtonPin = A4; // Steps push button pin assignment.
+const char stepsPushButtonPin = A1; // Steps push button pin assignment.
 int stepsPushButton; // 0 or 1.
 long stepsPushButtonChangeLog; // The timestamp of the last change of this button.
 int tapCount = 0; // The counter when tapping in the speed.
 long tapStart; // Timestamp of tapping in.
 long tapEnd; // Timestamp of tapping out.
-const char stepsJackDetectionPin = 2; // The pin of the detection for the external CV jack.
-const char stepsCVInPin = A3; // The pin of the external CV jack to clock the sequencer.
+const char stepsJackDetectionPin = 12; // The pin of the detection for the external CV jack.
+const char stepsCVInPin = A0; // The pin of the external CV jack to clock the sequencer.
 int stepsCVIn; // The control voltage state from an external source in the jack, 0 or 1.
 
 // Tracks
@@ -31,7 +31,7 @@ int tracksMode[tracksCount]; // 0 = record and play, 1 = pattern select.
 long tracksModeChangeLog[tracksCount]; // Timestamp log of the latest tracks mode change.
 bool tracksPattern[tracksCount][stepsCount]; // Holds the logical pattern of each track.
 long tracksPatternChangeLog[tracksCount]; // Timestamp of last pattern change per track.
-const char tracksPushButtonPin[tracksCount] = { A2, A1, A0 }; // Tracks push button pin assignments.
+const char tracksPushButtonPin[tracksCount] = { A2, A3, A4 }; // Tracks push button pin assignments.
 int tracksPushButton[tracksCount]; // The state of the tracks push buttons, 0 or 1.
 long tracksPushButtonChangeLog[tracksCount]; // Timestamp of the latest change to the track pattern.
 const int tracksOutputPin[tracksCount] = { 6, 9, 10 }; // Tracks output pin assignments.
@@ -49,12 +49,12 @@ int tracksPatternPreview[tracksCount]; // Which pattern is previewed (select mod
 #include <ShiftRegister74HC595.h> // ShiftRegister74HC595 Library, Docs: https://timodenk.com/blog/shift-register-arduino-library/
 
 const int ledMatrixRowsShiftRegisters = 1; // Number of shift registers attached in series.
-const int ledMatrixRowsDataPin = 12; // DS
-const int ledMatrixRowsLatchPin = 11; // STCP
-const int ledMatrixRowsClockPin = 8; // SHCP
+const int ledMatrixRowsDataPin = 11; // DS
+const int ledMatrixRowsLatchPin = 8; // STCP
+const int ledMatrixRowsClockPin = 7; // SHCP
 ShiftRegister74HC595<ledMatrixRowsShiftRegisters> ledMatrixRows(ledMatrixRowsDataPin, ledMatrixRowsClockPin, ledMatrixRowsLatchPin);
 
-const int ledMatrixColsPins [ ( tracksCount + 1 ) ] = { 7, 5, 4, 3 }; // The pins to control the LED matrix columns (right to left).
+const int ledMatrixColsPins [ ( tracksCount + 1 ) ] = { 5, 4, 3, 2 }; // The pins to control the LED matrix columns (right to left).
 
 const int flashTime = 300; // How many milliseconds a flash lasts.
 const int slowPulseTime = 1000; // How long one slow pulse cycle lasts.
