@@ -31,4 +31,4 @@ It's based on the ["Variable frequency oscillator" by jacky via circuitstoday.co
 
 The next time I build one of these I will add the ability to change the rate ranges. This could be done with a switch for two or more capacitors instead of C1. I would also add a gates-to-trigger converter inside this module and have an additional output for it.
 
-<!-- Instagram + Reddit Links --> 
+Also see the comments on [Instagram](https://www.instagram.com/p/CNsZUhPBFg2/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mriqqm/clock_gates_eurorack_module_on_stripboard/).
