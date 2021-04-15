@@ -13,7 +13,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 
 | Section   | Module                                                       | Finished |
 | --------- | ------------------------------------------------------------ | :------: |
-| Conductor | Clock II 0.1 <!-- Docs in Progress. Next: Video, text & post --> |          |
+| Conductor | [Clock II 0.1](/modules/clock-ii-0.1/) <!-- Social posts, then Update links --> |          |
 |           | [Gate to Trigger Converter 0.1](/modules/gate-to-trigger-converter-0.1) |    ✅     |
 |           | [Sequencer 0.1](/modules/sequencer-0.1)                      |    ✅     |
 | Bass Drum | Envelope Generator III 0.1.1 <!-- Assembly done -->          |          |

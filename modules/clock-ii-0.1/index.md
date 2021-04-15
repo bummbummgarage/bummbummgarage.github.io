@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Clock II (Gates) 0.1
-description: Clock that I built for my modular synth drum machine project.
+description: Clock module that I built for my modular synth drum machine project.
 image: modules/clock-ii-0.1/IMG_7938.jpg
 ---
 
@@ -11,7 +11,7 @@ image: modules/clock-ii-0.1/IMG_7938.jpg
 
 ![](IMG_7938.jpg)
 
-Clock that I built for my modular synth drum machine project 🕖
+Clock module that I built for my modular synth drum machine project 🕖
 
 ## Details
 
@@ -29,6 +29,6 @@ It's based on the ["Variable frequency oscillator" by jacky via circuitstoday.co
 
 ## Improvement Potential
 
-The next time I build one of these I will add the ability to change the rate ranges. This could be done with a switch for two or more capacitors instead of a C1. I would also add a gates-to-trigger converter inside this module and have an additional output for it.
+The next time I build one of these I will add the ability to change the rate ranges. This could be done with a switch for two or more capacitors instead of C1. I would also add a gates-to-trigger converter inside this module and have an additional output for it.
 
 <!-- Instagram + Reddit Links --> 
