@@ -43,4 +43,4 @@ The potis I use here are from Piher (PC-16 series) and the jack sockets are from
 
 At the beginning there is a small unwanted voltage spike. You can hear it in the video. In my case no problem, because I use the release only in my drum machine project.
 
-<!-- Social links to comments (improvement potential) -->
+Also see the comments on [Instagram](https://www.instagram.com/p/CNuiDEiBc5Y/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/ms2epn/envelope_generator_ar_in_eurorack_format/).
