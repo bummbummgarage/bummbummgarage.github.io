@@ -1,15 +1,17 @@
 ---
 layout: module
 title: Envelope Generator III 0.1.1
+description: Envelope Generator that I built for my modular synth drum machine project.
+image: modules/envelope-generator-iii-0.1.1/IMG_8139.jpg
 ---
-
-<!-- Meta Data: image, desc -->
 
 ## Envelope Generator III
 
-Version 0.1.1 from March 2021
+*Version 0.1.1 from March 2021*
 
-<!-- Main pic -->
+![](IMG_8139.jpg)
+
+Envelope Generator that I built for my modular synth drum machine project.
 
 ## Features
 
@@ -21,9 +23,13 @@ Version 0.1.1 from March 2021
 
 It's based on ["The Fastest Envelope in the West" by René Schmitz](https://www.schmitzbits.de/adsr.html). I removed the Decay and Sustain from the original design. Both were not crucial to my drum machine project. 
 
-<!-- Potis and jacks that I used -->
+![](IMG_8140.jpg)
 
-<!-- Images -->
+The potis I use here are from Piher (PC-16 series) and the jack sockets are from Cliff (FCR1281).
+
+![](IMG_8142.jpg)
+
+![](IMG_8141.jpg)
 
 ## Links
 
