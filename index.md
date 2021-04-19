@@ -22,7 +22,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | [Exponential Converter 0.1](/modules/exponential-converter-0.1) |    ✅     |
 |           | [VCO II 0.2.3](/modules/vco-ii-0.2.3)                        |    ✅     |
 |           | [VCA 0.2](/modules/vca-0.2)                                  |    ✅     |
-|           | Envelope Generator II 0.2.1                                  |    ✅     |
+|           | Envelope Generator II 0.2.1 <!-- Assembly done -->           |    ✅     |
 |           | [Noise Generator 0.2](/modules/noise-generator-0.2)          |    ✅     |
 |           | [VCA 0.2](/modules/vca-0.2)                                  |    ✅     |
 | Hi-Hat    | [Envelope Generator II 0.1](/modules/envelope-generator-ii-0.1) |    ✅     |

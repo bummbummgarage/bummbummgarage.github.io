@@ -42,5 +42,5 @@ The potis I use here are type WH148 and the jack sockets are from Cliff (FCR1281
 
 The solder pads at the pots and jack socket could be wider. And between the traces and the ground plane must have more space in between. I overlooked that when I made the plate – which took me around two hours to make it work in the etching bath 😅
 
-Also see the comment on [Instagram](https://www.instagram.com/p/CM4tvzVBh62/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mdsjpf/simple_vco_in_eurorack_format_square_and_triangle/).
+Also see the comments on [Instagram](https://www.instagram.com/p/CM4tvzVBh62/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mdsjpf/simple_vco_in_eurorack_format_square_and_triangle/).
 

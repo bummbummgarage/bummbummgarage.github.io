@@ -1,11 +1,31 @@
-# TODOs
+# Sequencer II 0.1
 
-* Bestellen
+
+
+## Solving Plan
+
+| Question                                                  | Ansatz                                                       |
+| --------------------------------------------------------- | ------------------------------------------------------------ |
+| **Taugen die Features was?**                              | Kits zusammen bauen (mit Labels) und Feedback bekommen. Zum Selbstkostenpreis. |
+| Taugt das DIY Kit etwas?                                  | Kit an die Leute bringen                                     |
+| Taugt das Siebdruck etwas?                                | Siebdruck-Kit bestellen und ausprobieren                     |
+| (Wie) kann ich das Gerät vermarkten (Preis, Kanäle, etc)? |                                                              |
+
+
+
+## TODOs
+
+* **Komponenten bestellen**
   * Nanos Every (inkl Headers)
   * Switches
-  * Richtige LEDs
+  * Die richtigen LEDs
   * Noch etwas?
-* Frontend bestellen (LEDs Löcher einen halben Millimeter mehr?)
+* **Frontend bestellen**
+  * Checken ob die Platzierungen passen.
+  * LEDs Löcher einen halben Millimeter mehr?
+  * Angebot einholen bei 
+* **User Manual schreiben**
+
 * Random Patterns mit rein programmieren :)
 * Code: Ungenutzte Pins internal pull-up und testen.
 * Gibt es weitere Fav Zener Dioiden neben der benutzten 1N4733A?
@@ -31,6 +51,16 @@
 | Glättens Caps für Arduino?                                   | https://forum.arduino.cc/t/decoupling-capacitors/136084/3 --> Ja, 100nF |
 | Power Supply Decoupl Caps?                                   | Ja, viele Infos, Muster scheinen 10uF zu sein. Rein damit.   |
 | Arduino ungenutzte Pins an GND oÄ?                           | enable the internal pull-up, https://forums.adafruit.com/viewtopic.php?f=25&t=20742#p108290 |
+
+
+
+## Other trigger / Gate sequencer kits
+
+* https://www.robaux.io/swt16 
+* https://www.robaux.io/swt16plus
+* https://www.tindie.com/products/nbirch/polygons-kit-gate-sequencer-for-eurorack-12hp/
+* https://division-6.com/products/dual-mini-sequencer/
+* https://schneidersladen.de/en/robaux-ll8 (no kit)
 
 
 
