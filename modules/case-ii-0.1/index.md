@@ -15,7 +15,7 @@ Eurorack case that I made for my modular synth drum machine project. It's built 
 
 ## Details
 
-I first designed the case in a free CAD software called [SketchUp for Web](https://www.sketchup.com//products/sketchup-for-web).
+I designed the case in a free CAD software called [SketchUp for Web](https://www.sketchup.com//products/sketchup-for-web).
 
 ![](Bumm-Bumm-Garage-Case-II-0.1-3D-Front.jpg)
 
