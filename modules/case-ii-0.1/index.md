@@ -11,7 +11,7 @@ description: 19 inch Eurorack case that I built for my modular synth drum machin
 
 ![](Bumm-Bumm-Garage-Case-II-0.1-01.jpg)
 
-Eurorack case that I built for my modular synth drum machine project. It's built around two pairs of rails with a length of 17.05 inch (43.3 cm).
+Eurorack case that I made for my modular synth drum machine project. It's built around two pairs of rails with a length of 17.05 inch (43.3 cm).
 
 ## Details
 
