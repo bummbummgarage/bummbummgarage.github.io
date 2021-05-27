@@ -29,7 +29,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | Noise Generator 0.3 <!-- Assembly done -->                   |    ✅     |
 | Mixing    | Filter <!-- Assembly in Progress (labels missing) -->        |          |
 |           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
-| Housing   | [Case II 0.1](modules/case-ii-0.1) <!-- Docs in Progress, more photos and social links missing --> |    ✅     |
+| Housing   | [Case II 0.1](modules/case-ii-0.1)                           |    ✅     |
 |           | Power Supply Unit II 0.1 <!-- Docs in Progress, photos taken --> |    ✅     |
 |           | Power Distribution Board 0.1 <!-- Docs in Progress, photos taken --> |    ✅     |
 
