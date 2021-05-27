@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Case II 0.2
-image: modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.2-01.jpg
+image: modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-01.jpg
 description: 19 inch Eurorack case that I built for my modular synth drum machine project.
 ---
 
@@ -9,7 +9,7 @@ description: 19 inch Eurorack case that I built for my modular synth drum machin
 
 *Version 0.1 from December 2020*
 
-![](Bumm-Bumm-Garage-Case-II-0.2-01.jpg)
+![](Bumm-Bumm-Garage-Case-II-0.1-01.jpg)
 
 Eurorack case that I built for my modular synth drum machine project. It's built around two pairs of rails with a length of 17.05 inch (43.3 cm).
 
@@ -17,21 +17,35 @@ Eurorack case that I built for my modular synth drum machine project. It's built
 
 I first designed the case in a free CAD software called [SketchUp for Web](https://www.sketchup.com//products/sketchup-for-web).
 
-![](Bumm-Bumm-Garage-Case-II-0.2-3D-Front.jpg)
+![](Bumm-Bumm-Garage-Case-II-0.1-3D-Front.jpg)
 
 The outer dimensions are (W x H x D): 457 x 290 x 162 mm.
 
-![](Bumm-Bumm-Garage-Case-II-0.2-3D-Back.jpg)
+![](Bumm-Bumm-Garage-Case-II-0.1-3D-Back.jpg)
 
 Then I went for it in the workshop 🪚
 
 ![](IMG_7585.jpg)
 
+I built the case around the rails with some blank panels to get the spacings 100%ly right.
+
 ![](IMG_7586.jpg)
 
-<!-- Some fine hours later it was finished. (More images) -->
+Some fine hours later it was finished.
 
-![](Bumm-Bumm-Garage-Case-II-0.2-Rails.jpg)
+![](Bumm-Bumm-Garage-Case-II-0.1-Top.jpg)
+
+![](Bumm-Bumm-Garage-Case-II-0.1-Back.jpg)
+
+![](Bumm-Bumm-Garage-Case-II-0.1-Bottom.jpg)
+
+![](Bumm-Bumm-Garage-Case-II-0.1-Back-Bottom.jpg)
+
+![](Bumm-Bumm-Garage-Case-II-0.1-Top-Bottom.jpg)
+
+![](Bumm-Bumm-Garage-Case-II-0.1-Right-Front.jpg)
+
+![](Bumm-Bumm-Garage-Case-II-0.1-Rails.jpg)
 
 The rails are from [Schneidersladen in Berlin](https://schneidersladen.de/). I sawed the profile at the top of all four. This way I can easily get the square nuts in.
 

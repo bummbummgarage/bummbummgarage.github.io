@@ -1,0 +1,396 @@
+{
+  "version": "1.1.6",
+  "modules": [
+    {
+      "id": 2,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "AudioInterface",
+      "params": [],
+      "data": {
+        "audio": {
+          "driver": 5,
+          "deviceName": "Apple Inc.: MacBook Air Lautsprecher",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        75,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "VCMixer",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.17699981
+        },
+        {
+          "id": 1,
+          "value": 0.766654611
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.987273037
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        }
+      ],
+      "pos": [
+        64,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "Delay",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.601499856
+        },
+        {
+          "id": 1,
+          "value": 0.391999662
+        },
+        {
+          "id": 2,
+          "value": 0.496499956
+        },
+        {
+          "id": 3,
+          "value": 0.497000128
+        }
+      ],
+      "pos": [
+        55,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "plugin": "ImpromptuModular",
+      "version": "1.1.10",
+      "model": "Clocked-Clkd",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 30.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "panelTheme": 0,
+        "running": true,
+        "bpmDetectionMode": false,
+        "resetOnStartStop": 0,
+        "ppqn": 4,
+        "resetClockOutputsHigh": true,
+        "momentaryRunInput": true,
+        "displayIndex": 0,
+        "trigOuts": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "clockMaster": -1
+      },
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "plugin": "Bogaudio",
+      "version": "1.1.37",
+      "model": "Bogaudio-RGate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "range_offset": 1.0,
+        "range_scale": 5.0,
+        "reset_mode": 0,
+        "initial_clock_seconds": 0.5,
+        "poly_input": 4
+      },
+      "pos": [
+        12,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "VCO2",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.809989631
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "pos": [
+        18,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0285000205
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.535498798
+        }
+      ],
+      "pos": [
+        27,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "pos": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "LFO2",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -2.37499976
+        },
+        {
+          "id": 3,
+          "value": 1.5
+        },
+        {
+          "id": 4,
+          "value": 0.5
+        }
+      ],
+      "pos": [
+        44,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "plugin": "Bogaudio",
+      "version": "1.1.37",
+      "model": "Bogaudio-Offset",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.121229947
+        }
+      ],
+      "data": {
+        "disableOutputLimit": false,
+        "offset_first": false
+      },
+      "pos": [
+        51,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 42,
+      "outputModuleId": 11,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 43,
+      "outputModuleId": 29,
+      "outputId": 0,
+      "inputModuleId": 30,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 36,
+      "outputModuleId": 26,
+      "outputId": 1,
+      "inputModuleId": 27,
+      "inputId": 4,
+      "color": "#c91847"
+    },
+    {
+      "id": 46,
+      "outputModuleId": 27,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 4,
+      "color": "#c91847"
+    },
+    {
+      "id": 47,
+      "outputModuleId": 21,
+      "outputId": 0,
+      "inputModuleId": 11,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 51,
+      "outputModuleId": 30,
+      "outputId": 0,
+      "inputModuleId": 21,
+      "inputId": 4,
+      "color": "#0986ad"
+    },
+    {
+      "id": 52,
+      "outputModuleId": 32,
+      "outputId": 0,
+      "inputModuleId": 33,
+      "inputId": 2,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 53,
+      "outputModuleId": 33,
+      "outputId": 0,
+      "inputModuleId": 21,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 54,
+      "outputModuleId": 28,
+      "outputId": 0,
+      "inputModuleId": 30,
+      "inputId": 1,
+      "color": "#c91847"
+    }
+  ]
+}
