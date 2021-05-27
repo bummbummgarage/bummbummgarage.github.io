@@ -35,9 +35,15 @@ Some fine hours later it was finished.
 
 ![](Bumm-Bumm-Garage-Case-II-0.1-Top.jpg)
 
+Top: The power plug socket is secured by an aluminum plate.
+
 ![](Bumm-Bumm-Garage-Case-II-0.1-Back.jpg)
 
+Back: The planned ventilation slots became holes. Easier to drill. 
+
 ![](Bumm-Bumm-Garage-Case-II-0.1-Bottom.jpg)
+
+Bottom and back: I put rubber feet on the bottom and on the back wall. So I can operate the rack standing and lying without scratching anything with the screws.
 
 ![](Bumm-Bumm-Garage-Case-II-0.1-Back-Bottom.jpg)
 
@@ -45,9 +51,11 @@ Some fine hours later it was finished.
 
 ![](Bumm-Bumm-Garage-Case-II-0.1-Right-Front.jpg)
 
+Side: After carrying the whole thing around a few times, I added handles to the sides.
+
 ![](Bumm-Bumm-Garage-Case-II-0.1-Rails.jpg)
 
-The rails are from [Schneidersladen in Berlin](https://schneidersladen.de/). I sawed the profile at the top of all four. This way I can easily get the square nuts in.
+Rails: They are from [Schneidersladen in Berlin](https://schneidersladen.de/). I sawed the profile at the top of all four. This way I can easily get the square nuts in.
 
 ## Links
 
