@@ -519,16 +519,8 @@ bool checkStepsJackConnection() {
 }
 
 bool checkStepsCVIn() {
-  int r = analogRead(stepsCVInPin);
-  if ( debug == true ) {
-        Serial.print("StepsCVIn: ");
-        Serial.println(r);
-  }
-  if ( r > 614 ) { // Count as HIGH above 3 volts (1024 = 5V).
-    return HIGH;
-  } else {
-    return LOW;
-  }
+  int r = digitalRead(stepsCVInPin);
+  return r;
 }
 
 // Set the steps position
