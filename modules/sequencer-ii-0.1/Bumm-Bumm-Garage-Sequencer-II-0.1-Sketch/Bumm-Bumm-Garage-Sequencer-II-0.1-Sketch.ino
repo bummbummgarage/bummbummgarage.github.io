@@ -4,7 +4,7 @@
 */
 
 // General
-const bool debug = true; // Enables the Serial print in several functions. Slows down the frontend.
+const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
 const int pushButtonDelay = 50; // The time a button will be muted after last change.
 const int longPress = 2000; // The time to trigger secondary actions on buttons.
 
@@ -137,19 +137,8 @@ void loop() {
       setStepsInterval(0); // Unset the interval, we don't need it  here.
     }
 
-    // Scenario 1: CV goes HIGH --> move on step further.
-    // Check the CV.
-    bool c = checkStepsCVIn(); // 0 or 1.
-    if ( c != stepsCVIn ) {
-      if ( debug == true ) {
-        Serial.print("stepsCVIn: ");
-        Serial.println(c);
-      }
-      if (c == 1) {
-        increaseStepsPosition();
-      }
-      stepsCVIn = c;
-    }
+    // Scenario 1: CV is on the move --> we'll update the steps.
+    updateSteps();
 
     // Scenario 2: Pushing the button --> resets steps.
     if ( stepsPushButtonChanged == true && stepsPushButton == 1 ) {
@@ -277,7 +266,7 @@ void loop() {
 
 
   /* ------------------------------------------------------------------------
-     DISPLAY
+     DISPLAY & OUTPUT
      ------------------------------------------------------------------------
   */
 
@@ -391,16 +380,38 @@ void loop() {
 
         if ( tracksPattern[t][s] == true ) {
 
-          // MODE 0: Illuminate all the active steps.
+          // INTERLUDE: Update step status here (in case of rapidly changed external CV).
+          if ( stepsMode == 0 ) {
+            updateSteps();
+          }
+
+          // TRACK MODE 0: Illuminate all the active steps.
           if ( tracksMode[t] == 0 ) {
 
+            // DISPLAY
             clearLEDMatrix(); // Turn off all LEDs
             ledMatrixRows.set( s , HIGH); // Put voltage on the row of this step.
             ledMatrixColSet( ( t + 1 ) , LOW); // Put ground on the column of this track.
+        
+            // OUTPUT some CV when here's a hit.
+            if ( tracksPattern[t][ ( stepsPosition - 1 ) ] == true ) { // For the particular step.
+        
+              digitalWrite(tracksOutputPin[t], LOW); // Reset output.
+        
+              // Steps mode 0: High when CV in, but at least for the trigger time.
+              if ( stepsMode == 0 && ( stepsCVIn == 1 || ( millis() < ( stepsChangeLog + triggerTime ) ) ) ) {
+                digitalWrite(tracksOutputPin[t], HIGH);
+              }
+              // Steps mode 1: High in the trigger time.
+              if ( stepsMode == 1 && ( millis() < ( stepsChangeLog + triggerTime ) ) ) {
+                digitalWrite(tracksOutputPin[t], HIGH);
+              }
+        
+            }
 
           }
 
-          // MODE 1: Pattern select --> Blink the steps of the currently viewed predefined pattern.
+          // TRACK MODE 1: Pattern select --> Blink the steps of the currently viewed predefined pattern.
           if ( tracksMode[t] == 1 ) {
 
             // Lightning the track LEDs of the pattern in the matrix:
@@ -419,38 +430,6 @@ void loop() {
 
   }
 
-
-  /* ------------------------------------------------------------------------
-    OUTPUT
-    -------------------------------------------------------------------------
-  */
-
-  // TRACKS
-
-  for (int t = 0; t < tracksCount; t++) { // Walk through all tracks.
-
-    // MODE 0: Output something
-    if ( tracksMode[t] == 0 ) {
-
-      if ( tracksPattern[t][ ( stepsPosition - 1 ) ] == true ) { // For the particular step.
-
-        digitalWrite(tracksOutputPin[t], LOW); // Reset output.
-
-        // Steps mode 0: High when CV in.
-        if ( stepsMode == 0 && stepsCVIn == 1 ) {
-          digitalWrite(tracksOutputPin[t], HIGH);
-        }
-        // Steps mode 1: High in the trigger time.
-        if ( stepsMode == 1 && ( millis() < ( stepsChangeLog + triggerTime ) ) ) {
-          digitalWrite(tracksOutputPin[t], HIGH);
-        }
-
-      }
-
-    }
-
-  }
-
 }
 
 
@@ -458,7 +437,6 @@ void loop() {
    FUNCTIONS
    ##########################################################################
 */
-
 
 // GENERAL
 
@@ -493,6 +471,8 @@ int pulsateColor( long start, int on, int off ) {
   return r;
 }
 
+// DISPLAY
+
 // Clear LED matrix
 void clearLEDMatrix() {
   ledMatrixRows.setAllLow();
@@ -517,6 +497,22 @@ void ledMatrixColsSetAllHigh() {
 bool checkStepsJackConnection() {
   int r = digitalRead(stepsJackDetectionPin);
   return r;
+}
+
+void updateSteps() {
+    // CV goes HIGH --> move on step further.
+    // Check the CV.
+    bool c = checkStepsCVIn(); // 0 or 1.
+    if ( c != stepsCVIn ) {
+      if ( debug == true ) {
+        Serial.print("stepsCVIn: ");
+        Serial.println(c);
+      }
+      if (c == 1) {
+        increaseStepsPosition();
+      }
+      stepsCVIn = c;
+    }  
 }
 
 bool checkStepsCVIn() {
