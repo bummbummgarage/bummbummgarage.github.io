@@ -65,4 +65,4 @@ Rails: They are from [Schneidersladen in Berlin](https://schneidersladen.de/). I
 
 I would have had more space (and less fiddling) between the screws for the rails if I had installed the profiles the other way around. Next time 🤷‍♂️
 
-Also see the comments on [Instagram](https://www.instagram.com/p/CPYX6qVhd3P/)and [Reddit](https://www.reddit.com/r/synthdiy/comments/nm9sjy/diy_eurorack_case/).
+Also see the comments on [Instagram](https://www.instagram.com/p/CPYX6qVhd3P/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/nm9sjy/diy_eurorack_case/).

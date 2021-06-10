@@ -520,11 +520,15 @@ bool checkStepsJackConnection() {
 
 bool checkStepsCVIn() {
   int r = analogRead(stepsCVInPin);
-  if ( r > 820 ) { // Count as HIGH above 4 volts.
+  if ( debug == true ) {
+        Serial.print("StepsCVIn: ");
+        Serial.println(r);
+  }
+  if ( r > 614 ) { // Count as HIGH above 3 volts (1024 = 5V).
     return HIGH;
   } else {
     return LOW;
-  } 
+  }
 }
 
 // Set the steps position
