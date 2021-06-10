@@ -4,7 +4,7 @@
 */
 
 // General
-const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
+const bool debug = true; // Enables the Serial print in several functions. Slows down the frontend.
 const int pushButtonDelay = 50; // The time a button will be muted after last change.
 const int longPress = 2000; // The time to trigger secondary actions on buttons.
 
@@ -74,6 +74,7 @@ void setup() {
   }
 
   // STEPS
+  pinMode(stepsCVInPin, INPUT); // Makes steps CV IN jack an input.
   pinMode(stepsPushButtonPin, INPUT); // Makes steps push button an input.
 
   // TRACKS
