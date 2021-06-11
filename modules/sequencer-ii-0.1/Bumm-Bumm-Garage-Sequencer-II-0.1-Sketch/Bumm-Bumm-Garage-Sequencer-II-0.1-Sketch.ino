@@ -620,7 +620,7 @@ void changeStepsPosition() {
       stepsPosition = bottomHit;
       pendingStepReset = false;
     } else { // Nope, move forward.
-      stepsPosition = random(1, stepsCount+1);
+      stepsPosition = random(bottomHit, topHit + 1);
     }
   }
   logStepsChange(stepsPosition);
