@@ -44,7 +44,7 @@
 */
 
 // General
-const bool debug = true; // Enables the Serial print in several functions. Slows down the frontend.
+const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
 const int pushButtonDelay = 50; // The time a button will be muted after last change.
 const int longPress = 2000; // The time to trigger secondary actions on buttons.
 
@@ -91,7 +91,9 @@ const bool tracksPredefinedPattern[tracksPatternCount][stepsCount] = { // Predef
 int tracksPatternPreview[tracksCount]; // Which pattern is previewed (select mode) per track.
 
 // Sequence Modes
-int sequenceMode; // 0 = chronologically, 1 = limited to hits on the tracks, 2 = random
+int sequenceMode; // 0 = chronologically, 1 = limited to the bottom and top hit on the tracks, 2 = random.
+int bottomHit = 0; // The hit over all tracks with the smallest step number.
+int topHit = 0; // The hit over all tracks with the highest step number.
 
 // Display
 #include <ShiftRegister74HC595.h> // ShiftRegister74HC595 Library, Docs: https://timodenk.com/blog/shift-register-arduino-library/
@@ -192,7 +194,11 @@ void loop() {
 
     // Scenario 2: Pushing the button --> resets steps.
     if ( stepsPushButtonChanged == true && stepsPushButton == 1 ) {
-      setStepsPosition(1);
+      if ( sequenceMode == 1 ) { // Steps are limited.
+          setStepsPosition( bottomHit );
+      } else {
+        setStepsPosition(1);
+      }
     }
 
   }
@@ -213,7 +219,11 @@ void loop() {
 
     // Scenario 2: Pushing the button --> resets steps.
     if ( stepsPushButtonChanged == true && stepsPushButton == 1 ) {
-      setStepsPosition(1);
+      if ( sequenceMode == 1 ) { // Steps are limited.
+          setStepsPosition( bottomHit );
+      } else {
+        setStepsPosition(1);
+      }
     }
 
     // Scenario 3: Holding the button for longer --> Clears interval (which leads to "recording clock" mode).
@@ -280,6 +290,7 @@ void loop() {
           s = true;
         }
         setTracksPattern( t, ( stepsPosition - 1 ), s);
+        logOuterHits();
       }
 
       // Scenario 2: Tracks button pressed long --> Switch to track mode 1 (pattern select).
@@ -307,6 +318,7 @@ void loop() {
       // Scenario 2: Tracks button unpressed for a while --> Switch to mode 0.
       if ( millis() > ( tracksPatternChangeLog[t] + ( longPress ) ) ) {
         setTracksMode(t, 0);
+        logOuterHits();
       }
 
     }
@@ -585,14 +597,21 @@ void setStepsPosition(int s) {
 
 // Move the step position forward.
 void changeStepsPosition() {
-  if( sequenceMode == 0 ) {
+  if( sequenceMode == 0 ) { // Chronologically from start to end.
     if ( stepsPosition < stepsCount ) {
       stepsPosition++;
     } else {
       stepsPosition = 1;
     }
   }
-  if( sequenceMode == 2 ) {
+  if( sequenceMode == 1 ) { // Chronologically limited by the bottom and top hit.
+    if ( stepsPosition < topHit ) {
+      stepsPosition++;
+    } else {
+      stepsPosition = bottomHit;
+    }
+  }
+  if( sequenceMode == 2 ) { // Random.
     stepsPosition = random(1, stepsCount+1);
   }
   logStepsChange(stepsPosition);
@@ -714,5 +733,30 @@ void setSequenceMode(int mode) {
   if ( debug == true ) {
     Serial.print("sequenceMode: ");
     Serial.println(mode);
+  }
+}
+
+void logOuterHits() { // Logs the bottom and top step that has a hit on a track.
+  int top = 0;
+  int bottom = stepsCount;
+  for (int t = 0; t < tracksCount; t++) { // Walk through all tracks.
+    for (int s = 0; s < stepsCount; s++) { // Walk through all steps.
+      if ( tracksPattern[t][s] ) {
+        if ( s < bottom ) {
+          bottom = s;
+        }
+        if ( s > top ) {
+          top = s;
+        }
+      } 
+    }
+  }
+  bottomHit = bottom + 1;
+  topHit = top + 1;
+  if ( debug == true ) {
+    Serial.print("bottomHit: ");
+    Serial.print(bottomHit);
+    Serial.print(", topHit: ");
+    Serial.println(topHit);
   }
 }
