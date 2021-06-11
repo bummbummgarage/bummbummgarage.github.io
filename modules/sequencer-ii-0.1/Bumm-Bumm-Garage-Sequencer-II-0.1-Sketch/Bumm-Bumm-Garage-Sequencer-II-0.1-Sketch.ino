@@ -30,7 +30,7 @@
   
 
     SEQUENCER II – GATES & TRIGGERS
-    This is the code for an Eurorack synth module. 
+    This is the code for an Eurorack synth module.
     It's built and tested on an Arduino Nano Every.
     
     Find out more on: http://bummbummgarage.github.io/
@@ -44,7 +44,7 @@
 */
 
 // General
-const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
+const bool debug = true; // Enables the Serial print in several functions. Slows down the frontend.
 const int pushButtonDelay = 50; // The time a button will be muted after last change.
 const int longPress = 2000; // The time to trigger secondary actions on buttons.
 
@@ -75,15 +75,23 @@ const char tracksPushButtonPin[tracksCount] = { A2, A1, A0 }; // Tracks push but
 int tracksPushButton[tracksCount]; // The state of the tracks push buttons, 0 or 1.
 long tracksPushButtonChangeLog[tracksCount]; // Timestamp of the latest change to the track pattern.
 const int tracksOutputPin[tracksCount] = { 5, 9, 10 }; // Tracks output pin assignments (1-3).
-const int tracksPatternCount = 5; // The number of predefined patterns.
+const int tracksPatternCount = 10; // The number of predefined patterns.
 const bool tracksPredefinedPattern[tracksPatternCount][stepsCount] = { // Predefined patterns for the tracks.
   { 1, 1, 1, 1, 1, 1, 1, 1 },
+  { 1, 1, 1, 1, 1, 1, 0, 0 },
+  { 1, 1, 1, 1, 0, 0, 0, 0 },
+  { 1, 1, 0, 0, 0, 0, 0, 0 },
   { 1, 0, 1, 0, 1, 0, 1, 0 },
   { 0, 1, 0, 1, 0, 1, 0, 1 },
-  { 1, 1, 0, 0, 1, 1, 0, 0 },
-  { 0, 0, 1, 1, 0, 0, 1, 1 }
+  { 1, 0, 0, 0, 1, 0, 0, 0 },
+  { 0, 1, 0, 0, 0, 1, 0, 0 },
+  { 0, 0, 1, 0, 0, 0, 1, 0 },
+  { 0, 0, 0, 1, 0, 0, 0, 1 }
 };
 int tracksPatternPreview[tracksCount]; // Which pattern is previewed (select mode) per track.
+
+// Sequence Modes
+int sequenceMode; // 0 = chronologically, 1 = limited to hits on the tracks, 2 = random
 
 // Display
 #include <ShiftRegister74HC595.h> // ShiftRegister74HC595 Library, Docs: https://timodenk.com/blog/shift-register-arduino-library/
@@ -134,6 +142,8 @@ void setup() {
     pinMode(ledMatrixColsPins[c], OUTPUT);
   }
 
+  setSequenceMode(0); // The the mode initally.
+
 }
 
 /* ##########################################################################
@@ -147,7 +157,7 @@ void loop() {
     -------------------------------------------------------------------------
   */
 
-  // STEPS
+  // STEPS ------------------------------------------------------------------
 
   // CV jack
   bool stepsJackConnection = checkStepsJackConnection(); // Depending on a cable plugged in (1) or not (0).
@@ -165,9 +175,9 @@ void loop() {
     stepsPushButton = s;
   }
 
-  // Modes
+  // Clock Modes
 
-  // MODE 0: "VOLTAGE CONTROLLED" mode
+  // CLOCK MODE 0: "EXTERNALLY CLOCKED" mode
   if ( stepsJackConnection == true ) { // CV plugged in.
 
     // Set the mode.
@@ -187,7 +197,7 @@ void loop() {
 
   }
 
-  // MODE 1: "INTERNALLY CLOCKED" mode
+  // CLOCK MODE 1: "INTERNALLY CLOCKED" mode
   if ( stepsJackConnection == false && stepsInterval != 0 ) { // No CV plugged in and the interval for the internal clock is set.
 
     // Set the mode.
@@ -198,7 +208,7 @@ void loop() {
 
     // Scenario 1: New interval after last step --> move on step further.
     if ( millis() - stepsChangeLog > stepsInterval ) {
-      increaseStepsPosition();
+      changeStepsPosition();
     }
 
     // Scenario 2: Pushing the button --> resets steps.
@@ -213,7 +223,7 @@ void loop() {
 
   }
 
-  // MODE 2: "RECORDING CLOCK" mode
+  // CLOCK MODE 2: "TAPPING SPEED" mode
   if ( stepsJackConnection == false && stepsInterval == 0 ) { // No CV in and no interval set.
 
     // Set the mode.
@@ -236,8 +246,7 @@ void loop() {
 
   }
 
-
-  // TRACKS
+  // TRACKS -----------------------------------------------------------------
 
   bool tracksPushButtonChanged[tracksCount];
   for (int t = 0; t < tracksCount; t++) { // Walk through all tracks.
@@ -259,11 +268,11 @@ void loop() {
 
     // Modes
 
-    // "RECORD & PLAY" mode
+    // TRACK MODE 0: "RECORD & PLAY"
     if ( tracksMode[t] == 0 ) {
 
       // Scenario 1: Tracks button pushed once --> Set and unset the tracks steps for the current step position.
-      if ( tracksPushButton[t] == true && tracksPushButtonChangeLog[t] > tracksPatternChangeLog[t] && stepsPosition > 0 ) {
+      if ( tracksPushButton[t] == true && tracksPushButtonChangeLog[t] > tracksPatternChangeLog[t] && stepsPosition > 0 && !stepsPushButton ) {
         bool s;
         if ( tracksPattern[ t ][ ( stepsPosition - 1 ) ] == true ) { // Flip the state.
           s = false;
@@ -274,13 +283,13 @@ void loop() {
       }
 
       // Scenario 2: Tracks button pressed long --> Switch to track mode 1 (pattern select).
-      if ( tracksPushButton[t] == true && ( millis() > tracksPushButtonChangeLog[t] + longPress ) ) {
+      if ( tracksPushButton[t] == true && ( millis() > tracksPushButtonChangeLog[t] + longPress )  && !stepsPushButton ) {
         setTracksMode(t, 1);
       }
 
     }
 
-    // "PATTERN SELECT" mode
+    // TRACK MODE 1: "PATTERN SELECT"
     if ( tracksMode[t] == 1 ) {
 
       // Scenario 1: Just entered the mode --> Apply first pattern.
@@ -290,7 +299,7 @@ void loop() {
       }
 
       // Scenario 2: Tracks button pushed once --> Walk through (increase pattern view number).
-      if ( tracksPushButtonChanged[t] == true && tracksPushButton[t] == true && tracksPushButtonChangeLog[t] > tracksPatternChangeLog[t] ) {
+      if ( tracksPushButtonChanged[t] == true && tracksPushButton[t] == true && tracksPushButtonChangeLog[t] > tracksPatternChangeLog[t]  && !stepsPushButton  ) {
         increaseTracksPreviewPattern(t);
         applyTracksPattern(t, tracksPatternPreview[t]);
       }
@@ -302,6 +311,14 @@ void loop() {
 
     }
 
+  }  
+
+  // SEQUENCE MODES --------------------------------------------------------------
+
+  for (int t = 0; t < tracksCount; t++) { // Walk through all tracks buttons.
+    if( stepsPushButton && tracksPushButton[t] && tracksPushButtonChanged[t] ) {
+      setSequenceMode(t);
+    }
   }
 
 
@@ -453,9 +470,9 @@ void loop() {
 
           // TRACK MODE 1: Pattern select --> Blink the steps of the currently viewed predefined pattern.
           if ( tracksMode[t] == 1 ) {
-
+            
             // Lightning the track LEDs of the pattern in the matrix:
-            int ledState = pulsateColor( stepsModeChangeLog, HIGH, LOW ); // Calculating the state (on or off).
+            int ledState = pulsateColor( tracksPatternChangeLog[t], HIGH, LOW ); // Calculating the state (on or off).
             clearLEDMatrix(); // Turn off all LEDs
             ledMatrixRows.set( s , ledState); // Put voltage on the rows of this step.
             ledMatrixColSet( ( t + 1 ) , LOW); // Place ground on the column of the step LEDs.
@@ -492,6 +509,8 @@ bool checkPushButton( int pin, bool currentState, long changeLog ) { // If HIGH 
   return r;
 }
 
+// DISPLAY
+
 // Pulsate – Returns a value for a certain time since start.
 int pulsateColor( long start, int on, int off ) {
   int r;
@@ -500,18 +519,16 @@ int pulsateColor( long start, int on, int off ) {
   if ( millis() > slowPulseTime ) {
     m = ( millis() - start ) % slowPulseTime; // Modulo
   } else {
-    m = millis();
+    m = millis(); // Just for the first glimpses after booting.
   }
   double f = m / (double)(slowPulseTime); // Factor
   if ( f < 0.5 ) {
     r = on;
   } else {
     r = off;
-  }
+  }    
   return r;
 }
-
-// DISPLAY
 
 // Clear LED matrix
 void clearLEDMatrix() {
@@ -549,7 +566,7 @@ void updateSteps() {
         Serial.println(c);
       }
       if (c == 1) {
-        increaseStepsPosition();
+        changeStepsPosition();
       }
       stepsCVIn = c;
     }  
@@ -566,12 +583,17 @@ void setStepsPosition(int s) {
   logStepsChange(stepsPosition);
 }
 
-// Increase the steps
-void increaseStepsPosition() {
-  if ( stepsPosition < stepsCount ) {
-    stepsPosition++;
-  } else {
-    stepsPosition = 1;
+// Move the step position forward.
+void changeStepsPosition() {
+  if( sequenceMode == 0 ) {
+    if ( stepsPosition < stepsCount ) {
+      stepsPosition++;
+    } else {
+      stepsPosition = 1;
+    }
+  }
+  if( sequenceMode == 2 ) {
+    stepsPosition = random(1, stepsCount+1);
   }
   logStepsChange(stepsPosition);
 }
@@ -682,5 +704,15 @@ void increaseTracksPreviewPattern(int track) {
     tracksPatternPreview[track]++;
   } else {
     tracksPatternPreview[track] = 0;
+  }
+}
+
+// SEQUENCE MODES
+
+void setSequenceMode(int mode) {
+  sequenceMode = mode;
+  if ( debug == true ) {
+    Serial.print("sequenceMode: ");
+    Serial.println(mode);
   }
 }
