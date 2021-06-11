@@ -44,7 +44,7 @@
 */
 
 // General
-const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
+const bool debug = true; // Enables the Serial print in several functions. Slows down the frontend.
 const int pushButtonDelay = 50; // The time a button will be muted after last change.
 const int longPress = 2000; // The time to trigger secondary actions on buttons.
 
@@ -64,6 +64,7 @@ long tapEnd; // Timestamp of tapping out.
 const char stepsJackDetectionPin = 4; // The pin of the detection for the external CV jack.
 const char stepsCVInPin = A7; // The pin of the external CV jack to clock the sequencer.
 int stepsCVIn; // The control voltage state from an external source in the jack, 0 or 1.
+bool pendingStepReset = false; // Required for quantized resets.
 
 // Tracks
 const int tracksCount = 3; // The number of tracks.
@@ -194,11 +195,7 @@ void loop() {
 
     // Scenario 2: Pushing the button --> resets steps.
     if ( stepsPushButtonChanged == true && stepsPushButton == 1 ) {
-      if ( sequenceMode == 1 ) { // Steps are limited.
-          setStepsPosition( bottomHit );
-      } else {
-        setStepsPosition(1);
-      }
+      resetSteps();
     }
 
   }
@@ -214,16 +211,12 @@ void loop() {
 
     // Scenario 1: New interval after last step --> move on step further.
     if ( millis() - stepsChangeLog > stepsInterval ) {
-      changeStepsPosition();
+       changeStepsPosition();
     }
 
     // Scenario 2: Pushing the button --> resets steps.
     if ( stepsPushButtonChanged == true && stepsPushButton == 1 ) {
-      if ( sequenceMode == 1 ) { // Steps are limited.
-          setStepsPosition( bottomHit );
-      } else {
-        setStepsPosition(1);
-      }
+      pendingStepReset = true;
     }
 
     // Scenario 3: Holding the button for longer --> Clears interval (which leads to "recording clock" mode).
@@ -595,26 +588,48 @@ void setStepsPosition(int s) {
   logStepsChange(stepsPosition);
 }
 
-// Move the step position forward.
+// Move the step position.
 void changeStepsPosition() {
   if( sequenceMode == 0 ) { // Chronologically from start to end.
-    if ( stepsPosition < stepsCount ) {
-      stepsPosition++;
-    } else {
+    if( pendingStepReset ) { // Quantized reset?
       stepsPosition = 1;
+      pendingStepReset = false;
+    } else { // Nope, move forward.
+      if ( stepsPosition < stepsCount ) {
+        stepsPosition++;
+      } else {
+        stepsPosition = 1;
+      }
     }
   }
   if( sequenceMode == 1 ) { // Chronologically limited by the bottom and top hit.
-    if ( stepsPosition < topHit ) {
-      stepsPosition++;
-    } else {
+    if( pendingStepReset ) { // Quantized reset?
       stepsPosition = bottomHit;
+      pendingStepReset = false;
+    } else { // Nope, move forward.
+      if ( stepsPosition < topHit ) {
+        stepsPosition++;
+      } else {
+        stepsPosition = bottomHit;
+      }
     }
+    
   }
   if( sequenceMode == 2 ) { // Random.
-    stepsPosition = random(1, stepsCount+1);
+    if( pendingStepReset ) { // Quantized reset?
+      stepsPosition = bottomHit;
+      pendingStepReset = false;
+    } else { // Nope, move forward.
+      stepsPosition = random(1, stepsCount+1);
+    }
   }
   logStepsChange(stepsPosition);
+}
+
+// Reset the steps depending on the sequence mode.
+void resetSteps() {
+  setStepsPosition(1);
+  pendingStepReset = false;
 }
 
 // Log the steps change.
@@ -671,7 +686,6 @@ void stepsTapping(bool isTap) {
     }
   }
 }
-
 
 // TRACKS
 
