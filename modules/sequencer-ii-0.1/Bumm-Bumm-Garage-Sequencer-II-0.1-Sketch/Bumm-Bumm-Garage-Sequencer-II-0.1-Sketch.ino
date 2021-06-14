@@ -670,7 +670,11 @@ void stepsTapping(bool isTap) {
     int i = ( tapEnd - tapStart ) / 3;
     if ( millis() >= tapEnd + i ) {
       setStepsInterval(i);
-      stepsPosition = 0;
+      if( sequenceMode == 0 ) {
+        stepsPosition = 0;
+      } else {
+        stepsPosition = bottomHit - 1;
+      }
       tapCount = 0;
     }
   }
