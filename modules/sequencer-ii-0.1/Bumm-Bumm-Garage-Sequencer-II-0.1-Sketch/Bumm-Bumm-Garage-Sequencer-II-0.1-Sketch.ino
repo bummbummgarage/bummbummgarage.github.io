@@ -188,7 +188,7 @@ void loop() {
     }
 
     // Scenario 1: External CV changed from 0 to 1 --> update the steps.
-    handleStepsCVIn();
+    handleClockCVIn();
 
     // Scenario 2: Pushing the button --> resets steps.
     if ( stepsPushButtonChanged == true && stepsPushButton == 1 ) {
@@ -443,7 +443,7 @@ void loop() {
           // It seems the hardware setup with the LED matrix and shift register slows everything down.
           // Compared to former hardware version, frequent short triggers (<2ms) in the external CV haven't been detected.
           // That's why this function is redundant to an upper line in "INPUTS & STATES", but a way that works.
-          handleStepsCVIn();
+          handleClockCVIn();
 
           // TRACK MODE 0: Illuminate all the active steps.
           if ( tracksMode[t] == 0 ) {
@@ -569,7 +569,7 @@ bool checkClockCVIn() {
 }
 
 // Act on CV In when it changed fom 0 to 1.
-void handleStepsCVIn() {
+void handleClockCVIn() {
   bool c = checkClockCVIn(); // 0 or 1.
   if ( c != clockCVIn ) {
     if (c == 1) {
