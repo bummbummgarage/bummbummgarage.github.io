@@ -61,7 +61,7 @@ long stepsPushButtonChangeLog; // The timestamp of the last change of this butto
 int tapCount = 0; // The counter when tapping in the speed.
 long tapStart; // Timestamp of tapping in.
 long tapEnd; // Timestamp of tapping out.
-const char stepsJackDetectionPin = 4; // The pin of the detection for the external CV jack.
+const char clockJackDetectionPin = 4; // The pin of the detection for the external CV jack.
 const char stepsCVInPin = A7; // The pin of the external CV jack to clock the sequencer.
 int stepsCVIn; // The control voltage state from an external source in the jack, 0 or 1.
 bool pendingStepReset = false; // Required for quantized resets.
@@ -555,7 +555,7 @@ void ledMatrixColsSetAllHigh() {
 // STEPS
 
 bool checkStepsJackConnection() {
-  int r = digitalRead(stepsJackDetectionPin);
+  int r = digitalRead(clockJackDetectionPin);
   return r;
 }
 
