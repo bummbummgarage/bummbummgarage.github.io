@@ -63,7 +63,7 @@ long tapStart; // Timestamp of tapping in.
 long tapEnd; // Timestamp of tapping out.
 const char clockJackDetectionPin = 4; // The pin of the detection for the external CV jack.
 const char clockCVInPin = A7; // The pin of the external CV jack to clock the sequencer.
-int stepsCVIn; // The control voltage state from an external source in the jack, 0 or 1.
+int clockCVIn; // The control voltage state from an external source in the jack, 0 or 1.
 bool pendingStepReset = false; // Required for quantized resets.
 int sequenceMode; // 0 = chronologically, 1 = limited to the bottom and top hit on the tracks, 2 = random.
 int bottomHit = 0; // The hit over all tracks with the smallest step number.
@@ -459,7 +459,7 @@ void loop() {
               digitalWrite(tracksOutputPin[t], LOW); // Reset output.
         
               // Steps mode 0: High when CV in, but at least for the trigger time.
-              if ( clockMode == 0 && ( stepsCVIn == 1 || ( millis() < ( stepsChangeLog + triggerTime ) ) ) ) {
+              if ( clockMode == 0 && ( clockCVIn == 1 || ( millis() < ( stepsChangeLog + triggerTime ) ) ) ) {
                 digitalWrite(tracksOutputPin[t], HIGH);
               }
               // Steps mode 1: High in the trigger time.
@@ -561,8 +561,8 @@ bool checkStepsJackConnection() {
 
 bool checkStepsCVIn() {
   int r = digitalRead(clockCVInPin);
-  if ( r != stepsCVIn ) {
-    Serial.print("stepsCVIn: ");
+  if ( r != clockCVIn ) {
+    Serial.print("clockCVIn: ");
     Serial.println(r);
   }
   return r;
@@ -571,13 +571,13 @@ bool checkStepsCVIn() {
 // Act on CV In when it changed fom 0 to 1.
 void handleStepsCVIn() {
   bool c = checkStepsCVIn(); // 0 or 1.
-  if ( c != stepsCVIn ) {
+  if ( c != clockCVIn ) {
     if (c == 1) {
       int i = millis() - stepsChangeLog; // Log the interval (for quantized steps reset).
       setStepsInterval(i);
       updateStepsPosition();
     }
-    stepsCVIn = c;
+    clockCVIn = c;
   }  
 }
 
