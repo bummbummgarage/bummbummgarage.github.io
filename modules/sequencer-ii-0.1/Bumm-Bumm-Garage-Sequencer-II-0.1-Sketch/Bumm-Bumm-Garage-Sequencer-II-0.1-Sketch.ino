@@ -79,12 +79,9 @@ const char tracksPushButtonPin[tracksCount] = { A2, A1, A0 }; // Tracks push but
 int tracksPushButton[tracksCount]; // The state of the tracks push buttons, 0 or 1.
 long tracksPushButtonChangeLog[tracksCount]; // Timestamp of the latest change to the track pattern.
 const int tracksOutputPin[tracksCount] = { 5, 9, 10 }; // Tracks output pin assignments (1-3).
-const int tracksPatternCount = 10; // The number of predefined patterns.
+const int tracksPatternCount = 7; // The number of predefined patterns.
 const bool tracksPredefinedPattern[tracksPatternCount][stepsCount] = { // Predefined patterns for the tracks.
   { 1, 1, 1, 1, 1, 1, 1, 1 },
-  { 1, 1, 1, 1, 1, 1, 0, 0 },
-  { 1, 1, 1, 1, 0, 0, 0, 0 },
-  { 1, 1, 0, 0, 0, 0, 0, 0 },
   { 1, 0, 1, 0, 1, 0, 1, 0 },
   { 0, 1, 0, 1, 0, 1, 0, 1 },
   { 1, 0, 0, 0, 1, 0, 0, 0 },
