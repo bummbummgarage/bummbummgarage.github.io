@@ -62,7 +62,7 @@ int tapCount = 0; // The counter when tapping in the speed.
 long tapStart; // Timestamp of tapping in.
 long tapEnd; // Timestamp of tapping out.
 const char clockJackDetectionPin = 4; // The pin of the detection for the external CV jack.
-const char stepsCVInPin = A7; // The pin of the external CV jack to clock the sequencer.
+const char clockCVInPin = A7; // The pin of the external CV jack to clock the sequencer.
 int stepsCVIn; // The control voltage state from an external source in the jack, 0 or 1.
 bool pendingStepReset = false; // Required for quantized resets.
 int sequenceMode; // 0 = chronologically, 1 = limited to the bottom and top hit on the tracks, 2 = random.
@@ -123,7 +123,7 @@ void setup() {
   }
 
   // CLOCK
-  pinMode(stepsCVInPin, INPUT); // Makes steps CV IN jack an input.
+  pinMode(clockCVInPin, INPUT); // Makes steps CV IN jack an input.
   pinMode(stepsPushButtonPin, INPUT); // Makes steps push button an input.
 
   // TRACKS
@@ -560,7 +560,7 @@ bool checkStepsJackConnection() {
 }
 
 bool checkStepsCVIn() {
-  int r = digitalRead(stepsCVInPin);
+  int r = digitalRead(clockCVInPin);
   if ( r != stepsCVIn ) {
     Serial.print("stepsCVIn: ");
     Serial.println(r);
