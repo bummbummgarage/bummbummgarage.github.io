@@ -161,7 +161,7 @@ void loop() {
   // CLOCK & STEPS ------------------------------------------------------------------
 
   // CV jack
-  bool stepsJackConnection = checkStepsJackConnection(); // Depending on a cable plugged in (1) or not (0).
+  bool stepsJackConnection = checkClockJackConnection(); // Depending on a cable plugged in (1) or not (0).
 
   // Push button.
   bool s = checkPushButton( stepsPushButtonPin, stepsPushButton, stepsPushButtonChangeLog ); // 0 or 1.
@@ -554,7 +554,7 @@ void ledMatrixColsSetAllHigh() {
 
 // STEPS
 
-bool checkStepsJackConnection() {
+bool checkClockJackConnection() {
   int r = digitalRead(clockJackDetectionPin);
   return r;
 }
