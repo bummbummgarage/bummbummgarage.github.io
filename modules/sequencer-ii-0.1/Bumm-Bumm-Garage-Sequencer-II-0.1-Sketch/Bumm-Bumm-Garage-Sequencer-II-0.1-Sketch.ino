@@ -559,7 +559,7 @@ bool checkClockJackConnection() {
   return r;
 }
 
-bool checkStepsCVIn() {
+bool checkClockCVIn() {
   int r = digitalRead(clockCVInPin);
   if ( r != clockCVIn ) {
     Serial.print("clockCVIn: ");
@@ -570,7 +570,7 @@ bool checkStepsCVIn() {
 
 // Act on CV In when it changed fom 0 to 1.
 void handleStepsCVIn() {
-  bool c = checkStepsCVIn(); // 0 or 1.
+  bool c = checkClockCVIn(); // 0 or 1.
   if ( c != clockCVIn ) {
     if (c == 1) {
       int i = millis() - stepsChangeLog; // Log the interval (for quantized steps reset).
