@@ -187,15 +187,14 @@ void loop() {
     int m = 0;
     if ( stepsMode != m ) {
       setStepsMode(m);
-      setStepsInterval(0); // Unset the interval, we don't need it  here.
     }
 
-    // Scenario 1: CV is on the move --> we'll update the steps.
-    updateSteps();
+    // Scenario 1: External CV changed from 0 to 1 --> update the steps.
+    handleStepsCVIn();
 
     // Scenario 2: Pushing the button --> resets steps.
     if ( stepsPushButtonChanged == true && stepsPushButton == 1 ) {
-      resetSteps();
+      pendingStepReset = true;
     }
 
   }
@@ -211,7 +210,7 @@ void loop() {
 
     // Scenario 1: New interval after last step --> move on step further.
     if ( millis() - stepsChangeLog > stepsInterval ) {
-       changeStepsPosition();
+       updateStepsPosition();
     }
 
     // Scenario 2: Pushing the button --> resets steps.
@@ -443,9 +442,10 @@ void loop() {
         if ( tracksPattern[t][s] == true ) {
 
           // INTERLUDE: Update step status here (in case of rapidly changed external CV).
-          if ( stepsMode == 0 ) {
-            updateSteps();
-          }
+          // It seems the hardware setup with the LED matrix and shift register slows everything down.
+          // Compared to former hardware version, frequent short triggers (<2ms) in the external CV haven't been detected.
+          // That's why this function is redundant to an upper line in "INPUTS & STATES", but a way that works.
+          handleStepsCVIn();
 
           // TRACK MODE 0: Illuminate all the active steps.
           if ( tracksMode[t] == 0 ) {
@@ -561,35 +561,30 @@ bool checkStepsJackConnection() {
   return r;
 }
 
-void updateSteps() {
-    // CV goes HIGH --> move on step further.
-    // Check the CV.
-    bool c = checkStepsCVIn(); // 0 or 1.
-    if ( c != stepsCVIn ) {
-      if ( debug == true ) {
-        Serial.print("stepsCVIn: ");
-        Serial.println(c);
-      }
-      if (c == 1) {
-        changeStepsPosition();
-      }
-      stepsCVIn = c;
-    }  
-}
-
 bool checkStepsCVIn() {
   int r = digitalRead(stepsCVInPin);
+  if ( r != stepsCVIn ) {
+    Serial.print("stepsCVIn: ");
+    Serial.println(r);
+  }
   return r;
 }
 
-// Set the steps position
-void setStepsPosition(int s) {
-  stepsPosition = s;
-  logStepsChange(stepsPosition);
+// Act on CV In when it changed fom 0 to 1.
+void handleStepsCVIn() {
+  bool c = checkStepsCVIn(); // 0 or 1.
+  if ( c != stepsCVIn ) {
+    if (c == 1) {
+      int i = millis() - stepsChangeLog; // Log the interval (for quantized steps reset).
+      setStepsInterval(i);
+      updateStepsPosition();
+    }
+    stepsCVIn = c;
+  }  
 }
 
 // Move the step position.
-void changeStepsPosition() {
+void updateStepsPosition() {
   if( sequenceMode == 0 ) { // Chronologically from start to end.
     if( pendingStepReset ) { // Quantized reset?
       stepsPosition = 1;
@@ -624,12 +619,6 @@ void changeStepsPosition() {
     }
   }
   logStepsChange(stepsPosition);
-}
-
-// Reset the steps depending on the sequence mode.
-void resetSteps() {
-  setStepsPosition(1);
-  pendingStepReset = false;
 }
 
 // Log the steps change.
