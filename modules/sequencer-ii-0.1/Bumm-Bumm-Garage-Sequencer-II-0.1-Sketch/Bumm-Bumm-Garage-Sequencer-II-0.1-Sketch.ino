@@ -51,7 +51,7 @@ const int longPress = 2000; // The time to trigger secondary actions on buttons.
 // Clock & Steps
 const int stepsCount = 8; // Overall number of steps.
 int clockMode; // 0 = voltage controlled, 1 = internally clocked, 2 = recording clock.
-long stepsModeChangeLog; // Timestamp log of the latest steps mode change.
+long clockModeChangeLog; // Timestamp log of the latest clock mode change.
 int stepsPosition = 0; // The current position of the steps. 0 means no step active, starts with 1.
 int stepsInterval = 0; // Defines the speed of the internal clock. 0 means clock is not running.
 long stepsChangeLog; // Timestamp log of the latest steps position change.
@@ -334,7 +334,7 @@ void loop() {
   for (int p = 0; p < stepsCount; p++) { // Walking through all the pixels of the steps.
 
     // ALL MODES: A new mode just got entered --> flash.
-    if ( millis() - stepsModeChangeLog < flashTime ) {
+    if ( millis() - clockModeChangeLog < flashTime ) {
 
       // Lightning the row LEDs designated to the steps in the matrix:
       clearLEDMatrix(); // Turn off all LEDs
@@ -345,7 +345,7 @@ void loop() {
 
     // MODE 0: Walk through the steps and light the corresponding pixel.
     if ( clockMode == 0 ) {
-      if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Initial mode flash is done.
+      if ( ( millis() > clockModeChangeLog + flashTime ) ) { // Initial mode flash is done.
 
         clearLEDMatrix(); // Turn off all LEDs
         
@@ -361,7 +361,7 @@ void loop() {
 
     // MODE 1: Walk through the steps and light the corresponding pixel.
     if ( clockMode == 1 ) { // Shine brighter when there is acutally current floating out.
-      if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Initial mode flash is done.
+      if ( ( millis() > clockModeChangeLog + flashTime ) ) { // Initial mode flash is done.
         if ( p == stepsPosition - 1 ) {
 
           // Lightning the particular step LED in the matrix:
@@ -377,10 +377,10 @@ void loop() {
     if ( clockMode == 2 ) {
 
       // Scenario 1: Not tapped yet, already blinked yet --> pulsate.
-      if ( tapCount == 0 && ( millis() > stepsModeChangeLog + flashTime ) ) {
+      if ( tapCount == 0 && ( millis() > clockModeChangeLog + flashTime ) ) {
 
         // Lightning the step LEDs in the matrix:
-        int ledState = pulsateColor( stepsModeChangeLog, HIGH, LOW ); // Calculating the state (on or off).
+        int ledState = pulsateColor( clockModeChangeLog, HIGH, LOW ); // Calculating the state (on or off).
         clearLEDMatrix(); // Turn off all LEDs
         ledMatrixRows.set(p, ledState); // Put voltage on the rows of this step.
         ledMatrixColSet(0, LOW); // Place ground on the column of the step LEDs.
@@ -640,12 +640,12 @@ void setStepsInterval(int interval) {
 
 void setStepsMode(int mode) {
   clockMode = mode;
-  stepsModeChangeLog = millis();
+  clockModeChangeLog = millis();
   if ( debug == true ) {
     Serial.print("clockMode: ");
     Serial.print(mode);
     Serial.print(" – ");
-    Serial.println(stepsModeChangeLog);
+    Serial.println(clockModeChangeLog);
   }
 }
 
