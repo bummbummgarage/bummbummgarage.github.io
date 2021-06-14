@@ -79,15 +79,16 @@ const char tracksPushButtonPin[tracksCount] = { A2, A1, A0 }; // Tracks push but
 int tracksPushButton[tracksCount]; // The state of the tracks push buttons, 0 or 1.
 long tracksPushButtonChangeLog[tracksCount]; // Timestamp of the latest change to the track pattern.
 const int tracksOutputPin[tracksCount] = { 5, 9, 10 }; // Tracks output pin assignments (1-3).
-const int tracksPatternCount = 7; // The number of predefined patterns.
-const bool tracksPredefinedPattern[tracksPatternCount][stepsCount] = { // Predefined patterns for the tracks.
+const int tracksPatternCount = 8; // The number of predefined patterns.
+bool tracksPredefinedPattern[tracksPatternCount][stepsCount] = { // Predefined patterns for the tracks.
   { 1, 1, 1, 1, 1, 1, 1, 1 },
   { 1, 0, 1, 0, 1, 0, 1, 0 },
   { 0, 1, 0, 1, 0, 1, 0, 1 },
   { 1, 0, 0, 0, 1, 0, 0, 0 },
   { 0, 1, 0, 0, 0, 1, 0, 0 },
   { 0, 0, 1, 0, 0, 0, 1, 0 },
-  { 0, 0, 0, 1, 0, 0, 0, 1 }
+  { 0, 0, 0, 1, 0, 0, 0, 1 },
+  { 0, 0, 0, 0, 0, 0, 0, 0 } // This last pattern is overwritten with random values at each preview.
 };
 int tracksPatternPreview[tracksCount]; // Which pattern is previewed (select mode) per track.
 
@@ -745,7 +746,15 @@ void applyTracksPattern(int track, int pattern) {
     Serial.print("tracksPatternPreview[");
     Serial.print(track);
     Serial.print("]: ");
-    Serial.println(pattern);
+    if( pattern == ( tracksPatternCount - 1 ) ) {
+      Serial.print(pattern);
+      Serial.println(" (random, yeah!)");
+    } else {
+      Serial.println(pattern);
+    }
+  }
+  if( pattern == ( tracksPatternCount - 1 ) ) { // Re-generate random pattern (last one in the bank).
+    randomizeTrackPattern( ( tracksPatternCount - 1 ) );
   }
   for (int s = 0; s < stepsCount; s++) { // Walk through the steps.
     setTracksPattern( track, s, tracksPredefinedPattern[pattern][s] );
@@ -758,5 +767,12 @@ void increaseTracksPreviewPattern(int track) {
     tracksPatternPreview[track]++;
   } else {
     tracksPatternPreview[track] = 0;
+  }
+}
+
+// Randomize a pattern in the pattern bank.
+void randomizeTrackPattern(int pattern) {
+  for (int s = 0; s < stepsCount; s++) { // Walk through the steps.
+    tracksPredefinedPattern[pattern][s] = random(0,2);
   }
 }
