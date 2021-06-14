@@ -48,9 +48,9 @@ const bool debug = false; // Enables the Serial print in several functions. Slow
 const int pushButtonDelay = 50; // The time a button will be muted after last change.
 const int longPress = 2000; // The time to trigger secondary actions on buttons.
 
-// Steps
+// Clock & Steps
 const int stepsCount = 8; // Overall number of steps.
-int stepsMode; // 0 = voltage controlled, 1 = internally clocked, 2 = recording clock.
+int clockMode; // 0 = voltage controlled, 1 = internally clocked, 2 = recording clock.
 long stepsModeChangeLog; // Timestamp log of the latest steps mode change.
 int stepsPosition = 0; // The current position of the steps. 0 means no step active, starts with 1.
 int stepsInterval = 0; // Defines the speed of the internal clock. 0 means clock is not running.
@@ -65,6 +65,9 @@ const char stepsJackDetectionPin = 4; // The pin of the detection for the extern
 const char stepsCVInPin = A7; // The pin of the external CV jack to clock the sequencer.
 int stepsCVIn; // The control voltage state from an external source in the jack, 0 or 1.
 bool pendingStepReset = false; // Required for quantized resets.
+int sequenceMode; // 0 = chronologically, 1 = limited to the bottom and top hit on the tracks, 2 = random.
+int bottomHit = 0; // The hit over all tracks with the smallest step number.
+int topHit = 0; // The hit over all tracks with the highest step number.
 
 // Tracks
 const int tracksCount = 3; // The number of tracks.
@@ -90,11 +93,6 @@ const bool tracksPredefinedPattern[tracksPatternCount][stepsCount] = { // Predef
   { 0, 0, 0, 1, 0, 0, 0, 1 }
 };
 int tracksPatternPreview[tracksCount]; // Which pattern is previewed (select mode) per track.
-
-// Sequence Modes
-int sequenceMode; // 0 = chronologically, 1 = limited to the bottom and top hit on the tracks, 2 = random.
-int bottomHit = 0; // The hit over all tracks with the smallest step number.
-int topHit = 0; // The hit over all tracks with the highest step number.
 
 // Display
 #include <ShiftRegister74HC595.h> // ShiftRegister74HC595 Library, Docs: https://timodenk.com/blog/shift-register-arduino-library/
@@ -124,7 +122,7 @@ void setup() {
     Serial.begin(9600); // Initialize serial communication at 9600 bits per second.
   }
 
-  // STEPS
+  // CLOCK
   pinMode(stepsCVInPin, INPUT); // Makes steps CV IN jack an input.
   pinMode(stepsPushButtonPin, INPUT); // Makes steps push button an input.
 
@@ -145,7 +143,7 @@ void setup() {
     pinMode(ledMatrixColsPins[c], OUTPUT);
   }
 
-  setSequenceMode(0); // The the mode initally.
+  setSequenceMode(0); // The the mode initally to 0.
 
 }
 
@@ -160,7 +158,7 @@ void loop() {
     -------------------------------------------------------------------------
   */
 
-  // STEPS ------------------------------------------------------------------
+  // CLOCK & STEPS ------------------------------------------------------------------
 
   // CV jack
   bool stepsJackConnection = checkStepsJackConnection(); // Depending on a cable plugged in (1) or not (0).
@@ -185,7 +183,7 @@ void loop() {
 
     // Set the mode.
     int m = 0;
-    if ( stepsMode != m ) {
+    if ( clockMode != m ) {
       setStepsMode(m);
     }
 
@@ -204,7 +202,7 @@ void loop() {
 
     // Set the mode.
     int m = 1;
-    if ( stepsMode != m ) {
+    if ( clockMode != m ) {
       setStepsMode(m);
     }
 
@@ -230,7 +228,7 @@ void loop() {
 
     // Set the mode.
     int m = 2;
-    if ( stepsMode != m ) {
+    if ( clockMode != m ) {
       setStepsMode(m);
     }
 
@@ -346,7 +344,7 @@ void loop() {
     }
 
     // MODE 0: Walk through the steps and light the corresponding pixel.
-    if ( stepsMode == 0 ) {
+    if ( clockMode == 0 ) {
       if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Initial mode flash is done.
 
         clearLEDMatrix(); // Turn off all LEDs
@@ -362,7 +360,7 @@ void loop() {
     }
 
     // MODE 1: Walk through the steps and light the corresponding pixel.
-    if ( stepsMode == 1 ) { // Shine brighter when there is acutally current floating out.
+    if ( clockMode == 1 ) { // Shine brighter when there is acutally current floating out.
       if ( ( millis() > stepsModeChangeLog + flashTime ) ) { // Initial mode flash is done.
         if ( p == stepsPosition - 1 ) {
 
@@ -376,7 +374,7 @@ void loop() {
     }
 
     // MODE 2: Pulsate or indicate the tap count.
-    if ( stepsMode == 2 ) {
+    if ( clockMode == 2 ) {
 
       // Scenario 1: Not tapped yet, already blinked yet --> pulsate.
       if ( tapCount == 0 && ( millis() > stepsModeChangeLog + flashTime ) ) {
@@ -461,11 +459,11 @@ void loop() {
               digitalWrite(tracksOutputPin[t], LOW); // Reset output.
         
               // Steps mode 0: High when CV in, but at least for the trigger time.
-              if ( stepsMode == 0 && ( stepsCVIn == 1 || ( millis() < ( stepsChangeLog + triggerTime ) ) ) ) {
+              if ( clockMode == 0 && ( stepsCVIn == 1 || ( millis() < ( stepsChangeLog + triggerTime ) ) ) ) {
                 digitalWrite(tracksOutputPin[t], HIGH);
               }
               // Steps mode 1: High in the trigger time.
-              if ( stepsMode == 1 && ( millis() < ( stepsChangeLog + triggerTime ) ) ) {
+              if ( clockMode == 1 && ( millis() < ( stepsChangeLog + triggerTime ) ) ) {
                 digitalWrite(tracksOutputPin[t], HIGH);
               }
         
@@ -641,10 +639,10 @@ void setStepsInterval(int interval) {
 }
 
 void setStepsMode(int mode) {
-  stepsMode = mode;
+  clockMode = mode;
   stepsModeChangeLog = millis();
   if ( debug == true ) {
-    Serial.print("stepsMode: ");
+    Serial.print("clockMode: ");
     Serial.print(mode);
     Serial.print(" – ");
     Serial.println(stepsModeChangeLog);
@@ -677,6 +675,39 @@ void stepsTapping(bool isTap) {
       }
       tapCount = 0;
     }
+  }
+}
+
+void setSequenceMode(int mode) {
+  sequenceMode = mode;
+  if ( debug == true ) {
+    Serial.print("sequenceMode: ");
+    Serial.println(mode);
+  }
+}
+
+void logOuterHits() { // Logs the bottom and top step that has a hit on a track.
+  int top = 0;
+  int bottom = stepsCount;
+  for (int t = 0; t < tracksCount; t++) { // Walk through all tracks.
+    for (int s = 0; s < stepsCount; s++) { // Walk through all steps.
+      if ( tracksPattern[t][s] ) {
+        if ( s < bottom ) {
+          bottom = s;
+        }
+        if ( s > top ) {
+          top = s;
+        }
+      } 
+    }
+  }
+  bottomHit = bottom + 1;
+  topHit = top + 1;
+  if ( debug == true ) {
+    Serial.print("bottomHit: ");
+    Serial.print(bottomHit);
+    Serial.print(", topHit: ");
+    Serial.println(topHit);
   }
 }
 
@@ -730,40 +761,5 @@ void increaseTracksPreviewPattern(int track) {
     tracksPatternPreview[track]++;
   } else {
     tracksPatternPreview[track] = 0;
-  }
-}
-
-// SEQUENCE MODES
-
-void setSequenceMode(int mode) {
-  sequenceMode = mode;
-  if ( debug == true ) {
-    Serial.print("sequenceMode: ");
-    Serial.println(mode);
-  }
-}
-
-void logOuterHits() { // Logs the bottom and top step that has a hit on a track.
-  int top = 0;
-  int bottom = stepsCount;
-  for (int t = 0; t < tracksCount; t++) { // Walk through all tracks.
-    for (int s = 0; s < stepsCount; s++) { // Walk through all steps.
-      if ( tracksPattern[t][s] ) {
-        if ( s < bottom ) {
-          bottom = s;
-        }
-        if ( s > top ) {
-          top = s;
-        }
-      } 
-    }
-  }
-  bottomHit = bottom + 1;
-  topHit = top + 1;
-  if ( debug == true ) {
-    Serial.print("bottomHit: ");
-    Serial.print(bottomHit);
-    Serial.print(", topHit: ");
-    Serial.println(topHit);
   }
 }
