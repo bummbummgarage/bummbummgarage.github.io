@@ -143,13 +143,15 @@ void setup() {
 
   setSequenceMode(0); // The the mode initally to 0.
 
+  // Improving the randomness, see: https://www.arduino.cc/en/pmwiki.php?n=Reference/Random
+  randomSeed(analogRead(A4)); // A4 is not connected.
 }
 
 /* ##########################################################################
    LOOP
    ##########################################################################
 */
-void loop() {
+void loop() {  
 
   /* ------------------------------------------------------------------------
     INPUTS & STATES
@@ -773,6 +775,13 @@ void increaseTracksPreviewPattern(int track) {
 // Randomize a pattern in the pattern bank.
 void randomizeTrackPattern(int pattern) {
   for (int s = 0; s < stepsCount; s++) { // Walk through the steps.
-    tracksPredefinedPattern[pattern][s] = random(0,2);
+    int r = random(10);
+    int b;
+    if ( r < 5 ){ // With a tiny tendency to 0.
+      b = 0;
+    } else {
+      b = 1;
+    }
+    tracksPredefinedPattern[pattern][s] = b;
   }
 }
