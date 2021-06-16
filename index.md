@@ -30,5 +30,5 @@ See the resulting modules below and check their **video demos**, **schematics**,
 | Mixing    | Filter <!-- Assembly in Progress (labels missing) -->        |          |
 |           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
 | Housing   | [Case II 0.1](modules/case-ii-0.1)                           |    ✅     |
-|           | PSU with Distro Board 0.1 <!-- Docs in Progress, photos taken --> |    ✅     |
+|           | [PSU & Distro Board 0.1](modules/psu-power-distribution-0.1) <!-- Docs in Progress, Modul noch fotografieren und texten  --> |    ✅     |
 

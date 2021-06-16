@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Case II 0.2
+title: Case II 0.1
 image: modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-01.jpg
 description: 19 inch Eurorack case that I built for my modular synth drum machine project.
 ---
