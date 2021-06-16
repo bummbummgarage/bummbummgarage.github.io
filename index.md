@@ -30,6 +30,5 @@ See the resulting modules below and check their **video demos**, **schematics**,
 | Mixing    | Filter <!-- Assembly in Progress (labels missing) -->        |          |
 |           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
 | Housing   | [Case II 0.1](modules/case-ii-0.1)                           |    ✅     |
-|           | Power Supply Unit II 0.1 <!-- Docs in Progress, photos taken --> |    ✅     |
-|           | Power Distribution Board 0.1 <!-- Docs in Progress, photos taken --> |    ✅     |
+|           | PSU with Distro Board 0.1 <!-- Docs in Progress, photos taken --> |    ✅     |
 
