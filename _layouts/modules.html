@@ -3,16 +3,24 @@
 
 {{ content }}
 
+<br>
 
-<ul>
 {% for module in site.data.modules %}
-  <li>
-    <a href='{{ module.name | replace: " ", "-" | downcase }}'>
-    {{ module.name }}
-    </a>
-  </li>
+<div class="row">
+	<div class="col-7">
+		{% if module.image %}
+		<a href='{{ module.name | replace: " ", "-" | downcase }}'>
+			<img src="{{module.image}}" />
+		</a>
+		{% endif %}
+	</div>
+	<div class="col-5">
+		<a href='{{ module.name | replace: " ", "-" | downcase }}'>
+		<strong>{{ module.name }}</strong>
+		</a>
+	</div>
+</div>
+<br>
 {% endfor %}
-</ul>
-
 
 {% include footer.html %}

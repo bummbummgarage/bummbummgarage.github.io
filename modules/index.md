@@ -6,5 +6,5 @@ description: All the modules that I pulled together.
 
 # Modules
 
-All the modules that I pulled together.
+All the modules that I pulled together. Alphabetically sorted.
 
