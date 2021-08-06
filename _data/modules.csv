@@ -1,15 +1,15 @@
-name,image
-Case II 0.1, /modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-01.jpg
-Clock II 0.1, /modules/clock-ii-0.1/IMG_7938.jpg
-Envelope Generator 0.1, /modules/envelope-generator-0.1/120343094_3458159520910993_5205335999587442971_n.jpg
-Envelope Generator II 0.1, /modules/envelope-generator-ii-0.1/150886302_121161163246069_6775219902744277767_n.jpg
-Exponential Converter 0.1, /modules/exponential-converter-0.1/154388090_471161937385519_3133007917346548765_n.jpg
-Gate to Trigger Converter 0.1, /modules/gate-to-trigger-converter-0.1/120194220_674661776766592_1671963204764866363_n.jpg
-Mixer 0.1, /modules/mixer-0.1/163535509_204415484816763_6223775483818641984_n.jpg
-Noise Generator 0.2, /modules/noise-generator-0.2/127847106_201614441532627_72816323489811047_n.jpg
-Sequencer 0.1, /modules/sequencer-0.1/121736146_988187851592777_9139359872235283236_n.jpg
-VCA 0.1, /modules/vca-0.1/126015022_380369819866411_1883062082916193714_n.jpg
-VCA 0.2, /modules/vca-0.2/153180515_182987476582838_2630144230978475653_n.jpg
-VCO 0.4, /modules/vco-0.4/120069748_171071121269591_6942984310127158100_n.jpg
-VCO II 0.2.3, /modules/vco-ii-0.2.3/160017333_213328790578242_8465238797184565485_n.jpg
-VCO III 0.1.1, /modules/vco-iii-0.1.1/IMG_7937.jpg
+name
+Case II 0.1
+Clock II 0.1
+Envelope Generator 0.1
+Envelope Generator II 0.1
+Exponential Converter 0.1
+Gate to Trigger Converter 0.1
+Mixer 0.1
+Noise Generator 0.2
+Sequencer 0.1
+VCA 0.1
+VCA 0.2
+VCO 0.4
+VCO II 0.2.3
+VCO III 0.1.1
