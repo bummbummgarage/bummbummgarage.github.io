@@ -1,0 +1,18 @@
+		
+{% include header.html %}
+
+{{ content }}
+
+
+<ul>
+{% for module in site.data.modules %}
+  <li>
+    <a href='{{ module.name | replace: " ", "-" | downcase }}'>
+    {{ module.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+
+{% include footer.html %}
