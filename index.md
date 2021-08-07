@@ -7,7 +7,11 @@ Sometime in May 2020 I woke up and knew I had to build my own **drum machine** f
 
 As a **synth and electronics newbie**, I first created a [software prototype based on VCV Rack](/projects/diy-drum-synthesizer/goal/Bumm Bumm Garage DIY Drum Synthesizer Prototype.mp4). Then over time, I worked out the necessary parts to complete my **modular drum synthesizer**.
 
-![](/assets/img/animation.gif)
+![](/projects/diy-modular-synthesizer-drum-machine/animation.gif)
+
+And in April 2021, I could then call the thing finished.
+
+![](/projects/diy-modular-synthesizer-drum-machine/done1080px.jpg)
 
 See the resulting modules below and check their **video demos**, **schematics**, **stripboard/PCB layouts** and **references** to other fellows' designs ❤️️
 
@@ -31,4 +35,3 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
 | Housing   | [Case II 0.1](modules/case-ii-0.1)                           |    ✅     |
 |           | [PSU & Distro Board 0.1](modules/psu-power-distribution-0.1) <!-- Docs in Progress, Modul noch fotografieren und texten  --> |    ✅     |
-

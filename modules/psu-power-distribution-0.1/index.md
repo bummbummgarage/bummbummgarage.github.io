@@ -53,6 +53,6 @@ If necessary later (e.g. when noise occurs), I could always solder capacitors in
 
 ## Links
 
-* [Stripboard Layout (PDF)](Bumm-Bumm-Garage-Distro-Board-&-Front-Module-0.1.pdf) of the Distro Board and the Front Module
+* [Stripboard Layout (PDF)](Bumm-Bumm-Garage-Distro-Board-&-Front-Module-0.1.pdf) of the Distro Board and the front module
 
 <!-- Social links, Improvement Potential --> 
