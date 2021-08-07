@@ -1,15 +1,15 @@
-name
-Case II 0.1
-Clock II 0.1
-Envelope Generator 0.1
-Envelope Generator II 0.1
-Exponential Converter 0.1
-Gate to Trigger Converter 0.1
-Mixer 0.1
-Noise Generator 0.2
-Sequencer 0.1
-VCA 0.1
-VCA 0.2
-VCO 0.4
-VCO II 0.2.3
-VCO III 0.1.1
+name,date
+Case II 0.1, 2020-12
+Clock II 0.1, 2020-09
+Envelope Generator 0.1, 2020-09
+Envelope Generator II 0.1, 2021-02
+Exponential Converter 0.1, 2021-02
+Gate to Trigger Converter 0.1, 2020-09
+Mixer 0.1, 2021-03
+Noise Generator 0.2, 2020-11
+Sequencer 0.1, 2020-10
+VCA 0.1, 2020-11
+VCA 0.2, 2021-02
+VCO 0.4, 2020-09
+VCO II 0.2.3, 2021-03
+VCO III 0.1.1, 2021-03

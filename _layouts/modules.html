@@ -3,14 +3,31 @@
 
 {{ content }}
 
-<ul>
-{% for module in site.data.modules %}
-  <li>
-    <a href='{{ module.name | replace: " ", "-" | downcase }}'>
-    {{ module.name }}
-    </a>
-  </li>
-{% endfor %}
-</ul>
+<table>
+  <thead>
+    <tr>
+      <td>
+        Name
+      </td>
+      <td>
+        Date
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for module in site.data.modules %}
+    <tr>
+      <td>
+        <a href='{{ module.name | replace: " ", "-" | downcase }}'>
+        {{ module.name }}
+        </a>
+      </td>
+      <td>
+        {{ module.date }}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 {% include footer.html %}
