@@ -55,10 +55,15 @@
 		</style>
 		<!-- End Cookie Consent -->
 
-		<div id="footer" class="container text-right">
-			<a href="#" onclick="return false;" id="cookieSettings">🍪 Settings</a> &middot;
-			<a href="/legal-notice">Legals</a> &middot;
-			<a href="/privacy-policy">Privacy</a>
+		<div id="footer" class="container clearfix">
+			<div style="width: 49%; float: left;">
+				<a href="/modules">Modules</a>
+			</div>
+			<div style="width: 49%; float: right;"  class="text-right">
+				<a href="#" onclick="return false;" id="cookieSettings">🍪 Settings</a> &middot;
+				<a href="/legal-notice">Legals</a> &middot;
+				<a href="/privacy-policy">Privacy</a>
+			</div>
 		</div>
 
 		{% if jekyll.environment == "production" %}
