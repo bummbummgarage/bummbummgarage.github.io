@@ -1,6 +1,7 @@
 ---
 layout: project
 title: DIY Drum Synthesizer
+
 ---
 
 Sometime in May 2020 I woke up and knew I had to build my own **drum machine** from scratch. **Bass, snare and hi-hat** synthesized through current manipulation.
