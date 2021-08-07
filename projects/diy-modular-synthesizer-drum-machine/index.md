@@ -4,6 +4,8 @@ title: DIY Drum Synthesizer
 
 ---
 
+# DIY Modular Synth Drum Machine
+
 Sometime in May 2020 I woke up and knew I had to build my own **drum machine** from scratch. **Bass, snare and hi-hat** synthesized through current manipulation.
 
 As a **synth and electronics newbie**, I first created a [software prototype based on VCV Rack](/projects/diy-drum-synthesizer/goal/Bumm Bumm Garage DIY Drum Synthesizer Prototype.mp4). Then over time, I worked out the necessary parts to complete my **modular drum synthesizer**.

@@ -6,5 +6,5 @@ description: All the modules that I pulled together.
 
 # Modules
 
-All the modules that I built. Alphabetically sorted.
+All the modules that I created. Alphabetically sorted.
 
