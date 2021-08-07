@@ -1,7 +1,7 @@
 ---
 layout: project
 title: A Modular Synth Techno Rack based on DIY Kits
-description: I'm creating a mobile rack to play live. And because I can (and it's fun), I'll base it on DIY kits.
+description: I'm creating a mobile rack to play live. And because it's fun, I'll base it on DIY kits.
 ---
 
 # A Modular Synth Techno Rack based on DIY Kits
