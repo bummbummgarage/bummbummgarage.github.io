@@ -16,10 +16,10 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 
 | Component                      | Implementation                                               |
 | ------------------------------ | ------------------------------------------------------------ |
-| ✅ Case and power supply        | [Case II 0.1](/modules/case-ii-0.1)     |
+| ✅ Case and power supply        | [Case II 0.1](/modules/case-ii-0.1)                          |
 | ✅ Clock                        | [Clock II 0.1](/modules/clock-ii-0.1) with [Gate to Trigger Converter 0.1](/modules/gate-to-trigger-converter-0.1) |
-| ✅ Clock Divider                | [Sequencer 0.1](/modules/sequencer-0.1) |
-| ✅ Rhythm / beat patterns       | [Sequencer 0.1](/modules/sequencer-0.1) |
+| ✅ Clock Divider                | [Sequencer 0.1](/modules/sequencer-0.1)                      |
+| ✅ Rhythm / beat patterns       | [Sequencer 0.1](/modules/sequencer-0.1)                      |
 | ✅ Clock multiplier / euclidean | [Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
 | 🟧 Multiple                     | *To be defined*                                              |
 | ✅ Kick drum                    | VCO, Envelope Generator and VCA from [my modules](/modules)  |
@@ -36,7 +36,8 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 | 🟧 VCF (lead)                   | *To be defined*                                              |
 | ✅ VCA (lead)                   | From [my modules](/modules) or a new one                     |
 | 🟧 Delay                        | *To be defined*                                              |
-| ✅ Mixer                        | [Mixer 0.1](/modules/mixer-0.1)         |
+| 🟧 Reverb                       | *To be defined*                                              |
+| ✅ Mixer                        | [Mixer 0.1](/modules/mixer-0.1)                              |
 
 ----
 
