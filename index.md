@@ -14,6 +14,8 @@ According to the video "[How to make a TINY live techno modular synth in only 62
 
 Following that approach, I'm adding what is missing and replacing what needs to be improved. **Step by step**.
 
+## Setup
+
 | Component                      | Implementation                                               |
 | ------------------------------ | ------------------------------------------------------------ |
 | ✅ Case and power supply        | [Case II 0.1](/modules/case-ii-0.1)                          |
@@ -43,21 +45,11 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 
 *Note: This setup is not carved in stone, but in a fluid state* 🌈
 
+## Sound
 
+This is the kind of music that I am aiming for:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [German Underground Techno | Dark & Hard | Fear N Loathing in Berlin [FNL043]](https://www.youtube.com/watch?v=cjF-9In3hqU&t=25s)
+* [Charlotte de Witte - Form](https://www.youtube.com/watch?v=zvAJbFNuyCA)
+* [Leipzig I (recorded with the Kaossilator App on my iPhone)](https://soundcloud.com/steffenlohaus/leipzig-i)
+* [Style Guide: Techno (Sample project by James Wiltshire)](https://www.youtube.com/watch?v=0Q6yR4s4syA&t=990s)

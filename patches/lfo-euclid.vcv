@@ -141,7 +141,7 @@
       ],
       "data": {
         "moduleVersion": 1,
-        "count": 87,
+        "count": 98,
         "theme": 0
       },
       "pos": [
@@ -447,7 +447,7 @@
       "data": {
         "moduleVersion": 1,
         "currentStep": 1,
-        "direction": 2,
+        "direction": 8,
         "clockState": false,
         "runState": true,
         "theme": 0
