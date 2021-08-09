@@ -49,7 +49,7 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 
 This is the kind of music that I am aiming for:
 
-* [German Underground Techno | Dark & Hard | Fear N Loathing in Berlin [FNL043]](https://www.youtube.com/watch?v=cjF-9In3hqU&t=25s)
+* [German Underground Techno, Dark & Hard, Fear N Loathing in Berlin](https://www.youtube.com/watch?v=cjF-9In3hqU&t=25s)
 * [Charlotte de Witte - Form](https://www.youtube.com/watch?v=zvAJbFNuyCA)
 * [Leipzig I (recorded with the Kaossilator App on my iPhone)](https://soundcloud.com/steffenlohaus/leipzig-i)
 * [Style Guide: Techno (Sample project by James Wiltshire)](https://www.youtube.com/watch?v=0Q6yR4s4syA&t=990s)
