@@ -59,9 +59,6 @@ const int chordShapes[shapeCount][voiceCount] = {
 
 int chordShape = 5;
 
-int waveButtonLog = 0; // Log the last time the button has been checked.
-bool waveButton = false; // The current state of the button.
-
 
 void setup()
 {
@@ -149,17 +146,6 @@ int readShapePoti() {
   return s;
 }
 
-/*
-// Set the wave form of the voices.
-void setWave() {
-  bool b = readWaveButton();
-  Serial.println(waveButton);
-  if ( waveButton ==  false && b == 1 ) {
-    Serial.println("CHANGE ----------------------------------------");
-  }
-}
-*/
-
 void setWave() {
   voiceWave = readWavePoti();
 }
@@ -174,24 +160,3 @@ int readWavePoti() {
   }
   return w;
 }
-
-/*
-  // Check the button.
-  bool readWaveButton() {
-  bool s;
-  if ( millis() > waveButtonLog + pushButtonDelay ) {
-    waveButtonLog = millis();
-    s = digitalRead(waveButtonPin);
-
-    if ( waveButton ==  false && b == 1 ) {
-    waveButton = s;
-    if ( debug == true ) {
-      Serial.print("waveButton: ");
-      Serial.println(s);
-    }
-  } else {
-    s = waveButton;
-  }
-  return s;
-  }
-*/
