@@ -1,7 +1,5 @@
 
 const bool debug = false; // Enables the Serial print in several functions. Sound won't work properly when true.
-const int pushButtonDelay = 50; // The time a button will be muted after last change.
-
 
 // Arduino synth library modulation example
 
