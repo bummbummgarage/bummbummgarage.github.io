@@ -1,5 +1,5 @@
 
-const bool debug = false; // Enables the Serial print in several functions. Sound won't work properly when true.
+const bool debug = false; // Enables the Serial print in several functions. Just for debugging, sound won't work properly when set on.
 
 // Arduino synth library modulation example
 
@@ -20,22 +20,26 @@ const bool debug = false; // Enables the Serial print in several functions. Soun
 
 synth chord; // Initialzing the synth.
 
-const int wavePotiPin = A5;
-const int rootPotiPin = A6;
-const int shapePotiPin = A7;
+// Inputs 
+const int rootCVIn = A0;
 
-int root = 69; // This is the base note of the chord (36-84, C-2 to C+2). "A" by default, will be updated in the loop.
-// Low and high define the range.
-const int lowestRoot = 36;
-const int highestRoot = 84;
+// Potis
+const int wavePotiPin = A4;
+const int rootPotiPin = A5;
+const int shapePotiPin = A6;
 
 const int waveCount = 5;
 const int voiceWaves[waveCount] = { SINE, TRIANGLE, SQUARE, SAW, NOISE };
-int voiceWave = 0; // Start with a sine.
+int voiceWave; // The current wave. Will be intially set in the loop.
 
-const int voiceEnv = 0; // Not needed, we just play the chord along.
-const int voiceLength = 0; // Not needed, we just play the chord along.
-const int voiceMod = 64; // 64 means no modulation, which is fine, not needed.
+
+int root; // This is the base note of the chord defined in semitones (36-84, C-2 to C+2). Will be set in the loop.
+// Low and high define the range.
+const int lowestRoot = 36;
+const int highestRoot = 84;
+int rootDelta; // This is the number of semitones to be added via the CV IN.
+int tune; // The resulting tune for the chord (the base note).
+
 
 const int voiceCount = 4;
 const int shapeCount = 13;
@@ -54,8 +58,11 @@ const int chordShapes[shapeCount][voiceCount] = {
   { 0, 0, 0, 0 }, // Root
   { -24, -12, 0, 0 } // Sub Octave
 };
+int chordShape; // The global variable for the current chord shape. Will be set in the loop.
 
-int chordShape = 5;
+const int voiceEnv = 0; // Not needed, we just play the chord along.
+const int voiceLength = 0; // Not needed, we just play the chord along.
+const int voiceMod = 64; // 64 means no modulation, which is fine, not needed.
 
 
 void setup()
@@ -72,11 +79,11 @@ void setup()
 void loop()
 {
 
-  // Set the root note.
-  setRoot();
-
   // Set the wave of the voices.
   setWave();
+  
+  // Set the tune.
+  setTune();
 
   // Set the shape of the chord.
   setShape();
@@ -92,69 +99,91 @@ void loop()
 }
 
 
-// Setting up the voices for the chord.
-void setupChord() {
-
-  for (int v = 0; v < voiceCount; v++) {
-    int tune = root + chordShapes[ chordShape ][ v ];
-    chord.setupVoice( v, voiceWaves[voiceWave], tune, voiceEnv, voiceLength, voiceMod );
+// Set the waveform.
+void setWave() {
+  int v = analogRead(wavePotiPin);
+  int w = ( v * waveCount ) / 1024;
+  if ( millis() < 10 || voiceWave != w ) { // Act after booting and when the value has changed.
+    voiceWave = w;
+    if ( debug == true ) {
+      Serial.print("Wave (poti value): ");
+      Serial.print(voiceWave);
+      Serial.print(" (");
+      Serial.print(v);
+      Serial.println(")");
+    }
   }
-
 }
 
+// Set the tune (resulting root note) from the poti and the CV In.
+void setTune() {
 
-// Set the root note from the poti and the CV In.
-void setRoot() {
-  root = readRootPoti();
-}
-
-
-// Get the value from the root poti.
-// Return something between 0 and 127.
-int readRootPoti() {
+  // 1. Get the root poti value.
   int v = analogRead(rootPotiPin); // The poti value
-  int t = map(v, 0, 1023, lowestRoot, highestRoot);
-  if ( debug == true ) {
-    Serial.print("rootPotiVal (tune): ");
-    Serial.print(v);
-    Serial.print(" (");
-    Serial.print(t);
-    Serial.println(")");
+  int r = map(v, 0, 1023, lowestRoot, highestRoot);
+  if ( millis() < 10 || root != r ) { // Act after booting and when the value has changed.
+    root = r;
+    if ( debug == true ) {
+      Serial.print("Root (poti value): ");
+      Serial.print(root);
+      Serial.print(" (");
+      Serial.print(v);
+      Serial.println(")");
+    }
   }
-  return t;
-}
 
+  // 2. Get the CV In value.
+  int c = analogRead(rootCVIn);
+  float unitsPerSemitone = 1024 / 4.9 / 12; // 17,4149659864
+  int d = c / unitsPerSemitone; // Root is defined by the number of semitones.
+  if ( millis() < 10 || rootDelta != d ) { // Act after booting and when the value has changed.
+    rootDelta = d;
+    if ( debug == true ) {
+      Serial.print("Root delta (CV IN value): ");
+      Serial.print(rootDelta);
+        Serial.print(" (");
+        Serial.print(c);
+        Serial.println(")");
+    }
+  }
+
+  // 3. Calculate the resulting tune.
+  int t = root + rootDelta;
+  if ( millis() < 10 || tune != t ) { // Act after booting and when the value has changed.
+    tune = t;
+    if ( debug == true ) {
+      Serial.print("Tune (root + delta): ");
+      Serial.print(tune);
+      Serial.print(" (");
+      Serial.print(root);
+      Serial.print(" + ");
+      Serial.print(rootDelta);
+      Serial.println(")");
+    }
+  }
+  
+}
 
 // Set the shape of the chord.
 void setShape() {
-  chordShape = readShapePoti();
-}
-
-// Read the shape poti.
-int readShapePoti() {
   int v = analogRead(shapePotiPin);
   int s = ( v * shapeCount ) / 1024;
-  if ( debug == true ) {
-    Serial.print("shapePotiVal (shape): ");
-    Serial.print(v);
-    Serial.print(" (");
-    Serial.print(s);
-    Serial.println(")");
+  if ( millis() < 10 || chordShape != s ) { // Act after booting and when the value has changed.
+    chordShape = s;
+    if ( debug == true ) {
+      Serial.print("Chord shape (poti value): ");
+      Serial.print(chordShape);
+      Serial.print(" (");
+      Serial.print(v);
+      Serial.println(")");
+    }
   }
-  return s;
 }
 
-void setWave() {
-  voiceWave = readWavePoti();
-}
-
-// Read the waveform poti.
-int readWavePoti() {
-  int v = analogRead(wavePotiPin);
-  int w = ( v * waveCount ) / 1024;
-  if ( debug == true ) {
-    Serial.print("wavePotiVal: ");
-    Serial.println(w);
+// Setting up the voices for the chord.
+void setupChord() {
+  for (int v = 0; v < voiceCount; v++) {
+    int baseNote = tune + chordShapes[ chordShape ][ v ];
+    chord.setupVoice( v, voiceWaves[voiceWave], baseNote, voiceEnv, voiceLength, voiceMod );
   }
-  return w;
 }

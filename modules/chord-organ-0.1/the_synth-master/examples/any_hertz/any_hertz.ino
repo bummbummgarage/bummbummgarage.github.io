@@ -22,8 +22,6 @@ void setup() {
 
 void loop()
 {
-  edgar.setFrequency(0,50.0);
-  edgar.trigger(0);
   delay(1000);
   edgar.setFrequency(0,60.0);
   edgar.trigger(0);
