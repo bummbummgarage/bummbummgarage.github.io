@@ -1,3 +1,43 @@
+---
+layout: module
+title: Case II 0.1
+---
+
+<!-- image: modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-01.jpg
+description: 19 inch Eurorack case that I built for my modular synth drum machine project. -->
+
+# Chord Organ
+
+*Version 0.1 from August 2021*
+
+<!-- BILD --> 
+
+Prototype for a polyphonic synth lead. I build it while having some slack time, waiting for new DIY kits for my techno rack project. I got inspired by the [Chord Organ from Music Thing Modular](https://musicthing.co.uk/pages/chord.html). 
+
+## Features
+
+* ✅ 4 simultaneous voices (polyphony)
+* ✅ 5 different waveforms: sine, triangle, square, saw, tuned noise
+* ✅ 13 different chord shapes
+* ✅ 48 semitones (from C-2 to C+2)
+* ✅ CV IN for the root note of the chord
+
+## Details
+
+It is based on an Arduino Nano. Luckily I found the library [the_synth](https://github.com/dzlonline/the_synth). That made the implementation with some additional circuitry a relatively easy task.
+
+![chord-shapes](chord-shapes.png)
+
+The logic and design of the chord shapes are taken from the [Music Thing Modular's approach](https://youtu.be/btCs3EEpJm0?t=104). They can be edited in the sketch file.
+
+## Links
+
+<!-- Video Demo
+Schematic (PDF)
+Arduino Sketch (Code)-->
+
+* Arduino Sketch (Code)
+
 
 
 **TODO:**
@@ -6,10 +46,6 @@
 * Amp hinten hin.
 
 
-
-**Fragen:**
-
-* Gehen jegliche Potis?
 
 ----
 

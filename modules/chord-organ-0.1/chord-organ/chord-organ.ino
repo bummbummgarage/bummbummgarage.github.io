@@ -1,23 +1,50 @@
 
+/* --------------------------------------------------------------------------
+
+    $$$$$$$\  $$\   $$\ $$\      $$\ $$\      $$\               
+    $$  __$$\ $$ |  $$ |$$$\    $$$ |$$$\    $$$ |              
+    $$ |  $$ |$$ |  $$ |$$$$\  $$$$ |$$$$\  $$$$ |              
+    $$$$$$$\ |$$ |  $$ |$$\$$\$$ $$ |$$\$$\$$ $$ |              
+    $$  __$$\ $$ |  $$ |$$ \$$$  $$ |$$ \$$$  $$ |              
+    $$ |  $$ |$$ |  $$ |$$ |\$  /$$ |$$ |\$  /$$ |              
+    $$$$$$$  |\$$$$$$  |$$ | \_/ $$ |$$ | \_/ $$ |              
+    \_______/  \______/ \__|     \__|\__|     \__|                    
+                                                                
+    $$$$$$$\  $$\   $$\ $$\      $$\ $$\      $$\               
+    $$  __$$\ $$ |  $$ |$$$\    $$$ |$$$\    $$$ |              
+    $$ |  $$ |$$ |  $$ |$$$$\  $$$$ |$$$$\  $$$$ |              
+    $$$$$$$\ |$$ |  $$ |$$\$$\$$ $$ |$$\$$\$$ $$ |              
+    $$  __$$\ $$ |  $$ |$$ \$$$  $$ |$$ \$$$  $$ |              
+    $$ |  $$ |$$ |  $$ |$$ |\$  /$$ |$$ |\$  /$$ |              
+    $$$$$$$  |\$$$$$$  |$$ | \_/ $$ |$$ | \_/ $$ |              
+    \_______/  \______/ \__|     \__|\__|     \__|                      
+                                                                
+     $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\  $$$$$$$$\ 
+    $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  _____|
+    $$ /  \__|$$ /  $$ |$$ |  $$ |$$ /  $$ |$$ /  \__|$$ |      
+    $$ |$$$$\ $$$$$$$$ |$$$$$$$  |$$$$$$$$ |$$ |$$$$\ $$$$$\    
+    $$ |\_$$ |$$  __$$ |$$  __$$< $$  __$$ |$$ |\_$$ |$$  __|   
+    $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      
+    \$$$$$$  |$$ |  $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$$$$$$$\ 
+     \______/ \__|  \__|\__|  \__|\__|  \__| \______/ \________|
+  
+
+    CHORD ORGAN
+    This is the code for an Eurorack synth module.
+    It's built and tested on an Arduino Nano.
+    
+    Find out more on: http://bummbummgarage.github.io/
+    
+    ---------------------------------------------------------------------- */
+
+/* ##########################################################################
+   PRESETUP
+   ##########################################################################
+*/
 const bool debug = false; // Enables the Serial print in several functions. Just for debugging, sound won't work properly when set on.
 
-// Arduino synth library modulation example
-
-//Hardware connections:
-
-//                    +10µF
-//PIN 11 ---[ 1k ]--+---||--->> Audio out
-//                  |
-//                 === 10nF
-//                  |
-//                 GND
-
-// DZL 2014
-// HTTP://dzlsevilgeniuslair.blogspot.dk
-// HTTP://illutron.dk
-
+// Arduino synth library, see https://github.com/dzlonline/the_synth
 #include <synth.h>
-
 synth chord; // Initialzing the synth.
 
 // Inputs 
@@ -28,11 +55,12 @@ const int wavePotiPin = A4;
 const int rootPotiPin = A5;
 const int shapePotiPin = A6;
 
+// Waveforms
 const int waveCount = 5;
 const int voiceWaves[waveCount] = { SINE, TRIANGLE, SQUARE, SAW, NOISE };
 int voiceWave; // The current wave. Will be intially set in the loop.
 
-
+// Tune (root note)
 int root; // This is the base note of the chord defined in semitones (36-84, C-2 to C+2). Will be set in the loop.
 // Low and high define the range.
 const int lowestRoot = 36;
@@ -40,7 +68,7 @@ const int highestRoot = 84;
 int rootDelta; // This is the number of semitones to be added via the CV IN.
 int tune; // The resulting tune for the chord (the base note).
 
-
+// Chord shapes
 const int voiceCount = 4;
 const int shapeCount = 13;
 const int chordShapes[shapeCount][voiceCount] = {
@@ -60,10 +88,15 @@ const int chordShapes[shapeCount][voiceCount] = {
 };
 int chordShape; // The global variable for the current chord shape. Will be set in the loop.
 
+// Misc
 const int voiceEnv = 0; // Not needed, we just play the chord along.
 const int voiceLength = 0; // Not needed, we just play the chord along.
 const int voiceMod = 64; // 64 means no modulation, which is fine, not needed.
 
+/* ##########################################################################
+   SETUP
+   ##########################################################################
+*/
 
 void setup()
 {
@@ -72,9 +105,14 @@ void setup()
     Serial.begin(9600); // Initialize serial communication at 9600 bits per second.
   }
 
-  chord.begin();  // Start it up
+  chord.begin(); // Start it up
 
 }
+
+/* ##########################################################################
+   LOOP
+   ##########################################################################
+*/
 
 void loop()
 {
@@ -98,6 +136,10 @@ void loop()
 
 }
 
+/* ##########################################################################
+   FUNCTIONS
+   ##########################################################################
+*/
 
 // Set the waveform.
 void setWave() {
