@@ -27,7 +27,7 @@ It is based on an **Arduino Nano**. Luckily I found the library [the_synth](http
 
 ![chord-shapes](chord-shapes.png)
 
-The logic and design of the chord shapes are taken from the [Music Thing Modular's approach](https://youtu.be/btCs3EEpJm0?t=104). They can be edited in the sketch file.
+The logic and design of the chord shapes are taken from the [Music Thing Modular's approach](https://youtu.be/btCs3EEpJm0?t=104). They can be edited in the code.
 
 ## Links
 
@@ -44,8 +44,8 @@ Schematic (PDF)
   * This is the elephant in the room. Especially in lower tone regions you can here it. I guess this is related to the software. So far I opened an [issue in the repository](https://github.com/dzlonline/the_synth/issues/23) of the fundamental library, let's see. Fixing it by myself would be beyond my programming skills and I would rather go for building the original Chord Organ. 
   * A portion of the noise can be filtered by additional circuitry or following filter modules. But of course this comes with costs for the dynamic range as well.
   * The noise is most noticeable with the sine and triangle waves. With the rest of the waves, it almost gets lost in the overtones.
-* Adding a **CV IN for the chord shape**, just like the original module has one.
-* Adding an **opamp at the end** for amplification
+* Add a **CV IN for the chord shape**, just like the original module has one.
+* Add an **opamp at the end** for amplification
 * Implement it as an **Eurorack module** on stripboard or PCB.
 
 <!-- Social links -->
