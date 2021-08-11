@@ -16,8 +16,8 @@ Breadboard prototype for a **polyphonic synth lead**. I build it while having so
 ## Features
 
 * ✅ 4 simultaneous voices (polyphony)
-* ✅ 5 different waveforms: sine, triangle, square, saw and tuned noise
-* ✅ 13 different chord shapes
+* ✅ 5 different waveforms: sine, triangle, square, saw and "tuned" noise
+* ✅ 13 different chord shapes (major, minor, 7th, …)
 * ✅ 48 semitones (from C-2 to C+2)
 * ✅ CV IN for the root note of the chord
 
