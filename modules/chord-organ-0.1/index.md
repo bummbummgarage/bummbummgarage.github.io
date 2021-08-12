@@ -48,4 +48,4 @@ The logic and design of the chord shapes are taken from the [Music Thing Modular
 * Add an **opamp at the end** for amplification
 * Implement it as an **Eurorack module** on stripboard or PCB.
 
-Also see the comments on [Instagram](https://www.instagram.com/p/CSdkY_5tRsG/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/p2ta4x/digital_polyphonic_synth_lead_based_on_arduino/).
+Also see the comments on [Instagram](https://www.instagram.com/p/CSdkY_5tRsG/), [Reddit](https://www.reddit.com/r/synthdiy/comments/p2ta4x/digital_polyphonic_synth_lead_based_on_arduino/) and [Mod Wiggler](https://www.modwiggler.com/forum/viewtopic.php?f=17&t=251941).
