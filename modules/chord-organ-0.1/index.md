@@ -2,7 +2,7 @@
 layout: module
 title: Chord Organ 0.1
 image: /modules/chord-organ-0.1/Bumm-Bumm-Garage-Chord-Organ-0.1.png
-description: Breadboard prototype for a polyphonic synth lead. Inspired by the Chord Organ from Music Thing Modular.
+description: Digital polyphonic synth lead on breadboard. Inspired by the Chord Organ from Music Thing Modular.
 ---
 
 # Chord Organ
@@ -11,7 +11,7 @@ description: Breadboard prototype for a polyphonic synth lead. Inspired by the C
 
 ![](Bumm-Bumm-Garage-Chord-Organ-0.1.png)
 
-Breadboard prototype for a **polyphonic synth lead**. I build it while having some slack time, waiting for new DIY kits for my techno rack project. The idea is taken from the [Chord Organ from Music Thing Modular](https://musicthing.co.uk/pages/chord.html).
+**Digital polyphonic synth lead** on breadboard. I build it while having some slack time, waiting for new DIY kits for my techno rack project. The idea is taken from the [Chord Organ from Music Thing Modular](https://musicthing.co.uk/pages/chord.html).
 
 ## Features
 
@@ -32,7 +32,6 @@ The logic and design of the chord shapes are taken from the [Music Thing Modular
 ## Links
 
 <!-- Video Demo
-Schematic (PDF)
 -->
 
 * [Schematic](Bumm-Bumm-Garage-Chord-Organ-0.1.pdf)
