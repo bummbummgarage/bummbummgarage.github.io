@@ -564,7 +564,7 @@
       "leftModuleId": 124,
       "data": {
         "moduleVersion": 1,
-        "currentStep": 4,
+        "currentStep": 2,
         "direction": 0,
         "clockState": false,
         "runState": true,
@@ -664,7 +664,7 @@
       "rightModuleId": 105,
       "data": {
         "moduleVersion": 1,
-        "count": 189,
+        "count": 117,
         "theme": 0
       },
       "pos": [

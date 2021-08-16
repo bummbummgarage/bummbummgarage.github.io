@@ -37,10 +37,10 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 | ✅ Sample and hold           | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
 | ✅ VCO (bass)                | [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations) |
 | 🟧 Envelope Generator (bass) | *To be defined*                                              |
-| 🟧 VCF (bass)                | *To be defined*                                              |
+| 🟧 VCF (bass)                | ***To be defined next*** 👀                                   |
 | 🟧 Chords (lead)             | *To be defined*                                              |
 | 🟧 Envelope Generator (lead) | *To be defined*                                              |
-| 🟧 VCF (lead)                | *To be defined*                                              |
+| 🟧 VCF (lead)                | ***To be defined next*** 👀                                   |
 | 🟧 Delay                     | *To be defined*                                              |
 | 🟧 Reverb                    | *To be defined*                                              |
 | ✅ Mixer & VCAs              | [Voltage controlled Mixer-VCA](https://haraldswerk.de/Mixer/VC_Mixer_VCA/VC_Mixer_VCA.html) (Haralds:Werk) |
