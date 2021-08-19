@@ -36,5 +36,5 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | Noise Generator 0.3 <!-- Assembly done -->                   |    ✅     |
 | Mixing    | Filter                                                       |    ✅     |
 |           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
-| Housing   | [Case II 0.1](modules/case-ii-0.1)                           |    ✅     |
-|           | [PSU & Distro Board 0.1](modules/psu-power-distribution-0.1) <!-- Docs in Progress, Modul noch fotografieren und texten  --> |    ✅     |
+| Housing   | [Case II 0.1](/modules/case-ii-0.1)                          |    ✅     |
+|           | [PSU & Distro Board 0.1](/modules/psu-distro-board-0.1)      |    ✅     |

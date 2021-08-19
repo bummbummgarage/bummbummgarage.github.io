@@ -27,7 +27,7 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 
 | Component                   | Implementation                                               |
 | --------------------------- | ------------------------------------------------------------ |
-| ✅ Case and power supply     | [Case II 0.1](/modules/case-ii-0.1)                          |
+| ✅ Case and power supply     | [Case II 0.1](/modules/case-ii-0.1)<br />[PSU & Distro Board 0.1](/modules/psu-distro-board-0.1/) |
 | ✅ Clock & Divider           | [BPM Generator 20..2400 BPM with dividers](https://haraldswerk.de/Gate_and_Trigger/Pulses/Pulses.html) (Haralds:Werk) |
 | ✅ Rhythm / beat patterns    | [Sequencer 0.1](/modules/sequencer-0.1)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
 | 🟧 Kick drum                 | *To be defined*                                              |
