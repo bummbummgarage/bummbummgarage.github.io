@@ -23,6 +23,8 @@ I arranged the values so that they would match the planned setup of kick, snare 
 
 ![](Bumm-Bumm-Garage-Filter-0.2-02.jpg)
 
+Also I added buffer opamps between the stages, see the schematic below.
+
 ## Links
 
 * [Schematic (PDF)](Bumm-Bumm-Garage-Filter-0.2-Schematic.pdf)
