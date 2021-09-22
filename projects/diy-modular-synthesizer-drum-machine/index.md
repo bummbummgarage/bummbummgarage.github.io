@@ -34,7 +34,7 @@ See the resulting modules below and check their **video demos**, **schematics**,
 |           | [VCA 0.2](/modules/vca-0.2)                                  |    ✅     |
 | Hi-Hat    | [Envelope Generator II 0.1](/modules/envelope-generator-ii-0.1) |    ✅     |
 |           | Noise Generator 0.3 <!-- Assembly done -->                   |    ✅     |
-| Mixing    | Filter                                                       |    ✅     |
+| Mixing    | [Filter 0.2](/modules/filter-0.2/)                           |    ✅     |
 |           | [Mixer 0.1](/modules/mixer-0.1)                              |    ✅     |
 | Housing   | [Case II 0.1](/modules/case-ii-0.1)                          |    ✅     |
 |           | [PSU & Distro Board 0.1](/modules/psu-distro-board-0.1)      |    ✅     |

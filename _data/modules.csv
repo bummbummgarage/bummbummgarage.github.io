@@ -4,11 +4,13 @@ Chord Organ 0.1, 2021-08
 Clock II 0.1, 2020-09
 Envelope Generator 0.1, 2020-09
 Envelope Generator II 0.1, 2021-02
+Envelope Generator III 0.1.1, 2021-03
 Exponential Converter 0.1, 2021-02
+Filter 0.2, 2021-03
 Gate to Trigger Converter 0.1, 2020-09
 Mixer 0.1, 2021-03
 Noise Generator 0.2, 2020-11
-PSU Distro Board 0.1, 12-2020
+PSU Distro Board 0.1, 2020-12
 Sequencer 0.1, 2020-10
 VCA 0.1, 2020-11
 VCA 0.2, 2021-02
