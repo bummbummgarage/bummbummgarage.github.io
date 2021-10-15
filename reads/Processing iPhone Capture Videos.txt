@@ -1,0 +1,22 @@
+Processing iPhone Capture Videos
+
+---
+ 
+// CUT SQUARE
+// https://video.stackexchange.com/a/4571
+
+// Previewing
+ffplay -i input.mp4 -vf "crop=719:719:205:0"
+
+// Execution
+ffmpeg -i input.mp4 -filter:v "crop=719:719:205:0" square.mp4
+
+---
+
+// Cut out 10 seconds
+// https://stackoverflow.com/a/42827058
+ffmpeg -ss 00:07:17 -i square.mp4 -to 00:00:10 -c copy TEMP.mp4
+
+// Trim (empty frames at the end)
+// http://johnriselvato.com/ffmpeg-how-to-trim-x-seconds-from-the-end-of-a-video/
+ffmpeg -t 00:00:07 -i TEMP.mp4 -async 1 a.mp4
