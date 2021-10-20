@@ -1,0 +1,16 @@
+- Gate IN
+- CV IN für Release
+- CV IN Amount Knob
+- A Knob – im Grunde nur, um zu muten
+- Release Knob
+- LED
+- zwei Ausgänge
+
+(- Manual trigger)
+(- inverted Ausgang)
+(- Retrigger für LFO)
+
+---
+
+- IC: AS3310
+- https://www.eddybergman.com/2019/11/synthesizer-build-part-3-envelope.html
