@@ -26,25 +26,21 @@ According to the video "[How to make a TINY live techno modular synth in only 62
 
 Following that approach, I'm adding what is missing and replacing what needs to be improved. **Step by step**.
 
-| Component                   | Implementation                                               |
-| --------------------------- | ------------------------------------------------------------ |
-| ✅ Case and power supply     | [Case II 0.1](/modules/case-ii-0.1)<br />[PSU & Distro Board 0.1](/modules/psu-distro-board-0.1/) |
-| ✅ Clock & Divider           | [BPM Generator 20..2400 BPM with dividers](https://haraldswerk.de/Gate_and_Trigger/Pulses/Pulses.html) (Haralds:Werk) |
-| ✅ Rhythm / beat patterns    | [Sequencer 0.1](/modules/sequencer-0.1)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
-| ✅ Kick drum                 | [Kickall](https://www.befaco.org/kickall-2/) (Befaco)        |
-| 🟧 Snare / clap              | *To be defined*                                              |
-| 🟧 Hats                      | Hihats (work in progress)<br />[VCF](/modules/vcf)           |
-| ✅ Sequencer                 | [Popcorn v1.1](https://bastl-instruments.com/eurorack/modules/popcorn) (Bastl Instruments) |
-| ✅ Sample and hold           | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
-| ✅ VCO (bass)                | [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations) |
-| 🟧 Envelope Generator (bass) | *To be defined*                                              |
-| ✅ VCF (bass)                | [BF-22](https://www.befaco.org/bf-22/) (Befaco)              |
-| 🟧 Chords (lead)             | *To be defined*                                              |
-| 🟧 Envelope Generator (lead) | *To be defined*                                              |
-| ✅ VCF (lead)                | [BF-22](https://www.befaco.org/bf-22/) (Befaco)              |
-| 🟧 Delay                     | *To be defined*                                              |
-| 🟧 Reverb                    | *To be defined*                                              |
-| ✅ Mixer & VCAs              | [Voltage controlled Mixer-VCA](https://haraldswerk.de/Mixer/VC_Mixer_VCA/VC_Mixer_VCA.html) (Haralds:Werk) |
+| Component                | Implementation                                               |
+| ------------------------ | ------------------------------------------------------------ |
+| ✅ Case and power supply  | [Case II 0.1](/modules/case-ii-0.1)<br />[PSU & Distro Board 0.1](/modules/psu-distro-board-0.1/) |
+| ✅ Clock & Divider        | [BPM Generator 20..2400 BPM with dividers](https://haraldswerk.de/Gate_and_Trigger/Pulses/Pulses.html) (Haralds:Werk) |
+| ✅ Rhythm / beat patterns | [Sequencer 0.1](/modules/sequencer-0.1)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
+| ✅ Kick drum              | [Kickall](https://www.befaco.org/kickall-2/) (Befaco)        |
+| 🟧 Snare / clap           | *To be defined*                                              |
+| 🟧 Hats                   | **Voice**: Hihats (work in progress)<br />**Filter**: [VCF](/modules/vcf) |
+| ✅ Sequencer              | [Popcorn v1.1](https://bastl-instruments.com/eurorack/modules/popcorn) (Bastl Instruments) |
+| ✅ Sample and hold        | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
+| 🟧 Bass                   | **Voice**: [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations)<br />**Envelope generator**: to be defined<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
+| 🟧 Lead                   | **Voice**: [Chord Organ](https://musicthing.co.uk/pages/chord.html) (Music Thing Modular)<br />**Envelope generator**: to be defined<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
+| 🟧 Delay                  | *To be defined*                                              |
+| 🟧 Reverb                 | *To be defined*                                              |
+| ✅ Mixer & VCAs           | [Voltage controlled Mixer-VCA](https://haraldswerk.de/Mixer/VC_Mixer_VCA/VC_Mixer_VCA.html) (Haralds:Werk) |
 
 ----
 
