@@ -33,7 +33,7 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 | ✅ Rhythm / beat patterns    | [Sequencer 0.1](/modules/sequencer-0.1)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
 | ✅ Kick drum                 | [Kickall](https://www.befaco.org/kickall-2/) (Befaco)        |
 | 🟧 Snare / clap              | *To be defined*                                              |
-| 🟧 Hats                      | *To be defined*                                              |
+| 🟧 Hats                      | Hihats (work in progress)<br />[VCF](/modules/vcf)           |
 | ✅ Sequencer                 | [Popcorn v1.1](https://bastl-instruments.com/eurorack/modules/popcorn) (Bastl Instruments) |
 | ✅ Sample and hold           | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
 | ✅ VCO (bass)                | [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations) |
