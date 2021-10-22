@@ -1,9 +1,10 @@
 ---
 layout: module
 title: VCF
+description: VCF that I built for my techno rack.
 ---
 
-<!-- description: image: -->
+<!-- image: -->
 
 # VCF
 
@@ -26,6 +27,7 @@ VCF that I built for my techno rack. It's based on ["Korg late MS20 filter" by R
 
 * [Schematic (PDF)](Bumm-Bumm-Garage-VCF-Rev3-Schematic.pdf)
 * [BOM (XLS)](Bumm-Bumm-Garage-VCF-Rev3-BOM.xls)
-
-
+* [Panel Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Panel.zip)
+* [Control board Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Control_Board.zip)
+* [Main board Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Main_Board.zip)
 
