@@ -12,7 +12,7 @@ As a **synth and electronics newbie**, I first created a [software prototype bas
 
 ![](/projects/diy-modular-synthesizer-drum-machine/animation.gif)
 
-And in April 2021, I could then call the thing finished.
+And in April 2021, I could then call the thing finished. 
 
 ![](/projects/diy-modular-synthesizer-drum-machine/done1080px.jpg)
 
