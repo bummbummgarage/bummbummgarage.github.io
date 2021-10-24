@@ -34,6 +34,7 @@ Voltage controlled filter that I built for my techno rack. It's based on ["Korg 
 
 **Revision 3 (two piece PCB)**
 
+* [Video Demo](https://www.youtube.com/watch?v=bDhkRAk-1UY)
 * [Schematic (PDF)](Bumm-Bumm-Garage-VCF-Rev3-Schematic.pdf)
 * [BOM (XLS)](Bumm-Bumm-Garage-VCF-Rev3-BOM.xls)
 * [Panel Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Panel.zip)
