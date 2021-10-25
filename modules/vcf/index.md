@@ -11,6 +11,10 @@ description: Voltage controlled filter (VCF) that I built for my techno rack.
 
 Voltage controlled filter that I built for my techno rack. It's based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html).
 
+René explains in the description how to add the high pass input. I didn't manage to make it a switch, so there are **two separate inputs for high pass and low pass** 🤷‍♂️
+
+Then I accidentally found out that if I remove one of the diodes in the original design, the resonance gets a crunchy kick (which I find particularly nice for bass voices). So I implemented this function with a switch: **Soft and hard resonance**.
+
 ## Details
 
 **Left and right view on the module:**
