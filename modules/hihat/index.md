@@ -1,3 +1,20 @@
+## Doku:
+
+* Vorsicht: Noise Board richtig rum ran stecken
+* Thonkiconns falsch rum
+* Noise regulator funzt nicht wirklich wie geplant: Kann nicht minimieren wie es sollte.
+* Block Diagramm dazu.
+
+
+
+
+
+---
+
+
+
+
+
 # August 2021
 
 * https://hackaday.com/2015/04/10/logic-noise-more-cmos-cowbell/
