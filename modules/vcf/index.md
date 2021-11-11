@@ -44,4 +44,5 @@ Then I accidentally found out that if I remove one of the diodes in the original
 * [Panel Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Panel.zip)
 * [Control board Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Control_Board.zip)
 * [Main board Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Main_Board.zip)
+* Showcase and feedback on [Instagram](https://www.instagram.com/p/CWIzVhPtUZS/)
 
