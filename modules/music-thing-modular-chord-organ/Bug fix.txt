@@ -1,0 +1,52 @@
+Notes
+
+Startup problems (known problem / with the Doepfer PSU3)
+
+- ✅ https://modwiggler.com/forum/viewtopic.php?t=219856
+- ✅ https://modwiggler.com/forum/viewtopic.php?t=174946&highlight=
+- ✅ https://github.com/TomWhitwell/RadioMusic/issues/99
+
+
+- https://forum.pjrc.com/threads/56541-Teensy-3-2-not-booting
+
+
+--- 
+
+Thesen / Ansätze:
+- "Card in or out doesn't make any difference"
+- Die Power Filtering Caps von allen Modulen saugen so stark. --> "Emptying the case" --> "problem is still there"
+- "I think there was also a software solution." (Radio Music) --> wo ist das?
+- Mal ohne SD Card starten
+- Mal alle raus und gucken, wo es Probleme gibt
+- SD card holder braucht extra cap
+
+- "I have fixed this issue on my board by re-flowing the solder on one of the electrolytic capacitors on the power input"
+
+- "the WMD Soft Start made no difference"
+
+- Soft Start Module: https://wmdevices.com/products/soft-start-module
+
+- "the problem moved over with the card"
+
+
+
+----
+
+GITHUB
+
+Hi guys, thnx for the contribution so far! I am experiencing the same problem, but am acutally happy having found this thread 😅
+
+My setup:
+- Chord Organ DIY Kit Rev2 (the red one)
+- SD card: SanDisk Ultra 32 GB
+- PSU: Doepfer PSU3
+- Digital module neighbourhood: Bastl Popcorn (Sequencer)
+
+I tested the workaround of pulling the SD card out when starting up. After ~5 attempts with a (hopefully completely decharged system) it seem to fix the bug.
+
+I would love to prevent or automate the workaround in the future.
+
+That's why: 
+
+
+
