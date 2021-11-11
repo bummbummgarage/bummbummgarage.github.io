@@ -14,7 +14,7 @@ As a **synth and electronics newbie**, I first created a [software prototype bas
 
 And in April 2021, I could then call the thing finished.
 
-![](/projects/diy-modular-synthesizer-drum-machine/done1080px.jpg)
+![](/projects/diy-modular-synthesizer-drum-machine/done-1080px.jpg)
 
 See the resulting modules below and check their **video demos**, **schematics**, **stripboard/PCB layouts** and **references** to other fellows' designs ❤️️
 
