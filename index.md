@@ -33,11 +33,11 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 | ✅ Rhythm / beat patterns | [Sequencer 0.1](/modules/sequencer-0.1)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
 | ✅ Kick drum              | [Kickall](https://www.befaco.org/kickall-2/) (Befaco)        |
 | 🟧 Snare / clap           | *To be defined*                                              |
-| 🟧 Hats                   | **Voice**: Hihats (work in progress)<br />**Filter**: [VCF](/modules/vcf) |
+| 🟧 Hats                   | **Voice**: [Hatz V2](http://patchingpanda.com/hatz) (Patching Panda)<br />**Mixer**: ***to be defined*** |
 | ✅ Sequencer              | [Popcorn v1.1](https://bastl-instruments.com/eurorack/modules/popcorn) (Bastl Instruments) |
 | ✅ Sample and hold        | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
-| 🟧 Bass                   | **Voice**: [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations)<br />**Envelope generator**: to be defined<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
-| 🟧 Lead                   | **Voice**: [Chord Organ](https://musicthing.co.uk/pages/chord.html) (Music Thing Modular)<br />**Envelope generator**: to be defined<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
+| 🟧 Bass                   | **Envelope generator**: to be defined<br />**Voice**: [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
+| 🟧 Lead                   | **Envelope generator**: to be defined<br />**Voice**: [Chord Organ](https://musicthing.co.uk/pages/chord.html) (Music Thing Modular)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
 | 🟧 Delay                  | *To be defined*                                              |
 | 🟧 Reverb                 | *To be defined*                                              |
 | ✅ Mixer & VCAs           | [Voltage controlled Mixer-VCA](https://haraldswerk.de/Mixer/VC_Mixer_VCA/VC_Mixer_VCA.html) (Haralds:Werk) |
