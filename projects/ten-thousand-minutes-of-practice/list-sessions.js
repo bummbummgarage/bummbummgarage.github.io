@@ -20,7 +20,13 @@ $( document ).ready(function() {
 			var row = "<tr>";
 
 			row += "<td>";
-			row += $( this )[0].Zeitstempel;
+			var d = parseGermanDate( $( this )[0].Zeitstempel );
+			year = d.getFullYear();
+			monthIndex = d.getMonth();
+			monthName = months[monthIndex];
+			day = d.getDate();
+			row += day + " " + monthName + " " + year;
+
 			row += "</td>";
 
 			row += "<td>";
@@ -43,3 +49,30 @@ $( document ).ready(function() {
 	});
 
 });
+
+
+// Parse german date format.
+// As seen on https://stackoverflow.com/a/2945150
+function parseGermanDate(input) {
+  var parts = input.match(/(\d+)/g);
+  // note parts[1]-1
+  return new Date(parts[2], parts[1]-1, parts[0]);
+}
+
+// Getting the month names
+// As seen on https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
+
