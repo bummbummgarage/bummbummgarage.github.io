@@ -17,17 +17,17 @@ $( document ).ready(function() {
 
 			row += "<td>";
 			row += $( this )[0].Zeitstempel;
-			// console.log( $( this )[0].Zeitstempel );
 			row += "</td>";
 
 			row += "<td>";
 			row += $( this )[0].Minutes;
-			// console.log( $( this )[0].Minuten );
 			row += "</td>";
 
+			// Link
 			row += "<td>";
-			row += $( this )[0].Link;
-			// console.log( $( this )[0].Link );
+			var link = $( this )[0].Link;
+			var text = link.replace("https://","");
+			row += "<a href='"+link+"'>"+text+"</a>";
 			row += "</td>";
 
 			row += "</tr>";
