@@ -11,6 +11,10 @@ $( document ).ready(function() {
 	// Add entries to the table
 	$.get( "https://opensheet.vercel.app/1uzUp3vcmD3A8ZHVXM3ih6do9SHKS0ISE8IcS67cavKY/RawData", function( data ) {
 
+		// Reverse order of elements
+		data.reverse();
+
+		// Append html to the table
 		$.each(data, function() {
 
 			var row = "<tr>";
