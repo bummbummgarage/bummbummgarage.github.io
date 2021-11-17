@@ -23,7 +23,7 @@ tagline: Steffen Making A Synth
 description: >- # this means to ignore newlines until next node 
   I woke up knowing I had to build my own drum machine from scratch. 
   Bass/snare/hi-hat synthesized by manipulating current.
-url: "https://bummbummgarage.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.bummbummgarage.com" # the base hostname & protocol for your site, e.g. http://example.com
 author: Steffen Lohaus
 logo: /assets/img/logo.jpg
 social:
