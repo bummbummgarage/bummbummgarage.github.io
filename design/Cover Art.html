@@ -1,0 +1,95 @@
+<html>
+  <title>Cover Art</title>
+  <style type="text/css">
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #container {
+      width: 720px;
+      height:720px;
+      background-color: #fff6be;
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+
+    .container input[type="button"] {
+      position: relative;
+      float: left;
+      font-size: 24px;
+      padding: 10px;
+      margin: 10px;
+      z-index: 1;
+    }
+
+    #canvas {
+      position: absolute;
+      width: 720px;
+      height:720px;
+      left: 0;
+      top: 0;
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+
+  </style>
+  <script type="text/javascript">
+    
+    // As initially seen on https://codepen.io/pintergabor/pen/BewJq
+    // Return a random color
+    var colors = ["#24920f", "#f13f57", "#fff6be"];
+    function randomColor(){
+      var color = colors[Math.floor(Math.random()*colors.length)];
+      return color;
+    }
+
+    // Draw some lines
+    function draw(n){
+      // Canvas
+      var c= document.getElementById("canvas");
+      var ctx= c.getContext("2d");
+      // Draw lines
+      for (var i= 0; i < n; i++) {
+        ctx.beginPath();
+        ctx.moveTo(c.width*Math.random(), c.height*Math.random());
+        ctx.lineTo(c.width*Math.random(), c.height*Math.random());
+        ctx.strokeStyle= randomColor();
+        ctx.stroke();
+      }
+    }
+
+    // Set container random background color.
+    function setContainerBG() {
+      var container = document.getElementById( "container" );
+      container.style.backgroundColor = randomColor();
+    }
+
+    // Set size of canvas and
+    // draw some lines at startup
+    window.onload= function(){
+      var c= document.getElementById("canvas");
+      c.width= c.offsetWidth;
+      c.height= c.offsetHeight;
+      draw(100);
+      setContainerBG();
+    }
+
+  </script>
+<body>
+  <div id="container">
+    <canvas id="canvas"></canvas>
+
+    <!--
+    <input type="button" value="Draw more" onclick="draw(100)"/>
+    <input type="button" value="Draw much more" onclick="draw(1000)"/>
+  -->
+
+  </div>
+</body>
+</html>
+
+
