@@ -58,6 +58,8 @@
         ctx.moveTo(c.width*Math.random(), c.height*Math.random());
         ctx.lineTo(c.width*Math.random(), c.height*Math.random());
         ctx.strokeStyle= randomColor();
+        const rndInt = Math.floor(Math.random() * 20) + 1;
+        ctx.lineWidth = rndInt;
         ctx.stroke();
       }
     }
