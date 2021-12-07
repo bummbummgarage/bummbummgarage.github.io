@@ -45,7 +45,7 @@ int bands = 8; // Define how many FFT bands to use (this needs to be a power of 
 float[] spectrum = new float[bands];
 BeatDetector beatDetector; // Docs: https://github.com/processing/processing-sound/blob/master/examples/Analysis/BeatDetection/BeatDetection.pde
 
-int bpm = 130; // The BPM of the song.
+int bpm = 110; // The BPM of the song.
 int bpmResolution = 4; // The possible images (changes) per beat.
 boolean isBeat = false;
 

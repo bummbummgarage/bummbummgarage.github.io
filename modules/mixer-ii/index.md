@@ -1,0 +1,1 @@
+Idee: Unverbundene Eingänge als DC Source, siehe https://www.modulargrid.net/e/intellijel-triplatt
