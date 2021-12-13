@@ -2,9 +2,6 @@
 
 ## TODOs
 
-* Potis Footprint ohne Schlitze
-* Panel bauen
-* Übereinander legen
 * Alles bestellen
 
 
