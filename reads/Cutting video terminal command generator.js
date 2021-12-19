@@ -1,5 +1,5 @@
-var video_length = 359; // in seconds.
-var snippet_interval = 30; // 300 = every 5 minutes, 180 = every 3 minutes
+var video_length = 799; // in seconds.
+var snippet_interval = 60; // 300 = every 5 minutes, 180 = every 3 minutes
 var snippet_length = 7;
 
 commands = "";

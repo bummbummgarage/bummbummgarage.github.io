@@ -1,8 +1,6 @@
 # Envelope Follower
 
-## TODOs
 
-* Alles bestellen
 
 
 

@@ -1,3 +1,12 @@
+## Kalibrierung
+
+* Vceg Kalibrierung: A ganz runter drehen (trimmer)
+
+
+
+----
+
+
 
 CURRENT DRAW, Breadboard, Vollgas
 17 mA +12V
