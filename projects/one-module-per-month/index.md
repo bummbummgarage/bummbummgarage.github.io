@@ -20,7 +20,7 @@ When I started DIY synth stuff about two years ago, I looked in deep admiration 
 
 **Over a period of six months I will release one module per month as a buyable DIY kit.** I haven't done anything like that yet. That's why I'm looking forward to the ideas, through the wins and fails that arise along the way 💪
 
-From a big picture view I'm still iterating on my mobile Techno rack. This is where the specific ideas for my own modules come from, especially when these requirements are not yet served on the DIY kit market.
+From a big picture view I'm still iterating on my mobile Techno rack. This is where the specific ideas for my modules come from, especially when these requirements are not yet served on the DIY kit market.
 
 ## Design Goals
 
