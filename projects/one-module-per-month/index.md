@@ -34,7 +34,7 @@ I work with certain principles and constraints:
 
 ## Roadmap (Modules)
 
-First things first. The types of modules are fixed and by time this roadmap will be filled with more details 🌱
+The types of modules are fixed and by time this roadmap will be filled with more details 🌱
 
 | Month      | Module                                                       |
 | ---------- | ------------------------------------------------------------ |
