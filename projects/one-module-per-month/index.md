@@ -12,7 +12,7 @@ Over a period of six months I will release one module per month as a buyable DIY
 
 1. [The Story Behind](#the-story-behind)
 2. [Design Goals](#design-goals)
-3. [Roadmap](#roadmap)
+3. [Roadmap (Modules)](#roadmap-modules)
 
 ## The Story Behind
 
@@ -32,7 +32,7 @@ I work with certain principles and constraints:
 2. **Components that are always available** – I like to have all the components for a new kit already in my modest box. For example, that's why I like to use widely available op amps, like uA741 and TL072.
 3. **Compact module design** – I don't want to break or change my case. I need modules with as much functionality as possible in a limited space.
 
-## Roadmap
+## Roadmap (Modules)
 
 | Month      | Module                                                       |
 | ---------- | ------------------------------------------------------------ |
