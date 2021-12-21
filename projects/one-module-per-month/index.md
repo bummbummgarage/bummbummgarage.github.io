@@ -16,7 +16,7 @@ Over a period of six months I will release one module per month as a buyable DIY
 
 ## The Story Behind
 
-When I started DIY synth stuff about two years ago, I looked in deep admiration at the makers of modules and DIY kits 🤩 Nothing has been lost in the fascination. With the circuits and modules I built myself over time, I took bigger and bigger steps and was always grateful for the positive feedback! At the end of this year (2021), the opportunity has arisen to distribute my modules as DIY kits. And with this a little dream comes true for me 🦄
+When I started DIY synth stuff in May 2020, I looked in deep admiration at the makers of modules and DIY kits 🤩 Nothing has been lost in the fascination. With the circuits and modules I built myself over time, I took bigger and bigger steps and was always grateful for the positive feedback! At the end of this year (2021), the opportunity has arisen to distribute my modules as DIY kits. And with this a little dream comes true for me 🦄
 
 **Over a period of six months I will release one module per month as a buyable DIY kit.** I haven't done anything like that yet. That's why I'm looking forward to the ideas, through the wins and fails that arise along the way 💪
 
@@ -33,6 +33,8 @@ I work with certain principles and constraints:
 3. **Compact module design** – I don't want to break or change my case. I need modules with as much functionality as possible in a limited space.
 
 ## Roadmap (Modules)
+
+First things first. The types of modules are fixed and by time this roadmap will be filled with more details 🌱
 
 | Month      | Module                                                       |
 | ---------- | ------------------------------------------------------------ |
