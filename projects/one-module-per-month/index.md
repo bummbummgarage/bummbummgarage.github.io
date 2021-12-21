@@ -11,7 +11,7 @@ Over a period of six months I will release one module per month as a buyable DIY
 **Contents**
 
 1. [The Story Behind](#the-story-behind)
-2. [Design Principles](#design-principles)
+2. [Design Goals](#design-goals)
 3. [Roadmap](#roadmap)
 
 ## The Story Behind
@@ -22,11 +22,11 @@ When I started DIY synth stuff about two years ago, I looked in deep admiration 
 
 From a big picture view I'm still iterating on my mobile Techno rack. This is where the specific ideas for my own modules come from, especially when these requirements are not yet served on the DIY kit market.
 
-## Design Principles
+## Design Goals
 
-When designing modules, I consider the experience of my DIY journey over the last 1.5 years. Having seen highest highs of euphoria and deepest valleys of demotivation, I know some pitfalls and try to keep my designs as frustration-free as possible.
+When designing modules, I consider the experience of my DIY journey over the last 1.5 years. Having seen highest highs of euphoria and deepest valleys of demotivation, I know some pitfalls and try to keep my designs **as frustration-free as possible**.
 
-I work with certain goals and constraints:
+I work with certain principles and constraints:
 
 1. **Few different components** – I try to limit the values and types to few and simple. For example, I am very happy if the values of the resistors in a kit are limited to 1K, 10K, and 100K.
 2. **Components that are always available** – I like to have all the components for a new kit already in my modest box. For example, that's why I like to use widely available op amps, like uA741 and TL072.
