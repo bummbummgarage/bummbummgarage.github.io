@@ -34,8 +34,6 @@ I work with certain principles and constraints:
 
 ## Roadmap (Modules)
 
-The types of modules are fixed and by time this roadmap will be filled with more details 🌱
-
 | Month      | Module                                                       |
 | ---------- | ------------------------------------------------------------ |
 | *February* | **Voltage Controlled Filter (VCF)**<br />![](Bumm-Bumm-Garage-Voltage-Controlled-Filter.png)<br />MS-20 style, based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html) (with friendly permission). |
