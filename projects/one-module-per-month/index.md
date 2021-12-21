@@ -38,7 +38,7 @@ I work with certain principles and constraints:
 | ---------- | ------------------------------------------------------------ |
 | *February* | **Voltage Controlled Filter (VCF)**<br />![](Bumm-Bumm-Garage-Voltage-Controlled-Filter.png)<br />MS-20 style, based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html) (with friendly permission). |
 | *March*    | **Voltage Controlled Envelope Generator (VCEG)**<br />![](Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png)<br />On a [AS3320](https://www.alfarzpp.lv/eng/sc/AS3320.php) basis. |
-| *April*    | **Envelope Follower (ENVF)**<br />![](Bumm-Bumm-Garage-Envelope-Follower.png)<br />Built with simple analog technology. |
-| *May*      | **Utility Mixer**<br />Built with simple analog technology.  |
+| *April*    | **Envelope Follower (ENVF)**<br />![](Bumm-Bumm-Garage-Envelope-Follower.png)<br />Handy tool for sidechaining in 2hp. Built with simple analog technology. |
+| *May*      | **Utility Mixer**<br />Two channel mixer for audio and CV in 2hp. Based on simple analog technology. |
 | *June*     | **Clock Multiplier**<br />Based on an [ATMega328](https://en.wikipedia.org/wiki/ATmega328). |
 | *July*     | **Trigger to Gate Converter**<br />Built with simple analog technology. |
