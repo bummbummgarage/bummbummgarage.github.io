@@ -1,7 +1,6 @@
 ---
 layout: project
 title: DIY Drum Synthesizer
-
 ---
 
 # DIY Modular Synth Drum Machine
