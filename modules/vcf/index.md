@@ -46,3 +46,9 @@ Then I accidentally found out that if I remove one of the diodes in the original
 * [Main board Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Main_Board.zip)
 * Showcase and feedback on [Instagram](https://www.instagram.com/p/CWIzVhPtUZS/)
 
+## Improvement Potential
+
+**Revision 3 (two piece PCB)**
+
+* Via Instagram DM: "Also just a quick comment, your thonk jack footprints seem to have rather large solder pads, and it is very easy for solder to bridge from one to the other due to the very small gap, you might want to make the gap larger by making the pad slightly smaller"
+
