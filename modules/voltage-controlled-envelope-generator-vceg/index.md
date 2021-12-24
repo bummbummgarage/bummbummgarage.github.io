@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Voltage Controlled Envelope Generator (VCEG)
-description: Voltage Controlled Envelope Generator I built for my techno rack.
+description: Voltage Controlled Envelope Generator I created for my techno rack.
 ---
 
 <!-- image: modules/vcf/Bumm-Bumm-Garage-VCF-Rev3.jpg -->

@@ -32,12 +32,12 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 | ✅ Clock & Divider        | [BPM Generator 20..2400 BPM with dividers](https://haraldswerk.de/Gate_and_Trigger/Pulses/Pulses.html) (Haralds:Werk) |
 | ✅ Rhythm / beat patterns | [LL8](https://www.robaux.io/ll8) (Robaux)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
 | ✅ Kick drum              | [Kickall](https://www.befaco.org/kickall-2/) (Befaco)        |
-| 🟧 Snare / clap           | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Noise**: From the [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
+| ✅ Snare / clap           | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Noise**: From the [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
 | 🟧 Hats                   | **Voice**: [Hatz V2](http://patchingpanda.com/hatz) (Patching Panda)<br />**Mixer**: ***to be defined*** |
 | ✅ Sequencer              | [Popcorn v1.1](https://bastl-instruments.com/eurorack/modules/popcorn) (Bastl Instruments) |
 | ✅ Sample and hold        | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
-| 🟧 Bass                   | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Voice**: [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
-| 🟧 Lead                   | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Voice**: [Chord Organ](https://musicthing.co.uk/pages/chord.html) (Music Thing Modular)<br />**Filter**: [VCF](/modules/vcf/) |
+| ✅ Bass                   | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Voice**: [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
+| ✅ Lead                   | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Voice**: [Chord Organ](https://musicthing.co.uk/pages/chord.html) (Music Thing Modular)<br />**Filter**: [VCF](/modules/vcf/) |
 | 🟧 Reverb                 | *To be defined*                                              |
 | ✅ Mixer & VCAs           | [Voltage controlled Mixer-VCA](https://haraldswerk.de/Mixer/VC_Mixer_VCA/VC_Mixer_VCA.html) (Haralds:Werk) |
 
