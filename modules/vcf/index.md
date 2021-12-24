@@ -51,4 +51,5 @@ Then I accidentally found out that if I remove one of the diodes in the original
 **Revision 3 (two piece PCB)**
 
 * Via Instagram DM: "Also just a quick comment, your thonk jack footprints seem to have rather large solder pads, and it is very easy for solder to bridge from one to the other due to the very small gap, you might want to make the gap larger by making the pad slightly smaller"
+* Via reddit: "Looking at the panel, I think this module would benefit from moving the Cutoff label down below the CV input. This would make it more clear that the large red knob is the cutoff control and the smaller green knob is the CV amount"
 
