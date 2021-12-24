@@ -30,6 +30,13 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 
 ## Use Cases (Testing)
 
+* Attack for (un)muting
+* Bass line
+* Chord Lead
+* Varying envelopes on chord filter
+* Snare from noise
+* Rumbling from noise
+
 ## Calibration
 
 * Vceg Kalibrierung: A ganz runter drehen (trimmer)
