@@ -21,14 +21,14 @@ When I started DIY synth stuff in May 2020, I looked in deep admiration at the m
 
 **Over a period of six months, I will release one module per month as a buyable DIY kit.** I haven't done anything like that yet. That's why I'm looking forward to the ideas, through the wins and fails that arise along the way 💪
 
-From a big picture view I'm still iterating on my mobile Techno rack. This is where the specific ideas for my modules come from, especially when these requirements are not yet served on the DIY kit market.
+From a big picture view I'm still iterating on my mobile techno rack. This is where the specific ideas for my modules come from, especially when these requirements are not yet served on the DIY kit market.
 
 ## Roadmap (Modules)
 
 | Month    | Module                                                       |
 | -------- | ------------------------------------------------------------ |
 | *March*  | **Voltage Controlled Filter (VCF)**<br />![](Bumm-Bumm-Garage-Voltage-Controlled-Filter.png)<br />MS-20 style, based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html) (with friendly permission). |
-| *April*  | **Voltage Controlled Envelope Generator (VCEG)**<br />![](Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png)<br />On a [AS3320](https://www.alfarzpp.lv/eng/sc/AS3320.php) basis. |
+| *April*  | **Voltage Controlled Envelope Generator (VCEG)**<br />![](Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png)<br />On a [AS3310](https://www.alfarzpp.lv/eng/sc/AS3310.php) basis. |
 | *May*    | **Envelope Follower (ENVF)**<br />![](Bumm-Bumm-Garage-Envelope-Follower.png)<br />Handy tool for sidechaining in 2hp. Built with simple analog technology. |
 | *June*   | **Utility Mixer**<br />Two channel mixer for audio and CV in 2hp. Based on simple analog technology. |
 | *July*   | **Clock Multiplier**<br />Based on an [ATMega328](https://en.wikipedia.org/wiki/ATmega328). |

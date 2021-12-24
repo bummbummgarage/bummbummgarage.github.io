@@ -31,7 +31,7 @@ Then I accidentally found out that if I remove one of the diodes in the original
 
 ## Links
 
-**Revision 2 (breadboard)**
+**Revision 2 (breadboard prototype)**
 
 * [Schematic (PDF)](Bumm-Bumm-Garage-VCF-Rev2-Schematic.pdf)
 * Showcase and feedback on [Instagram](https://www.instagram.com/p/CT4t3L1NxrV/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/ppebad/vcf_lp_hp_ms20_inspired/)
