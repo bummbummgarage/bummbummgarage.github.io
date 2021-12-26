@@ -12,11 +12,10 @@ description: I'm creating a mobile rack to play live. And because it's fun, I'll
 
 This is the kind of music that I am envisioning:
 
-* Lady Starlight, Karenn, Blawan, Hiroko Yamamura. 
-* [German Underground Techno, Dark & Hard, Fear N Loathing in Berlin](https://www.youtube.com/watch?v=cjF-9In3hqU&t=25s)
-* [Charlotte de Witte - Form](https://www.youtube.com/watch?v=zvAJbFNuyCA)
-* [Leipzig I (recorded with the Kaossilator App on my iPhone)](https://soundcloud.com/steffenlohaus/leipzig-i)
-* [Style Guide: Techno (Sample project by James Wiltshire)](https://www.youtube.com/watch?v=0Q6yR4s4syA&t=990s)
+* [Lady Starlight](https://www.youtube.com/watch?v=JXC-RGnLXOU)
+* [Karenn](https://www.youtube.com/watch?v=uVsfzprO7zs)
+* [Amelie Lens](https://www.youtube.com/watch?v=GJkuTx1DQzg)
+* [Layton Giordani](https://youtu.be/jYXeI_TGx9s?t=110)
 
 ## Setup
 
