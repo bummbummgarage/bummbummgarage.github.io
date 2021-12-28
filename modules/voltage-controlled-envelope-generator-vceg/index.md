@@ -1,12 +1,13 @@
 ---
 layout: module
 title: Voltage Controlled Envelope Generator (VCEG)
+image: /modules/voltage-controlled-envelope-generator-vceg/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg
 description: Voltage Controlled Envelope Generator I created for my techno rack.
 ---
 
-<!-- image: modules/vcf/Bumm-Bumm-Garage-VCF-Rev3.jpg -->
-
 # Voltage Controlled Envelope Generator (VCEG)
+
+![](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg)
 
 Voltage Controlled Envelope Generator I built for my techno rack. In this context I mostly have fastly repeating trigger signals that just need some release to create the bass or lead tone.
 
@@ -24,9 +25,21 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 - ✅ Eats both, gates and triggers
 - ✅ 2 outputs
 
-<!--
-
 ## Details
+
+**Left and right view on the module:**
+
+![](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Left-and-Top.JPG)
+
+**Control board (bottom):**
+
+![](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Control-Board.JPG)
+
+**Main board (top and bottom):**
+
+![](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Main-Board.JPG)
+
+<!--
 
 ## Use Cases (Testing)
 
