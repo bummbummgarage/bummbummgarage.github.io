@@ -52,4 +52,6 @@ Then I accidentally found out that if I remove one of the diodes in the original
 
 * Via Instagram DM: "Also just a quick comment, your thonk jack footprints seem to have rather large solder pads, and it is very easy for solder to bridge from one to the other due to the very small gap, you might want to make the gap larger by making the pad slightly smaller"
 * Via reddit: "Looking at the panel, I think this module would benefit from moving the Cutoff label down below the CV input. This would make it more clear that the large red knob is the cutoff control and the smaller green knob is the CV amount"
+* RS: "The way the high pass input is done is almost the same as I suggested on my page / I did with my original filter. But you have a 10k resistor (R3) in series. (This will change the transfer function of the filter, also in LP mode, maybe this is wanted, but true to original it would be without this)."
+* RS: "There is no reverse polarity protection. A couple of 1N4148 in series with the supply would prevent the worst."
 
