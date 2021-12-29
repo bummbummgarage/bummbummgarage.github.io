@@ -15,7 +15,7 @@ René explains in the description how to add the high pass input. I didn't manag
 
 Then I accidentally found out that if I remove one of the diodes in the original design, the resonance gets a crunchy kick (which I find particularly nice for bass voices). So I implemented this function with a switch: **Soft and hard resonance**.
 
-## Details
+## Specifications
 
 **Left and right view on the module:**
 
@@ -29,7 +29,7 @@ Then I accidentally found out that if I remove one of the diodes in the original
 
 ![](Bumm-Bumm-Garage-VCF-Rev3-Main_Board.JPG)
 
-## Links
+## Resources
 
 **Revision 2 (breadboard prototype)**
 

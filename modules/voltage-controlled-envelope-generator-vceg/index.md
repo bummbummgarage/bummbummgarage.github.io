@@ -25,7 +25,7 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 - ✅ Eats both, gates and triggers
 - ✅ 2 outputs
 
-## Details
+## Specifications
 
 **Left and right view on the module:**
 
@@ -41,10 +41,10 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 
 <!--
 
-## Use Cases (Testing)
+## Demo Videos
 
-* Attack for (un)muting
-* Bass line
+* X Attack for (un)muting
+* X Bass line
 * Chord Lead
 * Varying envelopes on chord filter
 * Snare from noise
@@ -56,7 +56,7 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 
 -->
 
-## Links
+## Resources
 
 **Revision 1 (breadboard prototype)**
 
@@ -66,6 +66,8 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 
 **Revision 2 (two piece PCB)**
 
+* [Video Demo: Bass Lines](https://youtu.be/kLFvXCiCb9g)
+* [Video Demo: Filter On Chords](https://www.youtube.com/watch?v=B0mmiwY81mQ)
 * [Schematic (PDF)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Schematic.pdf)
 * [Panel Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Panel.zip)
 * [Control board Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Control-Board.zip)
