@@ -72,4 +72,5 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 * [Panel Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Panel.zip)
 * [Control board Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Control-Board.zip)
 * [Main board Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-1-Gerber-Main-Board.zip)
+* Showcase and feedback on [Instagram](https://www.instagram.com/p/CYDvkR_swXZ/)
 
