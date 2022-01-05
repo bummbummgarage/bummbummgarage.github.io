@@ -51,6 +51,6 @@ Each module will go through certain stages in its development:
 2. PCB & Panel Prototype, to get feedback on the module and documentation.
 3. DIY Kit Release.
 
-For the second stage, **I am looking for eager people to test one or more DIY kits** at the given time. At this stage I will ship the kits at cost (around 10 € for PCB, panel and shipping worldwide). You then have to source the components yourself and I would ask you for feedback within four weeks.
+For the second stage, **I am looking for eager people to test one or more DIY kits** at the given time. At this stage I will ship the kits at cost (around 12 € for PCB, panel and shipping worldwide). You then have to source the components yourself and I would ask you for feedback within four weeks.
 
 If you're generally interested, **[please send me your data to become a beta tester](https://docs.google.com/forms/d/e/1FAIpQLSfKtfvwYhGxv0wBNFluhGeDvSWaMq5O3WMSM092OYp7E4YglQ/viewform)**.
