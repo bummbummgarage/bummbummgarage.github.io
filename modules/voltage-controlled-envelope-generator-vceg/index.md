@@ -69,6 +69,7 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 * [Video Demo: Bass Lines](https://youtu.be/kLFvXCiCb9g)
 * [Video Demo: Filter On Chords](https://www.youtube.com/watch?v=B0mmiwY81mQ)
 * [Schematic (PDF)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Schematic.pdf)
+* [BOM (XLS)](REV-2/Bumm-Bumm-Garage-VCEG-Rev2-BOM.xls)
 * [Panel Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Panel.zip)
 * [Control board Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Control-Board.zip)
 * [Main board Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-1-Gerber-Main-Board.zip)
