@@ -45,6 +45,7 @@ Then I accidentally found out that if I remove one of the diodes in the original
 * [Control board Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Control_Board.zip)
 * [Main board Gerber files (ZIP)](Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Main_Board.zip)
 * Showcase and feedback on [Instagram](https://www.instagram.com/p/CWIzVhPtUZS/)
+* Improvement potential and issues on [GitHub](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BVCF+Rev3%5D)
 
 ## Improvement Potential
 
