@@ -21,7 +21,6 @@ In the run, I then served the requirement to be able to sum control voltage as w
 * ✅ Mixes audio signals and control voltage
 * ✅ Inputs are normalled to +6V and -6V
 * ✅ Buffered inputs
-* ✅ Non-inverted output
 
 ## Resources
 
