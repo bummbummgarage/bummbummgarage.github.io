@@ -32,7 +32,7 @@ Following that approach, I'm adding what is missing and replacing what needs to 
 | ✅ Rhythm / beat patterns | [LL8](https://www.robaux.io/ll8) (Robaux)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
 | ✅ Kick drum              | [Kickall](https://www.befaco.org/kickall-2/) (Befaco)        |
 | ✅ Snare / clap           | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Noise**: From the [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
-| 🟧 Hats                   | **Voice**: [Hatz V2](http://patchingpanda.com/hatz) (Patching Panda)<br />**Mixer**: ***to be defined*** |
+| ✅ Hats                   | **Voice**: [Hatz V2](http://patchingpanda.com/hatz) (Patching Panda)<br />**Mixer**: [Mixer II](/modules/mixer-ii) |
 | ✅ Sequencer              | [Popcorn v1.1](https://bastl-instruments.com/eurorack/modules/popcorn) (Bastl Instruments) |
 | ✅ Sample and hold        | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
 | ✅ Bass                   | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Voice**: [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
