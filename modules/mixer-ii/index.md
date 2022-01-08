@@ -27,5 +27,5 @@ In the run, I then served the requirement to be able to sum control voltage as w
 
 **Revision 1 (stripboard prototype)** 
 
-* [Schematic (PDF)](Bumm-Bumm-Garage-Mixer-II-Rev1-Schematic.pdf)
-* [Stripboard Layout (PDF)](Bumm-Bumm-Garage-Mixer-II-Rev1-Breadboard-Layout.pdf)
+* [Schematic (PDF)](Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Schematic.pdf)
+* [Stripboard Layout (PDF)](Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Breadboard-Layout.pdf)
