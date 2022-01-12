@@ -13,6 +13,7 @@ description: I'm creating a mobile rack to play live. And because it's fun, I'll
 This is the kind of music that I am envisioning:
 
 * [Lady Starlight](https://www.youtube.com/watch?v=JXC-RGnLXOU)
+* [Tunegirl](https://www.instagram.com/the_tunegirl/)
 * [Karenn](https://www.youtube.com/watch?v=uVsfzprO7zs)
 * [Amelie Lens](https://www.youtube.com/watch?v=GJkuTx1DQzg)
 * [Layton Giordani](https://youtu.be/jYXeI_TGx9s?t=110)
