@@ -8,7 +8,7 @@ description: Ultra simple two-channel mixer in 2hp. You can mix audio signals, s
 
 # Mixer II
 
-Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage. There are attenuators and mute switches per channel. When not connected, the channels provide up to +6V and -6V, depending on the particular attenuation (inspired by the [intellijel Triplatt](https://intellijel.com/shop/eurorack/triplatt/)).
+Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage. There are attenuators and mute switches per channel.
 
 I built the first iteration of this module for my techno rack. I needed a slim mixer to sum the two channels of my hihats module because I didn't have more channels left on my main mixer 💡
 
@@ -19,7 +19,6 @@ In the run, I then served the requirement to be able to sum control voltage as w
 * ✅ 2 channels
 * ✅ Attenuation and mute per channel
 * ✅ Mixes audio signals and control voltage
-* ✅ Inputs are normalled to +6V and -6V
 * ✅ Buffered inputs
 
 ## Resources
@@ -28,3 +27,12 @@ In the run, I then served the requirement to be able to sum control voltage as w
 
 * [Schematic (PDF)](Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Schematic.pdf)
 * [Stripboard Layout (PDF)](Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Breadboard-Layout.pdf)
+
+<!--
+
+Rev2 Improvment Potential:
+
+* Remark: DC offset will not be removed. Audio can be strange if it has DC offset.
+* Clicking when muting.
+
+-->
