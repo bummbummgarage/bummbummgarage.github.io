@@ -1,12 +1,12 @@
 ---
 layout: project
 title: One Module Per Month
-description: Over a period of six months I will release one module per month as a buyable DIY kit.
+description: Over a period of six months I will release one module per month as a buyable DIY kit (through-hole).
 ---
 
 # One Module Per Month
 
-Over a period of six months, I will release one module per month as a buyable DIY kit.
+Over a period of six months, I will release one module per month as a buyable DIY kit (through-hole).
 
 **Contents**
 

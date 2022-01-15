@@ -1,14 +1,14 @@
 ---
 layout: module
 title: Mixer II
-description: Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage.
+description: Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage, like envelopes.
 ---
 
 <!-- image: modules/vcf/Bumm-Bumm-Garage-VCF-Rev3.jpg -->
 
 # Mixer II
 
-Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage. There are attenuators and mute switches per channel.
+Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage, like envelopes. There are attenuators and mute switches per channel.
 
 I built the first iteration of this module for my techno rack. I needed a slim mixer to sum the two channels of my hihats module because I didn't have more channels left on my main mixer 💡
 
@@ -27,6 +27,15 @@ In the run, I then served the requirement to be able to sum control voltage as w
 
 * [Schematic (PDF)](Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Schematic.pdf)
 * [Stripboard Layout (PDF)](Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Breadboard-Layout.pdf)
+
+<!--
+
+Demo Videos:
+
+* Mixing hihats
+* Mixing envelopes in side chaining
+
+-->
 
 <!--
 
