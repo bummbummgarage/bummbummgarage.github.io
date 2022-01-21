@@ -2,13 +2,12 @@
 layout: module
 title: Mixer II
 description: Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage, like envelopes.
+image: modules/mixer-ii/Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3.jpg
 ---
-
-<!-- image: modules/vcf/Bumm-Bumm-Garage-VCF-Rev3.jpg -->
 
 # Mixer II
 
-![](Rev2/Bumm-Bumm-Garage-Mixer-II-Rev2.jpg)
+![](Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3.jpg)
 
 Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage, like envelopes. There are attenuators and mute switches per channel.
 
@@ -45,6 +44,8 @@ What's new? Implemented a non-inverted output.
 
 What's new? Removed switches (and thereby their clicking) and added variable master gain.
 
+* [Video Demo: Mixing Hihats](https://www.youtube.com/watch?v=H-lA9sQpHlk)
+* [Video Demo: Mixing Envelopes](https://www.youtube.com/watch?v=vhxrNxvZDss)
 * [Schematic (PDF)](Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3-Schematic.pdf)
 
 <!--
