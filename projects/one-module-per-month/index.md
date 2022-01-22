@@ -31,7 +31,7 @@ From a big picture view I'm still iterating on my mobile techno rack. This is wh
 | *April*  | **Voltage Controlled Envelope Generator (VCEG)**<br />![](Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png)<br />On a [AS3310](https://www.alfarzpp.lv/eng/sc/AS3310.php) basis. |
 | *May*    | **Envelope Follower (ENVF)**<br />![](Bumm-Bumm-Garage-Envelope-Follower.png)<br />Handy tool for sidechaining in 2hp. Built with simple analog technology. |
 | *June*   | **Utility Mixer**<br />![](Bumm-Bumm-Garage-Mixer-II.png)<br />Two channel mixer for audio and CV in 2hp. Based on simple analog technology. |
-| *July*   | **Clock Multiplier**<br />Based on an [ATMega328](https://en.wikipedia.org/wiki/ATmega328). |
+| *July*   | **Clock Multiplier**<br />![](Bumm-Bumm-Garage-Clock-Multiplier.png)<br />Based on an [ATMega328](https://en.wikipedia.org/wiki/ATmega328). |
 | *August* | **Trigger to Gate Converter**<br />Built with simple analog technology. |
 
 ## Simple DIY Kits

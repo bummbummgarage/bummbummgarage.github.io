@@ -3,7 +3,7 @@ int start = 50;
 int end = 750;
 int cycle;
 
-int quantity = 5;
+int quantity = 4;
 float distribution = .5;
 
 void setup() {
