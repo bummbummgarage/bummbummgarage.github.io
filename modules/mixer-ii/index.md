@@ -47,6 +47,7 @@ What's new? Removed switches (and thereby their clicking) and added variable mas
 * [Video Demo: Mixing Hihats](https://www.youtube.com/watch?v=H-lA9sQpHlk)
 * [Video Demo: Mixing Envelopes](https://www.youtube.com/watch?v=vhxrNxvZDss)
 * [Schematic (PDF)](Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3-Schematic.pdf)
+* Showcase and feedback on [Reddit](https://www.reddit.com/r/synthdiy/comments/s9y0wm/two_channel_mixer_for_audio_and_cv_breadboard/).
 
 <!--
 
