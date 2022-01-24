@@ -31,11 +31,8 @@ The logic and design of the chord shapes are taken from the [Music Thing Modular
 
 ## Links
 
-<!-- Video Demo
--->
-
 * [Video Demo](Bumm-Bumm-Garage-Chord-Organ-0.1-Video-Demo-640p.mp4)
-* [Schematic](Bumm-Bumm-Garage-Chord-Organ-0.1.pdf)
+* [Schematic (PDF)](Bumm-Bumm-Garage-Chord-Organ-0.1.pdf)
 * [Arduino Sketch (Code)](https://github.com/bummbummgarage/bummbummgarage.github.io/blob/main/modules/chord-organ-0.1/chord-organ/chord-organ.ino)
 
 ## Improvement Potential

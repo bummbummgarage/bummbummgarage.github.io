@@ -15,6 +15,9 @@
   * Choose "Tools > Programmer > USBtinyISP"
   * Click "Tools > Programmer > Burn Bootloader"
   * Upload sketch via "Sketch > Upload Using Programmer"
+* **ATMega Digital and Analog Pins**: https://www.componentsinfo.com/atmega328p-pinout-configuration-datasheet/
+* **Overvoltage Protection:**
+  * https://forum.arduino.cc/t/12v-to-arduino-pin-zener-diode/529876/2#msg3759664
 
 ## Fragen
 

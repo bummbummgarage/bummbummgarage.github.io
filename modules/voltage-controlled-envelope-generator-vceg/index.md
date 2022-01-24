@@ -43,6 +43,7 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 
 ## Demo Videos
 
+* Verzerrt auf Chords
 * X Attack for (un)muting
 * X Bass line
 * Chord Lead
