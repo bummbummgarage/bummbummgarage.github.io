@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: bummbummgarage.com
+Token: 3bad74778b1281fe88b374f5322ac82441c963eaced71fe18ddb9ad8b742f1fb
