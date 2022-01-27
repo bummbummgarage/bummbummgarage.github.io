@@ -1,8 +1,20 @@
-# Envelope Follower
+---
+layout: module
+title: Envelope Follower (ENVF)
+---
+
+<!--
+
+image: /modules/voltage-controlled-envelope-generator-vceg/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg
+description: Voltage Controlled Envelope Generator I created for my techno rack.
+
+-->
+
+# Envelope Follower (ENVF)
 
 
 
-
+<!--
 
 ## Rev 1 
 
@@ -29,9 +41,9 @@ Peak Detection: https://www.youtube.com/watch?v=jllsqRWhjGM
 
 ## Use Cases And Tests
 
-* 👍🏻✅ **Sidechain compressor mit Kick und Chords** – https://www.youtube.com/watch?v=lGtKlH0UeuA --> um den Drop richtig wirken zu lassen. Volume und Filter Side Chain.
+* 👍🏻✅ **Sidechain compressor mit Kick und Chords** – https://www.youtube.com/watch?v=lGtKlH0UeuA : um den Drop richtig wirken zu lassen. Volume und Filter Side Chain.
 * 👍🏻✅ **Sidechain from Kick on Clapping Noise (Hihats) controlling volume** – https://youtu.be/ld04GHoWDUk?t=74
-* 👍🏻 🟧Mit einem **Envelope über einem Bass** mischen, der über die Kick geht. Den dann in den VCA packen --> Kann es leider noch nicht zusammenmischen. Brauch den neuen Mixer :)
+* 👍🏻 🟧Mit einem **Envelope über einem Bass** mischen, der über die Kick geht. Den dann in den VCA packen : Kann es leider noch nicht zusammenmischen. Brauch den neuen Mixer :)
 * 👍🏻✅ **Bass Riff from Drum Envelope** – https://www.youtube.com/watch?v=aByLEB_AZaE (Hälfte) mit Hihats bestimmt witzig.
 * 👍🏻 **Envelope from Drum Loop Modulating Pitch** – https://www.youtube.com/watch?v=XZxf5caWySw – Interessant, um die Response zu testen (Auflösung).
 * 👍🏻 Envelope **Modulating Filter on Drum Loop**: https://www.youtube.com/watch?v=ld04GHoWDUk
@@ -70,3 +82,10 @@ Next steps will be designing the PCBs and the final panel design.
 
 
 
+-->
+
+## Resources
+
+**Revision 3**
+
+* [Schematics (PDF)](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Schematic.pdf)
