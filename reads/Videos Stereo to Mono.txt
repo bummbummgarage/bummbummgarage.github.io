@@ -1,1 +1,0 @@
-ffmpeg -i stereo.mov -ac 1 mono.mov

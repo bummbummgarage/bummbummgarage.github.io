@@ -88,5 +88,6 @@ Next steps will be designing the PCBs and the final panel design.
 
 **Revision 3**
 
+* [Video Demo: Sidechaining On Bass Line](https://youtu.be/aDxRjQ9Nlts) 
 * [Video Demo: Bass Line From Hihat Beat](https://www.youtube.com/watch?v=DFfUIPmgM-s)
 * [Schematics (PDF)](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Schematic.pdf)
