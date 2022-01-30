@@ -39,24 +39,6 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 
 ![](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Main-Board.JPG)
 
-<!--
-
-## Demo Videos
-
-* Verzerrt auf Chords
-* X Attack for (un)muting
-* X Bass line
-* Chord Lead
-* Varying envelopes on chord filter
-* Snare from noise
-* Rumbling from noise
-
-## Calibration
-
-* Vceg Kalibrierung: A ganz runter drehen (trimmer)
-
--->
-
 ## Resources
 
 **Revision 1 (breadboard prototype)**
