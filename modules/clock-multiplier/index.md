@@ -1,5 +1,18 @@
 # Clock Multiplier
 
+## TODOs
+
+* Sound Test machen
+* Output Opamp einbauen
+* Startup Sequence einbauen
+* (Tap Clock einbauen)
+
+
+
+
+
+### ATMega Standalone
+
 * Build an Arduino:
   * https://www.instructables.com/Build-an-Arduino/
   * https://www.instructables.com/Build-Your-Own-Arduino/

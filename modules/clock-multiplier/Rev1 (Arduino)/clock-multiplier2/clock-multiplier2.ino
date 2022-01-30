@@ -8,11 +8,12 @@
 const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
 const bool internalClock = false; // Refuses the triggers and starts the internal clock. Meant for developing / debugging.
 const int internalClockBpm = 70; // The speed for the internal clock.
+const int pushButtonDelay = 50; // The time the button will be insensitive after last change.
 
 
 // Trigger IN
 int triggerInPin = A5;
-int triggerInLEDPin = 2;
+int triggerInLEDPin = 3;
 
 long triggerInHigh; // Timestamp of the latest trigger high.
 long triggerInLow; // Timestamp of the latest trigger low.
@@ -35,8 +36,16 @@ const int maxDistribution = 11; // The amount of different distribution patterns
 int currentDistribution;
 
 
+// Mute
+const int mutePin = 2;
+int mutePinState; // 0 or 1.
+long mutePinChangelog; // The timestamp of the last change on this button.
+bool mute = false; // The global mute state.
+
+
 // Trigger OUT
-int triggerOutLEDPin = 3;
+int triggerOutLEDPin = 5;
+int triggerOutLedMuted = 5; // The amount of brightness when muted.
 const int triggerLength = 25; // In milliseconds.
 int triggerOut = LOW;
 
@@ -57,6 +66,7 @@ void setup() {
   pinMode(triggerInPin, INPUT);
   pinMode(triggerInLEDPin, OUTPUT);
   pinMode(quantityCVPin, INPUT);
+  pinMode(mutePin, INPUT);
   pinMode(triggerOutLEDPin, OUTPUT);
 
 }
@@ -130,7 +140,31 @@ void loop() {
       Serial.println(currentDistribution);
     }
   }
-  
+
+
+  // ------------------------ MUTE ------------------------
+  // Checking and setting the status of mute or unmuted.
+  bool p;
+  p = digitalRead(mutePin); // Read the pin.
+  if ( ( p != mutePinState ) && ( millis() > ( mutePinChangelog + pushButtonDelay ) ) ) { // Did the pin recently change?
+    mutePinState = p;
+    mutePinChangelog = millis();
+    if (p == 1) { // The button is pushed.
+      // toggle the global mute state.
+      if(mute) {
+        mute = false;
+        if(debug) {
+          Serial.println("Unmute");
+        }
+      } else {
+        mute = true;
+        if(debug) {
+          Serial.println("Mute");
+        }
+      }
+      digitalWrite(triggerInLEDPin, HIGH); // A little flash to indicate the change.
+    }
+  }
   
 
   // ------------------------ TRIGGER OUT ------------------------
@@ -192,15 +226,20 @@ void loop() {
 
     // 4. Check if we're in the time span to trigger and blink.
     if ( ( millis() >= t ) && ( millis() < ( t + triggerLength ) ) ) {
-      triggerOut = HIGH;
+      if(!mute) {
+        triggerOut = 255;
+      } else {
+        triggerOut = triggerOutLedMuted;
+      }
       i = currentQuantity; // If so, stop the right away to keep the trigger HIGH.
     } else {
-      triggerOut = LOW;
+      triggerOut = 0;
     }
     
   }
 
-  digitalWrite( triggerOutLEDPin, triggerOut );
+  // Flash the output LED.
+  analogWrite( triggerOutLEDPin, triggerOut );
 
 }
 

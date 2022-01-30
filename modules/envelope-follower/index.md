@@ -14,6 +14,10 @@ description: Voltage Controlled Envelope Generator I created for my techno rack.
 
 
 
+
+
+
+
 <!--
 
 ## Rev 1 
@@ -91,3 +95,4 @@ Next steps will be designing the PCBs and the final panel design.
 * [Video Demo: Sidechaining On Bass Line](https://youtu.be/aDxRjQ9Nlts) 
 * [Video Demo: Bass Line From Hihat Beat](https://www.youtube.com/watch?v=DFfUIPmgM-s)
 * [Schematics (PDF)](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Schematic.pdf)
+* Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BENVF+Rev3%5D)
