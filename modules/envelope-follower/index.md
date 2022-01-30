@@ -2,13 +2,8 @@
 layout: module
 title: Envelope Follower (ENVF)
 description: Envelope follower that I built for my DIY modular synth techno rack.
+image: /modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3.jpg
 ---
-
-<!--
-
-image: /modules/voltage-controlled-envelope-generator-vceg/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg
-
--->
 
 # Envelope Follower (ENVF)
 
@@ -43,7 +38,7 @@ Envelope follower that I built for my DIY modular synth techno rack. My main sta
 **Implementation:**
 
 * The smoothing to create the envelope is based on peak detection, see [https://www.youtube.com/watch?v=jllsqRWhjGM](https://www.youtube.com/watch?v=jllsqRWhjGM) for instance.
-* The attack isn't a real attack from my perspective. Meaning it does not delay the time when the signal peak is reached. It rather smooths the entire signal like an attenuator. I decided to call it "Attack" anyways since I'll use it mainly to reduce natural pops at the beginning of an envelope. Any loss in amplitude coming from this can be compensated with the gain :)
+* The attack isn't a real attack from my perspective. Meaning it does not delay the time when the signal peak is reached. It rather smooths the entire signal like an attenuator. I decided to call it "Attack" anyways since I'll use it mainly to reduce natural pops at the beginning of an envelope. Any loss in amplitude coming from this can be compensated with the gain 😊
 
 <!--
 
