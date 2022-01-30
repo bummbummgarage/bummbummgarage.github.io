@@ -1,47 +1,51 @@
 ---
 layout: module
 title: Envelope Follower (ENVF)
+description: Envelope follower that I built for my DIY modular synth techno rack.
 ---
 
 <!--
 
 image: /modules/voltage-controlled-envelope-generator-vceg/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg
-description: Voltage Controlled Envelope Generator I created for my techno rack.
 
 -->
 
 # Envelope Follower (ENVF)
 
+![](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3.jpg)
 
+Envelope follower that I built for my DIY modular synth techno rack. My main stakes in this module are being able to side chain and create duckings on voices when the kick hits. Someone in a techno production subreddit recommended me this after hearing some audio from my synth 👍🏻
 
+## Features
 
+* ✅ Attack, realease and gain controls
+* ✅ Non-inverted and inverted out
+* ✅ Only 2hp wide
 
+## Specifications
 
+**Controls:**
+
+![](Bumm-Bumm-Garage-Envelope-Follower-Controls.png)
+
+**Left and right view on the module:**
+
+![](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Left-and-Right.jpg)
+
+**Control board (bottom):**
+
+![](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Controlboard-Bottom.jpg)
+
+**Main board (top and bottom):**
+
+![](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Mainboard-Top-Bottom.jpg)
+
+**Implementation:**
+
+* The smoothing to create the envelope is based on peak detection, see [https://www.youtube.com/watch?v=jllsqRWhjGM](https://www.youtube.com/watch?v=jllsqRWhjGM) for instance.
+* The attack isn't a real attack from my perspective. Meaning it does not delay the time when the signal peak is reached. It rather smooths the entire signal like an attenuator. I decided to call it "Attack" anyways since I'll use it mainly to reduce natural pops at the beginning of an envelope. Any loss in amplitude coming from this can be compensated with the gain :)
 
 <!--
-
-## Rev 1 
-
-**Feedback**:
-
-* https://modwiggler.com/forum/viewtopic.php?f=17&t=256361&p=3657389
-* https://www.reddit.com/r/synthdiy/comments/rbitj4/simple_envelope_follower_circuit/
-
-
-
-## Improvement Potential
-
-* Ideal rectifier einbauen: https://www.reddit.com/r/synthdiy/comments/rbitj4/simple_envelope_follower_circuit/hntzjwl/?context=3
-
-
-
-## References
-
-Peak Detection: https://www.youtube.com/watch?v=jllsqRWhjGM
-
-
-
-
 
 ## Use Cases And Tests
 
@@ -53,13 +57,7 @@ Peak Detection: https://www.youtube.com/watch?v=jllsqRWhjGM
 * 👍🏻 Envelope **Modulating Filter on Drum Loop**: https://www.youtube.com/watch?v=ld04GHoWDUk
 * 👍🏻 **Guitar in controlling VCA with sequenced melody**: https://youtu.be/ld04GHoWDUk?t=150
 
-
-
-
-
-
-
-## Post Text
+## Post Text Rev2
 
 Prototype of an envelope follower that I built for my DIY modular synth techno rack. My main stakes in this module are being able to side chain and create duckings on voices when the kick hits #technotechno
 
@@ -78,21 +76,27 @@ Next steps will be designing the PCBs and the final panel design.
 
 [#synthdiy](https://www.instagram.com/explore/tags/synthdiy/) [#diysynth](https://www.instagram.com/explore/tags/diysynth/) [#sdiy](https://www.instagram.com/explore/tags/sdiy/) [#diymodularsynth](https://www.instagram.com/explore/tags/diymodularsynth/) [#diysynthesizer](https://www.instagram.com/explore/tags/diysynthesizer/) [#diyelectronics](https://www.instagram.com/explore/tags/diyelectronics/)
 
-----
-
-
-
-[Simple Envelope Follower Circuit](https://www.reddit.com/r/synthdiy/comments/rbitj4/simple_envelope_follower_circuit/)
-
-
-
 -->
 
 ## Resources
 
-**Revision 3**
+**Revision 1**
+
+* [Schematics (PDF)](Rev1/Bumm-Bumm-Garage-Envelope-Follower-Rev1-Schematic.pdf)
+* Feedback on [Reddit](https://www.reddit.com/r/synthdiy/comments/rbitj4/simple_envelope_follower_circuit/) and [Modwiggler](https://www.modwiggler.com/forum/viewtopic.php?p=3657388#p3657388)
+
+**Revision 2 (breadboard prototype)**
+
+What's new? I added variable release (poti).
+
+* [Schematics (PDF)](Rev2/Bumm-Bumm-Garage-Envelope-Follower-Rev2-Schematic.pdf)
+* Showcase and feedback on [Reddit](https://www.reddit.com/r/synthdiy/comments/rd2off/simple_envelope_follower_circuit_rev_2/) and [Instagram](https://www.instagram.com/p/CXRuK9rNRQo/)
+
+**Revision 3 (PCB prototype)**
+
+What's new? I brought it on PCB level.
 
 * [Video Demo: Sidechaining On Bass Line](https://youtu.be/aDxRjQ9Nlts) 
 * [Video Demo: Bass Line From Hihat Beat](https://www.youtube.com/watch?v=DFfUIPmgM-s)
 * [Schematics (PDF)](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Schematic.pdf)
-* Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BENVF+Rev3%5D)
+* Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BENVF+Rev3%5D) – The main thing here is that I that I set the pins of the thonkiconns wrong way around on the PCB 🤦 With some tweaking and bending I could fix that, but will not publish the spoilt Gerber files of this revision here.
