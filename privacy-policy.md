@@ -39,13 +39,13 @@ There is a possibility that your browsing patterns will be statistically analyze
 
 For detailed information about these analysis programs please consult our Data Protection Declaration below.
 
-## 2. Hosting and Content Delivery Networks (CDN)
+## 2. Hosting
 
 ### External Hosting
 
 This website is hosted by an external service provider (host). Personal data collected on this website are stored on the servers of the host. These may include, but are not limited to, IP addresses, contact requests, metadata and communications, contract information, contact information, names, web page access, and other data generated through a web site.
 
-The host is used for the purpose of fulfilling the contract with our potential and existing customers (Art. 6 para. 1 lit. b GDPR) and in the interest of secure, fast, and efficient provision of our online services by a professional provider (Art. 6 para. 1 lit. f GDPR).
+The host is used for the purpose of fulfilling the contract with our potential and existing customers (Art. 6(1)(b) GDPR) and in the interest of secure, fast, and efficient provision of our online services by a professional provider (Art. 6(1)(f) GDPR). If appropriate consent has been obtained, the processing is carried out exclusively on the basis of Art. 6 (1)(a) GDPR and § 25 (1) TTDSG, insofar the consent includes the storage of cookies or the access to information in the user's end device (e.g., device fingerprinting) within the meaning of the TTDSG. This consent can be revoked at any time.
 
 Our host will only process your data to the extent necessary to fulfil its performance obligations and to follow our instructions with respect to such data.
 
@@ -72,18 +72,19 @@ The data processing controller on this website is:
 
 See legal notice
 
-Phone: [Telefonnummer der verantwortlichen Stelle]
-E-mail: [E-Mail-Adresse der verantwortlichen Stelle]
-
 The controller is the natural person or legal entity that single-handedly or jointly with others makes decisions as to the purposes of and resources for the processing of personal data (e.g., names, e-mail addresses, etc.).
 
 ### Storage duration
 
 Unless a more specific storage period has been specified in this privacy policy, your personal data will remain with us until the purpose for which it was collected no longer applies. If you assert a justified request for deletion or revoke your consent to data processing, your data will be deleted, unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial law retention periods); in the latter case, the deletion will take place after these reasons cease to apply.
 
+### General information on the legal basis for the data processing on this website
+
+If you have consented to data processing, we process your personal data on the basis of Art. 6(1)(a) GDPR or Art. 9 (2)(a) GDPR, if special categories of data are processed according to Art. 9 (1) DSGVO. In the case of explicit consent to the transfer of personal data to third countries, the data processing is also based on Art. 49 (1)(a) GDPR. If you have consented to the storage of cookies or to the access to information in your end device (e.g., via device fingerprinting), the data processing is additionally based on § 25 (1) TTDSG. The consent can be revoked at any time. If your data is required for the fulfillment of a contract or for the implementation of pre-contractual measures, we process your data on the basis of Art. 6(1)(b) GDPR. Furthermore, if your data is required for the fulfillment of a legal obligation, we process it on the basis of Art. 6(1)(c) GDPR. Furthermore, the data processing may be carried out on the basis of our legitimate interest according to Art. 6(1)(f) GDPR. Information on the relevant legal basis in each individual case is provided in the following paragraphs of this privacy policy.
+
 ### Information on data transfer to the USA and other non-EU countries
 
-Among other things, tools of companies domiciled in the United States or other from a data protection perspective non-secure non-EU countries, are integrated into our website. If these tools are active, your personal data may potentially be transferred to these non-EU countries and may be processed there. We must point out that in these countries, a data protection level that is comparable to that in the EU cannot be guaranteed. For instance, U.S. enterprises are under a mandate to release personal data to the security agencies and you as the data subject do not have any litigation options to defend yourself in court. Hence, it cannot be ruled out that U.S. agencies (e.g., the Secret Service) may process, analyze, and permanently archive your personal data for surveillance purposes. We have no control over these processing activities.
+Among other things, we use tools of companies domiciled in the United States or other from a data protection perspective non-secure non-EU countries. If these tools are active, your personal data may potentially be transferred to these non-EU countries and may be processed there. We must point out that in these countries, a data protection level that is comparable to that in the EU cannot be guaranteed. For instance, U.S. enterprises are under a mandate to release personal data to the security agencies and you as the data subject do not have any litigation options to defend yourself in court. Hence, it cannot be ruled out that U.S. agencies (e.g., the Secret Service) may process, analyze, and permanently archive your personal data for surveillance purposes. We have no control over these processing activities.
 
 ### Revocation of your consent to the processing of data
 
@@ -91,9 +92,9 @@ A wide range of data processing transactions are possible only subject to your e
 
 ### Right to object to the collection of data in special cases; right to object to direct advertising (Art. 21 GDPR)
 
-IN THE EVENT THAT DATA ARE PROCESSED ON THE BASIS OF ART. 6 SECT. 1 LIT. E OR F GDPR, YOU HAVE THE RIGHT TO AT ANY TIME OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA BASED ON GROUNDS ARISING FROM YOUR UNIQUE SITUATION. THIS ALSO APPLIES TO ANY PROFILING BASED ON THESE PROVISIONS. TO DETERMINE THE LEGAL BASIS, ON WHICH ANY PROCESSING OF DATA IS BASED, PLEASE CONSULT THIS DATA PROTECTION DECLARATION. IF YOU LOG AN OBJECTION, WE WILL NO LONGER PROCESS YOUR AFFECTED PERSONAL DATA, UNLESS WE ARE IN A POSITION TO PRESENT COMPELLING PROTECTION WORTHY GROUNDS FOR THE PROCESSING OF YOUR DATA, THAT OUTWEIGH YOUR INTERESTS, RIGHTS AND FREEDOMS OR IF THE PURPOSE OF THE PROCESSING IS THE CLAIMING, EXERCISING OR DEFENCE OF LEGAL ENTITLEMENTS (OBJECTION PURSUANT TO ART. 21 SECT. 1 GDPR).
+IN THE EVENT THAT DATA ARE PROCESSED ON THE BASIS OF ART. 6(1)(E) OR (F) GDPR, YOU HAVE THE RIGHT TO AT ANY TIME OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA BASED ON GROUNDS ARISING FROM YOUR UNIQUE SITUATION. THIS ALSO APPLIES TO ANY PROFILING BASED ON THESE PROVISIONS. TO DETERMINE THE LEGAL BASIS, ON WHICH ANY PROCESSING OF DATA IS BASED, PLEASE CONSULT THIS DATA PROTECTION DECLARATION. IF YOU LOG AN OBJECTION, WE WILL NO LONGER PROCESS YOUR AFFECTED PERSONAL DATA, UNLESS WE ARE IN A POSITION TO PRESENT COMPELLING PROTECTION WORTHY GROUNDS FOR THE PROCESSING OF YOUR DATA, THAT OUTWEIGH YOUR INTERESTS, RIGHTS AND FREEDOMS OR IF THE PURPOSE OF THE PROCESSING IS THE CLAIMING, EXERCISING OR DEFENCE OF LEGAL ENTITLEMENTS (OBJECTION PURSUANT TO ART. 21(1) GDPR).
 
-IF YOUR PERSONAL DATA IS BEING PROCESSED IN ORDER TO ENGAGE IN DIRECT ADVERTISING, YOU HAVE THE RIGHT TO AT ANY TIME OBJECT TO THE PROCESSING OF YOUR AFFECTED PERSONAL DATA FOR THE PURPOSES OF SUCH ADVERTISING. THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS AFFILIATED WITH SUCH DIRECT ADVERTISING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT ADVERTISING PURPOSES (OBJECTION PURSUANT TO ART. 21 SECT. 2 GDPR).
+IF YOUR PERSONAL DATA IS BEING PROCESSED IN ORDER TO ENGAGE IN DIRECT ADVERTISING, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR AFFECTED PERSONAL DATA FOR THE PURPOSES OF SUCH ADVERTISING AT ANY TIME. THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS AFFILIATED WITH SUCH DIRECT ADVERTISING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT ADVERTISING PURPOSES (OBJECTION PURSUANT TO ART. 21(2) GDPR).
 
 ### Right to log a complaint with the competent supervisory agency
 
@@ -120,7 +121,7 @@ You have the right to demand the imposition of restrictions as far as the proces
 - In the event that you should dispute the correctness of your data archived by us, we will usually need some time to verify this claim. During the time that this investigation is ongoing, you have the right to demand that we restrict the processing of your personal data.
 - If the processing of your personal data was/is conducted in an unlawful manner, you have the option to demand the restriction of the processing of your data in lieu of demanding the eradication of this data.
 - If we do not need your personal data any longer and you need it to exercise, defend or claim legal entitlements, you have the right to demand the restriction of the processing of your personal data instead of its eradication.
-- If you have raised an objection pursuant to Art. 21 Sect. 1 GDPR, your rights and our rights will have to be weighed against each other. As long as it has not been determined whose interests prevail, you have the right to demand a restriction of the processing of your personal data.
+- If you have raised an objection pursuant to Art. 21(1) GDPR, your rights and our rights will have to be weighed against each other. As long as it has not been determined whose interests prevail, you have the right to demand a restriction of the processing of your personal data.
 
 If you have restricted the processing of your personal data, these data – with the exception of their archiving – may be processed only subject to your consent or to claim, exercise or defend legal entitlements or to protect the rights of other natural persons or legal entities or for important public interest reasons cited by the European Union or a member state of the EU.
 
@@ -134,7 +135,7 @@ In some cases, it is possible that third-party cookies are stored on your device
 
 Cookies have a variety of functions. Many cookies are technically essential since certain website functions would not work in the absence of the cookies (e.g., the shopping cart function or the display of videos). The purpose of other cookies may be the analysis of user patterns or the display of promotional messages.
 
-Cookies, which are required for the performance of electronic communication transactions (required cookies) or for the provision of certain functions you want to use (functional cookies, e.g., for the shopping cart function) or those that are necessary for the optimization of the website (e.g., cookies that provide measurable insights into the web audience), shall be stored on the basis of Art. 6 Sect. 1 lit. f GDPR, unless a different legal basis is cited. The operator of the website has a legitimate interest in the storage of cookies to ensure the technically error free and optimized provision of the operator’s services. If your consent to the storage of the cookies has been requested, the respective cookies are stored exclusively on the basis of the consent obtained (Art. 6 Sect. 1 lit. a GDPR); this consent may be revoked at any time.
+Cookies, which are required for the performance of electronic communication transactions, or for the provision of certain functions you want to use (e.g., for the shopping cart function) or those that are necessary for the optimization (required cookies) of the website (e.g., cookies that provide measurable insights into the web audience), shall be stored on the basis of Art. 6(1)(f) GDPR, unless a different legal basis is cited. The operator of the website has a legitimate interest in the storage of required cookies to ensure the technically error free and optimized provision of the operator’s services. If your consent to the storage of the cookies and similar recognition technologies has been requested, processing occurs exclusively on the basis of the consent obtained (Art. 6(1)(a) GDPR and § 25 (1) TTDSG); this consent may be revoked at any time.
 
 You have the option to set up your browser in such a manner that you will be notified any time cookies are placed and to permit the acceptance of cookies only in specific cases. You may also exclude the acceptance of cookies in certain cases or in general or activate the delete function for the automatic eradication of cookies when the browser closes. If cookies are deactivated, the functions of this website may be limited.
 
@@ -153,7 +154,7 @@ The provider of this website and its pages automatically collects and stores inf
 
 This data is not merged with other data sources.
 
-This data is recorded on the basis of Art. 6 Sect. 1 lit. f GDPR. The operator of the website has a legitimate interest in the technically error free depiction and the optimization of the operator’s website. In order to achieve this, server log files must be recorded.
+This data is recorded on the basis of Art. 6(1)(f) GDPR. The operator of the website has a legitimate interest in the technically error free depiction and the optimization of the operator’s website. In order to achieve this, server log files must be recorded.
 
 ## 5. Analysis tools and advertising
 
@@ -161,17 +162,15 @@ This data is recorded on the basis of Art. 6 Sect. 1 lit. f GDPR. The operator o
 
 This website uses functions of the web analysis service Google Analytics. The provider of this service is Google Ireland Limited (“Google”), Gordon House, Barrow Street, Dublin 4, Ireland.
 
-Google Analytics enables the website operator to analyze the behavior patterns of website visitors. To that end, the website operator receives a variety of user data, such as pages accessed, time spent on the page, the utilized operating system and the user’s origin. Google may consolidate these data in a profile that is allocated to the respective user or the user’s device.
+Google Analytics enables the website operator to analyze the behavior patterns of website visitors. To that end, the website operator receives a variety of user data, such as pages accessed, time spent on the page, the utilized operating system and the user’s origin. This data is summarized in a user-ID and assigned to the respective end device of the website visitor.
+
+Furthermore, Google Analytics allows us to record your mouse and scroll movements and clicks, among other things. Google Analytics uses various modeling approaches to augment the collected data sets and uses machine learning technologies in data analysis.
 
 Google Analytics uses technologies that make the recognition of the user for the purpose of analyzing the user behavior patterns (e.g., cookies or device fingerprinting). The website use information recorded by Google is, as a rule transferred to a Google server in the United States, where it is stored.
 
-This analysis tool is used on the basis of Art. 6 Sect. 1 lit. f GDPR. The operator of this website has a legitimate interest in the analysis of user patterns to optimize both, the services offered online and the operator’s advertising activities. If a corresponding agreement has been requested (e.g., an agreement to the storage of cookies), the processing takes place exclusively on the basis of Art. 6 para. 1 lit. a GDPR; the agreement can be revoked at any time.
+This analysis tool is used on the basis of Art. 6(1)(f) GDPR. The operator of this website has a legitimate interest in the analysis of user patterns to optimize both, the services offered online and the operator’s advertising activities. If appropriate consent has been obtained, the processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR and § 25 (1) TTDSG, insofar the consent includes the storage of cookies or the access to information in the user’s end device (e.g., device fingerprinting) within the meaning of the TTDSG. This consent can be revoked at any time.
 
 Data transmission to the US is based on the Standard Contractual Clauses (SCC) of the European Commission. Details can be found here: https://privacy.google.com/businesses/controllerterms/mccs/.
-
-#### IP anonymization
-
-On this website, we have activated the IP anonymization function. As a result, your IP address will be abbreviated by Google within the member states of the European Union or in other states that have ratified the Convention on the European Economic Area prior to its transmission to the United States. The full IP address will be transmitted to one of Google’s servers in the United States and abbreviated there only in exceptional cases. On behalf of the operator of this website, Google shall use this information to analyze your use of this website to generate reports on website activities and to render other services to the operator of this website that are related to the use of the website and the Internet. The IP address transmitted in conjunction with Google Analytics from your browser shall not be merged with other data in Google’s possession.
 
 #### Browser plug-in
 
@@ -183,6 +182,42 @@ For more information about the handling of user data by Google Analytics, please
 
 We have executed a contract data processing agreement with Google and are implementing the stringent provisions of the German data protection agencies to the fullest when using Google Analytics.
 
-#### Archiving period
+## 6. Newsletter
 
-Data on the user or incident level stored by Google linked to cookies, user IDs or advertising IDs (e.g., DoubleClick cookies, Android advertising ID) will be anonymized or deleted after 14 month. For details, please click the following link: https://support.google.com/analytics/answer/7667196?hl=en
+### Newsletter data
+
+If you would like to receive the newsletter offered on the website, we require an e-mail address from you as well as information that allows us to verify that you are the owner of the e-mail address provided and that you agree to receive the newsletter. Further data is not collected or only on a voluntary basis. For the handling of the newsletter, we use newsletter service providers, which are described below.
+
+### Sendinblue
+
+This website uses Sendinblue for the sending of newsletters. The provider is the Sendinblue GmbH, Köpenicker Straße 126, 10179 Berlin, Germany.
+
+Sendinblue services can, among other things, be used to organize and analyze the sending of newsletters. The data you enter for the purpose of subscribing to the newsletter are archived on Sendinblue’s servers in Germany.
+
+#### Data analysis by Sendinblue
+
+Sendinblue enables us to analyze our newsletter campaigns. For instance, it allows us to see whether a newsletter message has been opened and, if so, which links may have been clicked. This enables us to determine, which links drew an extraordinary number of clicks.
+
+Moreover, we are also able to see whether once the e-mail was opened or a link was clicked, any previously defined actions were taken (conversion rate). This allows us to determine whether you have made a purchase after clicking on the newsletter.
+
+Sendinblue also enables us to divide the subscribers to our newsletter into various categories (i.e., to “cluster” recipients). For instance, newsletter recipients can be categorized based on age, gender, or place of residence. This enables us to tailor our newsletter more effectively to the needs of the respective target groups.
+
+If you do not want to permit an analysis by Sendinblue, you must unsubscribe from the newsletter. We provide a link for you to do this in every newsletter message. Moreover, you can also unsubscribe from the newsletter right on the website.
+
+For detailed information on the functions of Sendinblue please follow this link: https://www.sendinblue.com/newsletter-software/.
+
+#### Legal basis
+
+The data is processed based on your consent (Art. 6(1)(a) GDPR). You may revoke any consent you have given at any time by unsubscribing from the newsletter. This shall be without prejudice to the lawfulness of any data processing transactions that have taken place prior to your revocation.
+
+#### Storage period
+
+The data deposited with us for the purpose of subscribing to the newsletter will be stored by us until you unsubscribe from the newsletter or the newsletter service provider and deleted from the newsletter distribution list after you unsubscribe from the newsletter. Data stored for other purposes with us remain unaffected.
+
+After you unsubscribe from the newsletter distribution list, your e-mail address may be stored by us or the newsletter service provider in a blacklist, if such action is necessary to prevent future mailings. The data from the blacklist is used only for this purpose and not merged with other data. This serves both your interest and our interest in complying with the legal requirements when sending newsletters (legitimate interest within the meaning of Art. 6(1)(f) GDPR). The storage in the blacklist is indefinite. **You may object to the storage if your interests outweigh our legitimate interest.**
+
+For more details, please consult the Data Protection Regulations of Sendinblue at: https://de.sendinblue.com/datenschutz-uebersicht/.
+
+#### Data processing
+
+We have concluded a data processing agreement (DPA) with the above-mentioned provider. This is a contract mandated by data privacy laws that guarantees that they process personal data of our website visitors only based on our instructions and in compliance with the GDPR.
