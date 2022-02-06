@@ -58,4 +58,5 @@ The circuit of the module is very simple, because it's built around an [AS3310](
 * [Control board Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Control-Board.zip)
 * [Main board Gerber files (ZIP)](REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-1-Gerber-Main-Board.zip)
 * Showcase and feedback on [Instagram](https://www.instagram.com/p/CYDvkR_swXZ/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/rr2led/voltage_controlled_envelope_generator_pcb/)
+* Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BVCEG+Rev2%5D)
 

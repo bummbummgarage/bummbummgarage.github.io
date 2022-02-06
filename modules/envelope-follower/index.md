@@ -94,5 +94,6 @@ What's new? I brought it on PCB level.
 * [Video Demo: Sidechaining On Bass Line](https://youtu.be/aDxRjQ9Nlts) 
 * [Video Demo: Bass Line From Hihat Beat](https://www.youtube.com/watch?v=DFfUIPmgM-s)
 * [Schematics (PDF)](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Schematic.pdf)
+* [BOM (XLS)](Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-BOM.xls)
 * Showcase and feedback on [Reddit](https://www.reddit.com/r/synthdiy/comments/sg73az/envelope_follower_pcb_prototype_eurorack/) and [Instagram](https://www.instagram.com/p/CZWg2FJMRuM/)
 * Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BENVF+Rev3%5D) – The main thing here is that I that I set the pins of the thonkiconns wrong way around on the PCB 🤦 With some tweaking and bending I could fix that, but will not publish the spoilt Gerber files of this revision here.
