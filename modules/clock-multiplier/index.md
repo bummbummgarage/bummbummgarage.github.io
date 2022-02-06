@@ -2,10 +2,21 @@
 
 ## TODOs
 
-* Sound Test machen
+* Quantity CV IN:
+  * Programmieren
+  * Testen
 * Output Opamp einbauen
-* Startup Sequence einbauen
+* Use Case finden
+  * Fünftel Bass line über einen Takt
+
+* (Startup Sequence einbauen)
 * (Tap Clock einbauen)
+
+
+
+### Features:
+
+* Offene Schnittstelle am Modul, wenn man es hacken möchte für eigene Programme.
 
 
 
