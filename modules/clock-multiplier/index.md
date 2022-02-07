@@ -3,10 +3,9 @@
 ## TODOs
 
 * Quantity CV IN:
-  * Programmieren
   * Testen
 * Output Opamp einbauen
-* Use Case finden
+* Use Cases finden
   * Fünftel Bass line über einen Takt
 
 * (Startup Sequence einbauen)
