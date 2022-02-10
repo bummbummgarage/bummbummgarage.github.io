@@ -1,13 +1,33 @@
+---
+layout: module
+title: Clock Multiplier
+image: /modules/clock-multiplier/Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Breadboard.jpg
+---
+
+<!--
+
+image: /modules/voltage-controlled-envelope-generator-vceg/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg
+description: Voltage Controlled Envelope Generator I created for my techno rack.
+
+-->
+
 # Clock Multiplier
+
+![](Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Breadboard.jpg)
+
+
+
+
+
+
+
+<!--
 
 ## TODOs
 
-* Quantity CV IN:
-  * Testen
 * Output Opamp einbauen
 * Use Cases finden
   * Fünftel Bass line über einen Takt
-
 * (Startup Sequence einbauen)
 * (Tap Clock einbauen)
 
@@ -47,3 +67,5 @@
 * Wie bekomme ich den ISP Programmer drauf (dann mit Strom oder ohne)?
   * ISP and power supply
 * Welche Decoupling Caps für den ATMega mit dem uA7805?
+
+-->
