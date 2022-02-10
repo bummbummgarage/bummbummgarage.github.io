@@ -36,6 +36,7 @@ description: Voltage Controlled Envelope Generator I created for my techno rack.
 ### Features:
 
 * Offene Schnittstelle am Modul, wenn man es hacken möchte für eigene Programme.
+* Mute
 
 
 
