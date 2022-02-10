@@ -3,8 +3,8 @@ int start = 50;
 int end = 750;
 int cycle;
 
-int quantity = 4;
-float distribution = 1;
+int quantity = 1;
+float distribution = 1.8;
 
 void setup() {
   
@@ -14,9 +14,9 @@ void setup() {
 }
 
 void draw () {
-  strokeWeight( 1 );
-  line(start, 70, end, 70);
-  stroke(0);
+  strokeWeight( 10 );
+  // line(start, 70, end, 70); // horizontal timeline
+  stroke(242,64,88);
   
   cycle = end - start; 
   

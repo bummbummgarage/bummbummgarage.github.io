@@ -15,14 +15,19 @@ In the first step I implement the idea with an Arduino as a prototype, so I can 
 
 As a follow-on version, I'm building it around an ATMega, i.e. without a pre-built Arduino, making it much cheaper and space-saving.
 
+## Specifications
+
+**Parameters (quantity and distribution):**
+
+![](Bumm-Bumm-Garage-Clock-Multiplier-Parameters.png)
+
 ## Resources
 
 **Revision 1 (Arduino on breadboard)**
 
 * [Schematics (PDF)](Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Schematic.pdf)
 * [Arduino Sketch (Code)](https://github.com/bummbummgarage/bummbummgarage.github.io/blob/main/modules/clock-multiplier/Rev1/clock-multiplier/clock-multiplier.ino)
-
-
+* Improvement potential: Opamp buffer at the output and an ATMega 329 instead of an Arduino.
 
 <!--
 
@@ -34,16 +39,10 @@ As a follow-on version, I'm building it around an ATMega, i.e. without a pre-bui
 * (Startup Sequence einbauen)
 * (Tap Clock einbauen)
 
-
-
 ### Features:
 
 * Offene Schnittstelle am Modul, wenn man es hacken möchte für eigene Programme.
 * Mute
-
-
-
-
 
 ### ATMega Standalone
 
@@ -52,8 +51,6 @@ As a follow-on version, I'm building it around an ATMega, i.e. without a pre-bui
   * https://www.instructables.com/Build-Your-Own-Arduino/
   * https://duckduckgo.com/?q=build+an+arduino&ia=web
 * Arduino Uno to ATmega328 - Shrinking your Arduino Projects: https://www.youtube.com/watch?v=Sww1mek5rHU
-
-
 
 ## Resources
 
