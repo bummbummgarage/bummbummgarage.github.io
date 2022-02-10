@@ -20,6 +20,7 @@ As a follow-on version, I'm building it around an ATMega, i.e. without a pre-bui
 **Revision 1 (Arduino on breadboard)**
 
 * [Schematics (PDF)](Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Schematic.pdf)
+* [Arduino Sketch (Code)](https://github.com/bummbummgarage/bummbummgarage.github.io/blob/main/modules/clock-multiplier/Rev1/clock-multiplier/clock-multiplier.ino)
 
 
 
