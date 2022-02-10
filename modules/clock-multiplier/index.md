@@ -2,20 +2,16 @@
 layout: module
 title: Clock Multiplier
 image: /modules/clock-multiplier/Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Breadboard.jpg
+Description: Clock multiplier I built for my techno rack to play non-linear accented triplets, quintuplets or septuplets.
 ---
-
-<!--
-
-image: /modules/voltage-controlled-envelope-generator-vceg/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg
-description: Voltage Controlled Envelope Generator I created for my techno rack.
-
--->
 
 # Clock Multiplier
 
 ![](Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Breadboard.jpg)
 
+I've heard, especially with Lady Starlight, that techno tracks get more interesting when the bassline hits in triplets (3 hits), quintuplets (5 hits) or septuplets (7 hits). In contrast, the songs from my techno rack have always been relatively linear in this respect. That's why I built the Clock Multiplayer.
 
+The module is mainly inspired by Befaco's Burst. It is the first module that I build around an ATMega, i.e. without a prefabricated Arduino and therefore much more economical and space-saving.
 
 
 
