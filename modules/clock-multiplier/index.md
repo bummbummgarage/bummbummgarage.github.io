@@ -15,7 +15,7 @@ In the first step I implement the idea with an Arduino as a prototype, so I can 
 
 As a follow-on version, I'm building it around an ATMega, i.e. without a pre-built Arduino, making it much cheaper and space-saving.
 
-## Ressources
+## Resources
 
 **Revision 1 (Arduino on breadboard)**
 
