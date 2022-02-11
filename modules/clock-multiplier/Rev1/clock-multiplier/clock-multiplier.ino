@@ -31,7 +31,7 @@
     This is the code for an Eurorack synth module.
     It's built and tested on an Arduino Uno.
     
-    Find out more on: https://www.bummbummgarage.com/
+    Find out more on: https://www.bummbummgarage.com/modules/clock-multiplier/
 
     Creative Commons yeah! License: CC BY-SA 4.0
     
@@ -213,7 +213,7 @@ void loop() {
   
 
   // ------------------------ TRIGGER OUT ------------------------
-  // 1. Calculate the time slices for the triggers OUT.
+  // Calculate the time slices for the triggers OUT.
   // This happens all the time because the settings can change anytime.
   // We will calculate the exact timestamps when the single hits should follow based on the current settings.
   // And then act on'em, meaning LED and the trigger.
@@ -295,25 +295,19 @@ void loop() {
    ##########################################################################
 */
 
-// Read the trigger and set the global variable.
+// Read the trigger.
 boolean getTriggerIn(){
   boolean t = LOW;
-
-  if ( !internalClock ) {
-    
+  if ( !internalClock ) { // the external clock
     t = digitalRead(triggerInPin);
-    
-  } else {
-    
+  } else { // the internal clock.
     int cycle = 1000 / ( internalClockBpm / 60 );
     for (int i = 0; i <= triggerLength; i++) { // Run the clock.
       if ( ( millis() - i ) % cycle == 0 ) {
         t = HIGH;
       }
     }
-    
   }
-
   return t;
 }
 
@@ -333,6 +327,7 @@ int getQuantity() {
     }
     return r;
 }
+
 
 // Read the CV input (poti) for the distribution.
 int getDistribution() {
