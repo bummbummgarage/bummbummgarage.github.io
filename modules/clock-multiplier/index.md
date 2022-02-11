@@ -13,15 +13,15 @@ I've heard, especially with Lady Starlight, that techno tracks get more interest
 
 In the first step I implement the idea with an Arduino as a prototype, so I can quickly test the handling and features on the rack.
 
-As a follow-on version, I'm building it around an ATMega, i.e. without a pre-built Arduino, making it much cheaper and space-saving.
+As a follow-up version, I'm building it around an ATMega, i.e. without a pre-built Arduino, making it much cheaper and space-saving.
 
 ## Features
 
-* ✅ Variable quantity of beats (1–8)
-* ✅ Variable beat distribution (11 gradations)
-* ✅ Quantity CV input with attenuation
-* ✅ Output muting button
-* ✅ Overvoltage protection on both inputs
+* ✅ **Variable quantity** of beats (1–8)
+* ✅ **Variable beat distribution** (11 gradations)
+* ✅ **Quantity CV** input with attenuation
+* ✅ **Muting button** for the output triggers
+* ✅ **Overvoltage protection** on both inputs
 
 ## Specifications
 
