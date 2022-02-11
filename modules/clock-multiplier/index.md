@@ -36,7 +36,7 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 * [Video snapshots from testing](https://www.youtube.com/watch?v=SXv_L24jIZk)
 * [Schematics (PDF)](Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Schematic.pdf)
 * [Arduino Sketch (Code)](https://github.com/bummbummgarage/bummbummgarage.github.io/blob/main/modules/clock-multiplier/Rev1/clock-multiplier/clock-multiplier.ino)
-* Showcase and feedback on [Instagram](https://www.instagram.com/p/CZ1NLhLM4i7/)
+* Showcase and feedback on [Instagram](https://www.instagram.com/p/CZ1NLhLM4i7/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/spvbwu/clock_multiplier_with_variable_trigger/)
 * Improvement potential: Opamp buffer at the output and an ATMega 329 instead of an Arduino.
 
 <!--
