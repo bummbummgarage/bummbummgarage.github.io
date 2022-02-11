@@ -9,11 +9,19 @@ Description: Clock multiplier I built for my techno rack to play non-linear acce
 
 ![](Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Breadboard.jpg)
 
-I've heard, especially with Lady Starlight, that techno tracks get more interesting when the bassline hits in triplets (3 hits), quintuplets (5 hits) or septuplets (7 hits). In contrast, the songs from my techno rack have always been relatively linear in this respect. That's why I build this Clock Multiplier. The main inspiration is Befaco's Burst, from which I took the terminology for quantity and distribution.
+I've heard, especially with Lady Starlight, that techno tracks get more interesting when the bassline hits in triplets (3 beats), quintuplets (5 beats) or septuplets (7 beats). In contrast, the songs from my techno rack have always been relatively linear in this respect. That's why I build this Clock Multiplier. The main inspiration is Befaco's Burst, from which I took the terminology for quantity and distribution.
 
 In the first step I implement the idea with an Arduino as a prototype, so I can quickly test the handling and features on the rack.
 
 As a follow-on version, I'm building it around an ATMega, i.e. without a pre-built Arduino, making it much cheaper and space-saving.
+
+## Features
+
+* ✅ Variable quantity of beats (1–8)
+* ✅ Variable beat distribution (11 gradations)
+* ✅ Quantity CV input with attenuation
+* ✅ Output muting button
+* ✅ Overvoltage protection on both inputs
 
 ## Specifications
 
