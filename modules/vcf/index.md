@@ -47,3 +47,10 @@ Then I accidentally found out that if I remove one of the diodes in the original
 * Showcase and feedback on [Instagram](https://www.instagram.com/p/CWIzVhPtUZS/)
 * Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BVCF+Rev3%5D)
 
+**Revision 4**
+
+What's new? Optimized footprints, panel design and documentation.
+
+* [Schematic (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Schematic.pdf)
+* [BOM (XLS)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-BOM.xls)
+
