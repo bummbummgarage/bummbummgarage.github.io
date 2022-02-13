@@ -13,7 +13,7 @@ Endersstraße 41
 
 ## Contact
 
-Email: steffenlohaus@gmail.com
+Email: support@bummbummgarage.com
 
 ## Person responsible for editorial
 
