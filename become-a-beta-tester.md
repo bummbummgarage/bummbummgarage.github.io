@@ -20,8 +20,6 @@ I am looking for eager people to test one or more DIY kits at the given time. I 
   </p>
   <p>
     <strong>Which modules do you want to test (as PCB & panel kit)? <span class="text-error">*</span></strong><br>
-    <input type="checkbox" name="lists_25[]" value="9" id="envf" checked>
-    <label for="envf">Envelope Follower (ENVF)</label><br>
     <input type="checkbox" name="lists_25[]" value="10" id="mixer" checked>
     <label for="mixer">Utility Mixer</label><br>
     <input type="checkbox" name="lists_25[]" value="11" id="clock-multiplier" checked>
@@ -43,7 +41,7 @@ I am looking for eager people to test one or more DIY kits at the given time. I 
 
 
 
-  
+
 
 
 
