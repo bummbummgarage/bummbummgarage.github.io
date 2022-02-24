@@ -102,4 +102,5 @@ What's new? I brought it on PCB level.
 
 What's new? Adjusted to real 2hp (9.8mm wide), changed decoupling capacitors to smaller ones, fixed Thonkiconn twist.
 
+* [Build Document (PDF)](Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-Build_Doc.pdf)
 * [BOM (XLS)](Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-BOM.xls)
