@@ -43,7 +43,7 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 
 ## Testing / Use cases
 
-* from 1khz to 9khz? --> https://www.reddit.com/r/synthdiy/comments/spvbwu/comment/hwhrxm8/?utm_source=share&utm_medium=web2x&context=3 und Rückmeldung geben.
+* from 1khz to 9khz? -> https://www.reddit.com/r/synthdiy/comments/spvbwu/comment/hwhrxm8/?utm_source=share&utm_medium=web2x&context=3 und Rückmeldung geben.
 
   
 
