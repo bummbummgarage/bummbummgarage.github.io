@@ -1,46 +1,57 @@
 ---
 layout: project
-title: A Modular Synth Techno Rack based on DIY Kits
-description: I'm creating a mobile rack to play live. And because it's fun, I'll base it on DIY kits.
+title: One Module Per Month
+description: Over a period of six months I will release one module per month as a buyable DIY kit (through-hole).
 ---
 
-# A Modular Synth Techno Rack based on DIY Kits
+# One Module Per Month
 
-**Clearly making techno!** That's how I got into the world of modular synthesizers. With [my DIY drum machine](/projects/diy-modular-synthesizer-drum-machine/) I have laid the foundations. Now I want to make music!
+Over a period of six months, I will release one module per month as a buyable DIY kit (through-hole).
 
-## Sound
+**Contents**
 
-This is the kind of music that I am envisioning:
+1. [A Dream Come True](#a-dream-come-true)
+2. [Roadmap (Modules)](#roadmap-modules)
+3. [Simple DIY Kits](#simple-diy-kits)
+4. [Become A Beta Tester](#become-a-beta-tester)
 
-* [Lady Starlight](https://www.youtube.com/watch?v=JXC-RGnLXOU)
-* [Tunegirl](https://www.instagram.com/the_tunegirl/)
-* [Karenn](https://www.youtube.com/watch?v=uVsfzprO7zs)
-* [Amelie Lens](https://www.youtube.com/watch?v=GJkuTx1DQzg)
-* [Layton Giordani](https://youtu.be/jYXeI_TGx9s?t=110)
+## A Dream Come True
 
-## Setup
+When I started DIY synth stuff in May 2020, I looked in deep admiration at the makers of modules and DIY kits 🤩 Nothing has been lost in the fascination. With the circuits and modules I built myself over time, I took bigger and bigger steps and was always grateful for the positive feedback! At the end of this year (2021), the opportunity has arisen to distribute my modules as DIY kits. Thanks to the great people at [Exploding Shed](https://www.exploding-shed.com/)! With this a little dream comes true for me 🦄
 
-I'm creating **a mobile rack to play live**. And because I can (and because it's fun), I'm building it **based on DIY kits**.
+**Over a period of six months, I will release one module per month as a buyable DIY kit.** I haven't done anything like that yet. That's why I'm looking forward to the ideas, through the wins and fails that arise along the way 💪
 
-According to the video "[How to make a TINY live techno modular synth in only 62HP](https://www.youtube.com/watch?v=4jCCzpWBsFs)" by Mylar Melodies, you need: **drums, bass, lead (e.g. chords) and freaky noises**.
+From a big picture view I'm still iterating on my mobile techno rack. This is where the specific ideas for my modules come from, especially when these requirements are not yet served on the DIY kit market.
 
-Following that approach, I'm adding what is missing and replacing what needs to be improved. **Step by step**.
+## Roadmap (Modules)
 
-| Component                | Implementation                                               |
-| ------------------------ | ------------------------------------------------------------ |
-| ✅ Case and power supply  | [Case II 0.1](/modules/case-ii-0.1)<br />[PSU & Distro Board 0.1](/modules/psu-distro-board-0.1/) |
-| ✅ Clock & Divider        | [BPM Generator 20..2400 BPM with dividers](https://haraldswerk.de/Gate_and_Trigger/Pulses/Pulses.html) (Haralds:Werk) |
-| ✅ Rhythm / beat patterns | [LL8](https://www.robaux.io/ll8) (Robaux)<br />[Knight's Gallop](https://www.shakmatmodular.com/products/kg.html) (Shakmat Modular) |
-| ✅ Kick drum              | [Kickall](https://www.befaco.org/kickall-2/) (Befaco)        |
-| ✅ Snare / clap           | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Noise**: From the [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
-| ✅ Hats                   | **Voice**: [Hatz V2](http://patchingpanda.com/hatz) (Patching Panda)<br />**Mixer**: [Mixer II](/modules/mixer-ii) |
-| ✅ Sequencer              | [Popcorn v1.1](https://bastl-instruments.com/eurorack/modules/popcorn) (Bastl Instruments) |
-| ✅ Sample and hold        | [ADDAC215 Dual S&H+](https://www.addacsystem.com/en/products/modules/addac200-series/addac215) (ADDAC System) |
-| ✅ Bass                   | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Voice**: [3080 VCO](https://www.tindie.com/products/pmfoundations/3080-vco-eurorack-pcb-set/) (PM Foundations)<br />**Filter**: [BF-22](https://www.befaco.org/bf-22/) (Befaco) |
-| ✅ Lead                   | **Envelope generator**: [VCEG](/modules/voltage-controlled-envelope-generator-vceg/)<br />**Voice**: [Chord Organ](https://musicthing.co.uk/pages/chord.html) (Music Thing Modular)<br />**Filter**: [VCF](/modules/vcf/) |
-| 🟧 Reverb                 | *To be defined*                                              |
-| ✅ Mixer & VCAs           | [Voltage controlled Mixer-VCA](https://haraldswerk.de/Mixer/VC_Mixer_VCA/VC_Mixer_VCA.html) (Haralds:Werk) |
+| Month       | Module                                                       |
+| ----------- | ------------------------------------------------------------ |
+| *April*     | **[Voltage Controlled Filter (VCF)](/modules/vcf) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Filter.png) MS-20 style, based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html) (with friendly permission).** |
+| *May*       | **[Voltage Controlled Envelope Generator (VCEG)](/modules/voltage-controlled-envelope-generator-vceg/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png) On a [AS3310](https://www.alfarzpp.lv/eng/sc/AS3310.php) basis.** |
+| *June*      | **[Envelope Follower (ENVF)](/modules/envelope-follower/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Envelope-Follower.png) Handy tool for sidechaining in 2hp. Built with simple analog technology.** |
+| *July*      | **[Utility Mixer](/modules/mixer-ii/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Mixer-II.png) Two channel mixer for audio and CV in 2hp. Based on simple analog technology.** |
+| *August*    | **[Clock Multiplier](/modules/clock-multiplier/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Clock-Multiplier.png) Based on an [ATMega328](https://en.wikipedia.org/wiki/ATmega328).** |
+| *September* | **Trigger to Gate Converter** Built with simple analog technology. |
 
-----
+## Simple DIY Kits
 
-*Note: This setup is not carved in stone, but in a fluid state* 🌈
+When designing modules, I consider the experience of my DIY journey over the last months. Having seen highest highs of euphoria and deepest valleys of demotivation, I know some pitfalls and try to keep my designs **as frustration-free as possible**.
+
+I work with certain principles and constraints:
+
+1. **Few different components** – I try to limit the values and types to few and simple. For example, I am very happy if the values of the resistors in a kit are limited to 1K, 10K, and 100K.
+2. **Components that are always available** – I like to have all the components for a new kit already in my modest box. For example, that's why I like to use widely available op amps, like uA741 and TL072.
+3. **Compact module design** – I don't want to break or change my case. I need modules with as much functionality as possible in a limited space.
+
+## Become A Beta Tester
+
+Each module will go through certain stages in its development:
+
+1. Breadboard prototype, to test the circuit and function.
+2. PCB & Panel Prototype, to get feedback on the module and documentation.
+3. DIY Kit Release.
+
+For the second stage, **I am looking for eager people to test one or more DIY kits** at the given time. At this stage I will ship the kits at cost (around 12 € for PCB, panel and shipping worldwide). You then have to source the components yourself and I would ask you for feedback within four weeks.
+
+If you're generally interested, **[please send me your data to become a beta tester](become-a-beta-tester).**
