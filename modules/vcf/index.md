@@ -54,4 +54,5 @@ What's new? Optimized footprints, panel design and documentation.
 * [Build Document (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Build_Doc.pdf)
 * [BOM (XLS)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-BOM.xls)
 * [Schematic (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Schematic.pdf)
+* Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BVCF+Rev4%5D)
 
