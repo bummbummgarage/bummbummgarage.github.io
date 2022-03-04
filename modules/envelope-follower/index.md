@@ -104,3 +104,4 @@ What's new? Adjusted to real 2hp (9.8mm wide), changed decoupling capacitors to 
 
 * [Build Document (PDF)](Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-Build_Doc.pdf)
 * [BOM (XLS)](Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-BOM.xls)
+* Improvement potential on [Github (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BENVF+Rev4%5D)
