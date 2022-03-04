@@ -27,11 +27,11 @@ From a big picture view I'm still iterating on my mobile techno rack. This is wh
 
 | Month       | Module                                                       |
 | ----------- | ------------------------------------------------------------ |
-| *April*     | **[Voltage Controlled Filter (VCF)](/modules/vcf) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Filter.png) MS-20 style, based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html) (with friendly permission).** |
-| *May*       | **[Voltage Controlled Envelope Generator (VCEG)](/modules/voltage-controlled-envelope-generator-vceg/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png) On a [AS3310](https://www.alfarzpp.lv/eng/sc/AS3310.php) basis.** |
-| *June*      | **[Envelope Follower (ENVF)](/modules/envelope-follower/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Envelope-Follower.png) Handy tool for sidechaining in 2hp. Built with simple analog technology.** |
-| *July*      | **[Utility Mixer](/modules/mixer-ii/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Mixer-II.png) Two channel mixer for audio and CV in 2hp. Based on simple analog technology.** |
-| *August*    | **[Clock Multiplier](/modules/clock-multiplier/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Clock-Multiplier.png) Based on an [ATMega328](https://en.wikipedia.org/wiki/ATmega328).** |
+| *April*     | **[Voltage Controlled Filter (VCF)](/modules/vcf) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Filter.png)** MS-20 style, based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html) (with friendly permission). |
+| *May*       | **[Voltage Controlled Envelope Generator (VCEG)](/modules/voltage-controlled-envelope-generator-vceg/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png)** On a [AS3310](https://www.alfarzpp.lv/eng/sc/AS3310.php) basis. |
+| *June*      | **[Envelope Follower (ENVF)](/modules/envelope-follower/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Envelope-Follower.png)** Handy tool for sidechaining in 2hp. Built with simple analog technology. |
+| *July*      | **[Utility Mixer](/modules/mixer-ii/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Mixer-II.png)** Two channel mixer for audio and CV in 2hp. Based on simple analog technology. |
+| *August*    | **[Clock Multiplier](/modules/clock-multiplier/) ![img](projects/one-module-per-month/Bumm-Bumm-Garage-Clock-Multiplier.png)** Based on an [ATMega328](https://en.wikipedia.org/wiki/ATmega328). |
 | *September* | **Trigger to Gate Converter** Built with simple analog technology. |
 
 ## Simple DIY Kits
