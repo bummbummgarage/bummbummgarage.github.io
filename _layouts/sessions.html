@@ -1,0 +1,46 @@
+		
+{% include header.html %}
+
+{{ content }}
+
+<table>
+  <thead>
+    <tr>
+      <td>
+        Date
+      </td>
+      <td>
+        Minutes
+      </td>
+      <td>
+        Link
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for session in site.data.sessions %}
+    <tr>
+      <td>
+        {{ session.date }}
+        <!--
+        <a href='{{ module.name | replace: " ", "-" | replace: "(", "" | replace: ")", "" | downcase }}'>
+        {{ module.name }}
+        </a>
+        -->
+      </td>
+      <td>
+        {{ session.minutes }}
+      </td>
+      <td>
+        <a href='{{ session.link }}'>
+          {{ session.link }}
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<br>
+
+{% include footer.html %}
