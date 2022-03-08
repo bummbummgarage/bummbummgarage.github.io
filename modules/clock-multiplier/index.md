@@ -49,11 +49,18 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 
 ## TODOs
 
-* Output Opamp einbauen
+* PCB und Panel setzen
+  * Passt der 7805 liegend hin?
+  * Switch Footprint okay von den Maßen?
+  * Idiotensichere Labels an den ISP.
+  * Passt ein Loch für eine Verbindungssschraube rein?
+* Schematic auf Git sichern
+* Kram bestellen
+* Reverse Polarity Protection testen, Hardcore Test.
 * Use Cases finden
   * Fünftel Bass line über einen Takt
-* (Startup Sequence einbauen)
-* (Tap Clock einbauen)
+* (Startup Sequence einbauen -> Morse Code)
+* Lösen: LEDs leuchten, wenn kein Trigger IN kommt. Soll nicht.
 
 ### Features:
 
