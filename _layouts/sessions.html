@@ -3,6 +3,17 @@
 
 {{ content }}
 
+
+{% assign total = 0 %}
+
+{% for session in site.data.sessions %}
+  {% assign total = total | plus: session.minutes %}
+{% endfor %}
+
+<p>Current total: {{ total }} minutes</p>
+
+<h2>Sessions</h2>
+
 <table>
   <thead>
     <tr>
@@ -18,22 +29,20 @@
     </tr>
   </thead>
   <tbody>
-    {% for session in site.data.sessions %}
+
+    {% assign sorted = site.data.sessions | sort: 'date' | reverse %}
+
+    {% for session in sorted %}
     <tr>
       <td>
-        {{ session.date }}
-        <!--
-        <a href='{{ module.name | replace: " ", "-" | replace: "(", "" | replace: ")", "" | downcase }}'>
-        {{ module.name }}
-        </a>
-        -->
+        {{ session.date | date: "%d" | plus:'0' }}.{{ session.date | date: "%m" | plus:'0' }}.{{ session.date | date: "%y" | plus:'0' }}
       </td>
       <td>
         {{ session.minutes }}
       </td>
       <td>
         <a href='{{ session.link }}'>
-          {{ session.link }}
+          {{ session.link | replace: "https://", "" }}
         </a>
       </td>
     </tr>
