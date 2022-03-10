@@ -12,3 +12,6 @@ https://www.google.com/amp/s/amp.reddit.com/r/modular/comments/5u0nr5/cv_recorde
 
 https://www.modulargrid.net/e/patching-panda-ephemere
 
+
+
+Interface Sprache: https://www.instagram.com/p/CaLBwGdsuft/
