@@ -1,7 +1,5 @@
 # 🧬 Recreate
 
-* Bass Synthie Sound am Anfang von Million Dollar Code
-* https://open.spotify.com/track/5UsfWcP6SThHlZ4oAgx7ge?si=71244b326d624214 --> 3:40 mit dem Rumble und einfachen Synth drüber
 * https://open.spotify.com/track/4BBJIOZIz1F7mehcQgNJ8e?si=8761e7d7a6bf480c Anfang mit Rumble fein
 * https://open.spotify.com/track/5D8rqUiLXz2nipiQvjL77h?si=YCduiDwwRpixuJNuyR2idw relativ am Ende
 * Angel Alanis Departing V1

@@ -50,7 +50,6 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 ## TODOs
 
 * PCB und Panel setzen
-  * Idiotensichere Labels an den ISP.
   * Beschriftung, Logos etc.
   * Panel setzen
   * Übereinander legen
