@@ -1,3 +1,8 @@
+
+
+const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
+
+
 // Fixated bottom and top end of the bpm scale for this clock.
 // Music genre tempos: https://soundprogramming.net/synthesis/bpm-by-musical-genre/
 const int lowestBpm = 0;
@@ -7,25 +12,38 @@ int maxBpm; // This can change on the run.
 int minBpm; // This can change on the run.
 
 const int bpmPotiPin = A0;
-int bpm; // The global BPM storage.
+long bpm; // The global BPM storage.
 
 const int minTrimpotPin = A1;
 const int maxTrimpotPin = A2;
 
 const int counterLEDPin = 11;
 
-const int LEDPrimaryBright = 150;
+const int LEDPrimaryBright = 255;
 const int LEDSecondaryBright = 10;
+
+
+long lastBeat = 0; // Timestamp of the latest beat. Starts at zero.
+
+
+const int triggerLength = 25; // In milliseconds.
+
+
+const int bpmLEDPin = 10;
+
 
 
 void setup() {
 
-  Serial.begin(9600);
+  if ( debug == true ) {
+    Serial.begin(9600);
+  }
 
   pinMode(bpmPotiPin, INPUT);
   pinMode(minTrimpotPin, INPUT);
   pinMode(maxTrimpotPin, INPUT);
   pinMode(counterLEDPin,OUTPUT);
+  pinMode(bpmLEDPin,OUTPUT);
 
 }
 
@@ -35,15 +53,19 @@ void loop() {
 
   int mx = getMax();
   if ( mx != maxBpm ) {
-    Serial.print("maxBpm: ");
-    Serial.println(mx);
+    if ( debug == true ) {
+      Serial.print("maxBpm: ");
+      Serial.println(mx);
+    }
     maxBpm = mx;
   }
   
   int mn = getMin();
   if ( mn != minBpm ) {
-    Serial.print("minBpm: ");
-    Serial.println(mn);
+    if ( debug == true ) {
+      Serial.print("minBpm: ");
+      Serial.println(mn);
+    }
     minBpm = mn;
   }
 
@@ -51,13 +73,32 @@ void loop() {
 
   int b = getBpm();
   if ( b != bpm ) {
-    Serial.print("BPM: ");
-    Serial.println(b);
+    if ( debug == true ) {
+      Serial.print("BPM: ");
+      Serial.println(b);
+    }
     bpm = b;   
   }
 
   /* ---------------------- 3. Calculate triggers per beat ---------------------- */
 
+  // How many milliseconds has one beat cycle?
+  long beatCycle = 60000 / bpm;
+
+  // Has already enough time passed for the next beat?
+  /*
+  if( ( ( millis() - lastBeat ) % beatCycle ) == 0 ) {
+    lastBeat = millis();
+  }
+  */
+  /*
+  if( ( millis() - lastBeat ) == beatCycle ) {
+    lastBeat = millis();
+  }
+  */
+
+  // Hier läuft etwas noch nicht rund. Mit den beiden Methoden oben fallen teilweise oder alle folgenden Schläge aus.
+  
 
   /* ------------------------ 4. Output LEDS & triggers -------------------------- */
 
@@ -74,6 +115,15 @@ void loop() {
     analogWrite(counterLEDPin,0); 
   }
 
+  // BPM LED
+  if ( lastBeat - millis() < triggerLength ) {
+    if ( debug == true ) {
+      Serial.println("BEAT");
+    }
+    analogWrite(bpmLEDPin,LEDPrimaryBright);
+  } else {
+    analogWrite(bpmLEDPin,0);
+  }
 
 }
 
