@@ -1,5 +1,4 @@
 
-
 const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
 
 
@@ -42,8 +41,8 @@ void setup() {
   pinMode(bpmPotiPin, INPUT);
   pinMode(minTrimpotPin, INPUT);
   pinMode(maxTrimpotPin, INPUT);
-  pinMode(counterLEDPin,OUTPUT);
-  pinMode(bpmLEDPin,OUTPUT);
+  pinMode(counterLEDPin, OUTPUT);
+  pinMode(bpmLEDPin, OUTPUT);
 
 }
 
@@ -59,7 +58,7 @@ void loop() {
     }
     maxBpm = mx;
   }
-  
+
   int mn = getMin();
   if ( mn != minBpm ) {
     if ( debug == true ) {
@@ -77,7 +76,8 @@ void loop() {
       Serial.print("BPM: ");
       Serial.println(b);
     }
-    bpm = b;   
+    bpm = b;
+    lastBeat = millis(); // Start cycles from the beginning.
   }
 
   /* ---------------------- 3. Calculate triggers per beat ---------------------- */
@@ -87,32 +87,39 @@ void loop() {
 
   // Has already enough time passed for the next beat?
   /*
-  if( ( ( millis() - lastBeat ) % beatCycle ) == 0 ) {
-    lastBeat = millis();
-  }
-  */
-  /*
-  if( ( millis() - lastBeat ) == beatCycle ) {
-    lastBeat = millis();
-  }
+    if( ( ( millis() - lastBeat ) % beatCycle ) == 0 ) {
+      lastBeat = millis();
+      if ( debug == true ) {
+        Serial.print("lastBeat: ");
+        Serial.println(lastBeat);
+      }
+    }
   */
 
+  if ( ( millis() - beatCycle ) == lastBeat ) {
+    lastBeat = millis();
+    if ( debug == true ) {
+      Serial.print("lastBeat: ");
+      Serial.println(lastBeat);
+    }
+  }
+
   // Hier läuft etwas noch nicht rund. Mit den beiden Methoden oben fallen teilweise oder alle folgenden Schläge aus.
-  
+
 
   /* ------------------------ 4. Output LEDS & triggers -------------------------- */
 
   // COUNTER LED
   // Light the counter LED a little on each second bpm (…2, …4, …6, …8).
   if ( bpm % 2 == 0 ) {
-    analogWrite(counterLEDPin,LEDSecondaryBright);
+    analogWrite(counterLEDPin, LEDSecondaryBright);
     // Light the counter LED fully when the BPM is a multiple of ten (10, 20, 30, 40, …).
     if ( bpm % 10 == 0 ) {
-      analogWrite(counterLEDPin,LEDPrimaryBright);
+      analogWrite(counterLEDPin, LEDPrimaryBright);
     }
   }
   else {
-    analogWrite(counterLEDPin,0); 
+    analogWrite(counterLEDPin, 0);
   }
 
   // BPM LED
@@ -120,9 +127,9 @@ void loop() {
     if ( debug == true ) {
       Serial.println("BEAT");
     }
-    analogWrite(bpmLEDPin,LEDPrimaryBright);
+    analogWrite(bpmLEDPin, LEDPrimaryBright);
   } else {
-    analogWrite(bpmLEDPin,0);
+    analogWrite(bpmLEDPin, 0);
   }
 
 }
