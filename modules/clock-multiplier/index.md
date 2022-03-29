@@ -53,6 +53,7 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
   * Beschriftung, Logos etc.
   * Panel setzen
   * Übereinander legen
+* ISP mit Stromversorgung möglich?
 * Schematic auf Git sichern
 * Kram bestellen
 * Reverse Polarity Protection testen, Hardcore Test.
