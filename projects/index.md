@@ -5,6 +5,7 @@ title: Projects
 
 # Projects
 
+* [My **Vision Of Sound**](/projects/my-vision-of-sound) – *in progress*
 * [**One Module Per Month**](/) – *in progress*
 * [**One Thousand Minutes** Of Practice](/projects/one-thousand-minutes-of-practice) – *in progress*
 * [DIY Kit based Modular Synth **Techno Rack**](/projects/diy-kit-based-modular-synthesizer-techno-rack) – *August 2021 to February 2022*
