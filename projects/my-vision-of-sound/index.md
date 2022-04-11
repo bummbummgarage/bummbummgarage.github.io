@@ -32,9 +32,7 @@ Extract songs and artists from favorite DJ sets.
 * Sven Väth
 * Tobias Lueke
 * [Fear N Loathing](https://www.youtube.com/c/FearNLoathing)
-  * https://www.youtube.com/watch?v=cjF-9In3hqU
-    * Feiern - Lukas Freudenebrger, Unmensch
-    * Umleitung - Kai Pattenberg
+  * ✅ https://www.youtube.com/watch?v=cjF-9In3hqU
 * https://www.phantom-agency.com/index.php (Sven Schaller Agency)
 * Matt Mus
 * United we streams
