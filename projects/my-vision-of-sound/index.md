@@ -7,7 +7,7 @@ title: My Vision Of Sound
 
 ## Collected Songs
 
-[Spotify Playlist](https://open.spotify.com/playlist/09QaGau4HZ0Hjl410cA01N?si=e6ae645ae3874103)
+The goal is a playlist of at least **100 songs**: [Spotify Playlist](https://open.spotify.com/playlist/09QaGau4HZ0Hjl410cA01N?si=e6ae645ae3874103)
 
 ### Structural Approach
 
