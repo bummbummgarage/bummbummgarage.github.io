@@ -5,7 +5,7 @@ title: Become A Beta Tester
 
 # Become A Beta Tester
 
-Over a period of six months, I will release one module per month as a buyable DIY kit (see the [concept and roadmap](/)).
+Over a period of five months, I will release one module per month as a buyable DIY kit (see the [concept and roadmap](/)).
 
 I am looking for eager people to test one or more DIY kits at the given time. I will ship the kits at cost (around 12 € for PCB, panel and shipping worldwide). You then have to source the components yourself and I would ask you for feedback within four weeks.
 
