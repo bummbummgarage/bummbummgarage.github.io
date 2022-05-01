@@ -29,7 +29,7 @@
   
     TRIGGER TO MIDI CLOCK (Rev1)
     This is the code for an Eurorack synth module.
-    It's built and tested on an Arduino Uno.
+    It's built and tested on Arduino Uno and Nano.
 
     Crucial parts of the code are taken gratefully from:
     "Arduino MIDI clock with tap tempo" by DieterVDW
@@ -57,7 +57,6 @@
 // General
 const bool debug = false; // Enables the Serial print in several functions. MIDI will not work (different baud rates).
 const int pushButtonDelay = 50; // The time the button will be insensitive after last change.
-
 
 // Trigger IN
 const int triggerInPin = A5;
