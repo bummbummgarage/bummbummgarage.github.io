@@ -25,6 +25,20 @@ At some point it bothered me more and more that it clicked so much in the sound 
 * ✅ Variable master gain
 * ✅ Buffered inputs
 
+## Specifications
+
+**Right and left view on the module:**
+
+![Bumm-Bumm-Garage-Mixer-II-Rev4-Right_Left](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Right_Left.JPG)
+
+**Control board (bottom):**
+
+![Bumm-Bumm-Garage-Mixer-II-Rev4-Control_Board](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Control_Board.JPG)
+
+**Main board (top and bottom):**
+
+![Bumm-Bumm-Garage-Mixer-II-Rev4-Main_Board](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Main_Board.JPG)
+
 ## Resources
 
 **Revision 1 (stripboard prototype)** 
