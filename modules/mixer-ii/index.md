@@ -56,6 +56,7 @@ What's new? Brought it on PCB level.
 
 * [Video Demo: Mixing Envelopes](https://www.youtube.com/watch?v=IGLfQJ8vuSY)
 * [Video Demo: Mixing Hihats](https://youtu.be/b4lbFXiRjBc)
+* [Video Demo: Mixing Bass Line And Hihat](https://www.youtube.com/watch?v=XQECzrxT42k)
 
 <!--
 
