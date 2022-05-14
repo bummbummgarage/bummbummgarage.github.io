@@ -58,6 +58,9 @@ What's new? Brought it on PCB level.
 * [Video Demo: Mixing Hihats](https://youtu.be/b4lbFXiRjBc)
 * [Video Demo: Mixing Bass Line And Hihat](https://www.youtube.com/watch?v=XQECzrxT42k)
 * [Schematic (PDF)](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Schematic.pdf)
+* [Panel Gerber files (ZIP)](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Panel-Gerber.zip)
+* [Main board Gerber files (ZIP)](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Main_Board-Gerber.zip)
+* [Control board Gerber files (ZIP)](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Control_Board-Gerber.zip)
 
 <!--
 
