@@ -55,3 +55,10 @@ What's new? Removed switches (and thereby their clicking) and added variable mas
 What's new? Brought it on PCB level.
 
 * [Video Demo: Mixing Envelopes](https://www.youtube.com/watch?v=IGLfQJ8vuSY)
+* [Video Demo: Mixing Hihats](https://youtu.be/b4lbFXiRjBc)
+
+<!--
+
+Rev4 Issue: Löcher nicht optimal am Panel.
+
+-->
