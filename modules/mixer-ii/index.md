@@ -2,12 +2,12 @@
 layout: module
 title: Mixer II
 description: Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage, like envelopes.
-image: modules/mixer-ii/Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3.jpg
+image: modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4.jpg
 ---
 
 # Mixer II
 
-![](Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3.jpg)
+![Bumm-Bumm-Garage-Mixer-II-Rev4](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4.jpg)
 
 Ultra simple two-channel mixer in 2hp. You can mix audio signals, such as control voltage, like envelopes. There are attenuators and mute switches per channel.
 
