@@ -50,10 +50,8 @@ What's new? Removed switches (and thereby their clicking) and added variable mas
 * Showcase and feedback on [Reddit](https://www.reddit.com/r/synthdiy/comments/s9y0wm/two_channel_mixer_for_audio_and_cv_breadboard/), [Modwiggler](https://www.modwiggler.com/forum/viewtopic.php?p=3684686) and [Instagram](https://www.instagram.com/p/CZBs4mWskNp/)
 * Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BMixer+II+Rev3%5D)
 
-<!--
+**Revision 4 (PCB prototype)**
 
-Rev2 Improvment Potential:
+What's new? Brought it on PCB level.
 
-* Remark: DC offset will not be removed. Audio can be strange if it has DC offset.
-
--->
+* [Video Demo: Mixing Envelopes](https://www.youtube.com/watch?v=IGLfQJ8vuSY)
