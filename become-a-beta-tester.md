@@ -20,8 +20,10 @@ I am looking for eager people to test one or more DIY kits at the given time. I 
   </p>
   <p>
     <strong>Which modules do you want to test (as PCB & panel kit)? <span class="text-error">*</span></strong><br>
+    <!--
     <input type="checkbox" name="lists_25[]" value="10" id="mixer" checked>
     <label for="mixer">Utility Mixer</label><br>
+		-->
     <input type="checkbox" name="lists_25[]" value="11" id="clock-multiplier" checked>
     <label for="clock-multiplier">Clock Multiplier</label><br>
     <input type="checkbox" name="lists_25[]" value="12" id="trigger-to-gate-converter" checked>
@@ -38,6 +40,7 @@ I am looking for eager people to test one or more DIY kits at the given time. I 
     I will send you emails only for this purpose and treat your data responsibly according to my privacy policy.
   </p>
 </form>
+
 
 
 
