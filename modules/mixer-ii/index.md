@@ -76,5 +76,5 @@ What's new? Brought it on PCB level.
 * [Panel Gerber files (ZIP)](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Panel-Gerber.zip)
 * [Main board Gerber files (ZIP)](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Main_Board-Gerber.zip)
 * [Control board Gerber files (ZIP)](Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Control_Board-Gerber.zip)
-* Showcase and feedback on [Instagram](https://www.instagram.com/p/CdkiTXwM7bK/)
+* Showcase and feedback on [Instagram](https://www.instagram.com/p/CdkiTXwM7bK/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/uq1bsj/2_channel_mixer_pb_prototype_eurorack/)
 * Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BMixer+II+Rev4%5D)
