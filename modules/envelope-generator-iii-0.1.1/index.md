@@ -31,7 +31,7 @@ The potis I use here are from Piher (PC-16 series) and the jack sockets are from
 
 ![](IMG_8141.jpg)
 
-## Links
+## Resources
 
 * [Video Demo](Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Video-Demo.mp4)
 * [Schematic (PDF)](Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Schematic.pdf)
