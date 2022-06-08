@@ -9,6 +9,8 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 
 ## Hihat
 
+*September 2021*
+
 ![Bumm-Bumm-Garage-Hihat-Rev3](/modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg)
 
 <!--
@@ -27,6 +29,7 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 ### Dazu noch
 
 * Videos aus Instagram
+* Das offene JLC Project
 
 
 
