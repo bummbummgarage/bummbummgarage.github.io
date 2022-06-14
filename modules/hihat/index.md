@@ -41,7 +41,7 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 
 The revision 3 comes with some fundamental issues:
 
-* Thonkiconn footprint is twisted.
+* Thonkiconn footprint is twisted (I tweaked it for the first implementation).
 * Noise regulator does not really work as intended: Cannot minimize as it should.
 * Metallic sound doesn't sound as nice as in the breadboard prototypes.
 
