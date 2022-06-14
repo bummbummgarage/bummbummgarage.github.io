@@ -37,7 +37,7 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 
 * [Schematic (PDF)](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Schematic.pdf)
 
-## Improvement Potiential
+## Improvement Potential
 
 The revision 3 comes with some fundamental issues:
 
