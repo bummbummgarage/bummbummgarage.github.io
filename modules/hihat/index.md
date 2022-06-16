@@ -9,8 +9,8 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 
 ### Dazu noch
 
+* Features dazu
 * Das offene JLC Project
-* Kurze Zusammenfassung oben
 * Bilder von den PCBs
 
 -->
@@ -20,6 +20,21 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 *September 2021*
 
 ![Bumm-Bumm-Garage-Hihat-Rev3](/modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg)
+
+I wanted a compact hihat module for my techno rack with a combined output for the closed and open hihat. I orientated myself mainly on the circuits of the 808. 
+
+The development on the breadboard took relatively long, but was successful. Unfortunately the sound and the behavior on the first PCB prototype was not so satisfying. 
+
+All in all, this was my most complex module up to that point. It will remain my nemesis.
+
+## Features
+
+* ✅ **Combined output** for the closed (CH) and open hihat (OH).
+* ✅ **Kill switch**: CH overwrites the OH
+* ✅ **Accent CV IN** with attenuation
+* ✅ **Variable mix** of metallic crash and noise sound
+* ✅ **Separate noise output** of metallic crash and noise sound
+* ✅ **Envelopes output** of the CH and OH
 
 ## Ressources
 
