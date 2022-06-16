@@ -9,7 +9,6 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 
 ### Dazu noch
 
-* Features dazu
 * Das offene JLC Project
 * Bilder von den PCBs
 
@@ -46,6 +45,7 @@ All in all, this was my most complex module up to that point. It will remain my 
 **Revision 3 (3 piece PCB)**
 
 * [Schematic (PDF)](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Schematic.pdf)
+* [EasyEDA files (ZIP)](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip)
 
 **References**
 
