@@ -37,12 +37,12 @@ All in all, this was my most complex module up to that point. It will remain my 
 
 ## Ressources
 
-**Revision 2 (breadboard prototype)**
+**Revision 1 (breadboard prototype)**
 
 - [Video snapshots from testing](https://www.youtube.com/watch?v=UXNZ4XKT65U)
 - [Schematic (PDF)](/modules/hihat/Rev1/Bumm-Bumm-Garage-Hihat-Rev1-Schematic.pdf)
 
-**Revision 3 (3 piece PCB)**
+**Revision 2 (3 piece PCB)**
 
 * [Schematic (PDF)](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Schematic.pdf)
 * [Schematic, Panel, PCBs (EasyEDA)](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip)
@@ -56,7 +56,7 @@ All in all, this was my most complex module up to that point. It will remain my 
 
 ## Improvement Potential
 
-**Revision 3**
+**Revision 2**
 
 * PCB: Thonkiconn footprint is twisted (I tweaked it for the first implementation).
 * Soldered module: Noise regulator does not really work as intended: Cannot minimize as it should.
