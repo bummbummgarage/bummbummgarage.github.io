@@ -5,15 +5,6 @@ description: Hihat module that I built for my modular synth drum machine project
 image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev2.jpg
 ---
 
-<!--
-
-### Dazu noch
-
-* Bilder von den PCBs
-* Ordner im Finder grün machen
-
--->
-
 ## Hihat
 
 *September 2021*
