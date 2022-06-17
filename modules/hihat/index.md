@@ -2,7 +2,7 @@
 layout: module
 title: Hihat
 description: Hihat module that I built for my modular synth drum machine project.
-image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
+image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev2.jpg
 ---
 
 <!--
@@ -18,13 +18,27 @@ image: /modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg
 
 *September 2021*
 
-![Bumm-Bumm-Garage-Hihat-Rev3](/modules/hihat/Bumm-Bumm-Garage-Hihat-Rev3.jpg)
+![Bumm-Bumm-Garage-Hihat-Rev3](/modules/hihat/Bumm-Bumm-Garage-Hihat-Rev2.jpg)
 
 I wanted a compact hihat module for my techno rack with a combined output for the closed and open hihat. I orientated myself mainly on the circuits of the 808. 
 
 The development on the breadboard took relatively long, but was successful. Unfortunately the sound and the behavior on the first PCB prototype was not so satisfying. 
 
 All in all, this was my most complex module up to that point. It will remain my nemesis.
+
+## Details
+
+**Panel and control board bottom:**
+
+![Bumm-Bumm-Garage-Hihat-Rev3](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Panel-Control-Board.jpg)
+
+**Main board top and bottom:**
+
+![Bumm-Bumm-Garage-Hihat-Rev3](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Main-Board.jpg)
+
+**Noise board top and bottom:**
+
+![Bumm-Bumm-Garage-Hihat-Rev3](/modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Noise-Board.jpg)
 
 ## Features
 
