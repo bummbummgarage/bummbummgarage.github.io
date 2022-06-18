@@ -56,3 +56,8 @@ What's new? Optimized footprints, panel design and documentation.
 * [Schematic (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Schematic.pdf)
 * Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BVCF+Rev4%5D)
 
+**Revision 5**
+
+What's new? Updated panel design and information on the PCB. It's the commercialized version available as a DYI kit at [Exploding Shed](https://www.exploding-shed.com/).
+
+* [Build Document (PDF)](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Build_Doc.pdf)
