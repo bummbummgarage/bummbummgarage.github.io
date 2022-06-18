@@ -15,19 +15,21 @@ René explains in the description how to add the high pass input. I didn't manag
 
 Then I accidentally found out that if I remove one of the diodes in the original design, the resonance gets a crunchy color (which I find particularly nice for bass voices). So I implemented this function with a switch: **Soft and hard resonance**.
 
-## Specifications
+## Assembly
 
-**Left and right view on the module:**
+**Right view on the module:**
 
-![](Rev3/Bumm-Bumm-Garage-VCF-Rev3-Sides.JPG)
+![](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Right.jpg)
 
-**Control board (bottom):**
+**Panel and main board from top:**
 
-![](Rev3/Bumm-Bumm-Garage-VCF-Rev3-Control_Board.jpg)
+![](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Top.jpg)
 
-**Main board (top and bottom):**
+**Control board and main board from bottom:**
 
-![](Rev3/Bumm-Bumm-Garage-VCF-Rev3-Main_Board.JPG)
+![](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Bottom.jpg)
+
+You can find a detailed [step-by-step assembly on Imgur](https://imgur.com/gallery/KzbNrbc).
 
 ## Resources
 
@@ -61,3 +63,4 @@ What's new? Optimized footprints, panel design and documentation.
 What's new? Updated panel design and information on the PCB. It's the commercialized version available as a DYI kit at [Exploding Shed](https://www.exploding-shed.com/).
 
 * [Build Document (PDF)](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Build_Doc.pdf)
+* Step-by-step assembly on [Imgur (images)](https://imgur.com/gallery/KzbNrbc)
