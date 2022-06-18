@@ -60,7 +60,7 @@ What's new? Optimized footprints, panel design and documentation.
 
 **Revision 5**
 
-What's new? Updated panel design and information on the PCB. It's the commercialized version available as a DYI kit at [Exploding Shed](https://www.exploding-shed.com/).
+What's new? Updated panel design and information on the PCB. It's the commercialized version available as a DIY kit at [Exploding Shed](https://www.exploding-shed.com/).
 
 * [Build Document (PDF)](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Build_Doc.pdf)
 * Step-by-step assembly on [Imgur (images)](https://imgur.com/gallery/KzbNrbc)
