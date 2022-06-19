@@ -55,4 +55,5 @@ What's new? Optimized footprints, updated panel design and information on the PC
 
 * [Build Document (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Build_Doc.pdf)
 * Step-by-step assembly on [Imgur (images)](https://imgur.com/gallery/s64xE1T)
+* [BOM (XLS)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-BOM.xls)
 * Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BVCF+Rev4%5D)
