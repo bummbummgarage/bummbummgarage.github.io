@@ -19,17 +19,17 @@ Then I accidentally found out that if I remove one of the diodes in the original
 
 **Right view on the module:**
 
-![](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Right.jpg)
+![](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Right.jpg)
 
 **Panel and main board from top:**
 
-![](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Top.jpg)
+![](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Top.jpg)
 
 **Control board and main board from bottom:**
 
-![](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Bottom.jpg)
+![](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Bottom.jpg)
 
-You can find a detailed [step-by-step assembly on Imgur](https://imgur.com/gallery/KzbNrbc).
+You can find a detailed [step-by-step assembly on Imgur](https://imgur.com/gallery/s64xE1T).
 
 ## Resources
 
@@ -51,16 +51,8 @@ You can find a detailed [step-by-step assembly on Imgur](https://imgur.com/galle
 
 **Revision 4**
 
-What's new? Optimized footprints, panel design and documentation.
+What's new? Optimized footprints, updated panel design and information on the PCB. It's the commercialized version available as a DIY kit at [Exploding Shed](https://www.exploding-shed.com/).
 
 * [Build Document (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Build_Doc.pdf)
-* [BOM (XLS)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-BOM.xls)
-* [Schematic (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Schematic.pdf)
+* Step-by-step assembly on [Imgur (images)](https://imgur.com/gallery/s64xE1T)
 * Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BVCF+Rev4%5D)
-
-**Revision 5**
-
-What's new? Updated panel design and information on the PCB. It's the commercialized version available as a DIY kit at [Exploding Shed](https://www.exploding-shed.com/).
-
-* [Build Document (PDF)](Rev5/Bumm-Bumm-Garage-VCF-Rev5-Build_Doc.pdf)
-* Step-by-step assembly on [Imgur (images)](https://imgur.com/gallery/KzbNrbc)
