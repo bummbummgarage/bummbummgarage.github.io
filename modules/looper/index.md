@@ -5,7 +5,7 @@ title: Looper
 
 <!-- Add description, image -->
 
-# Looper
+# Looper (concept)
 
 ![Bumm-Bumm-Garage-Looper](Bumm-Bumm-Garage-Looper.png)
 
