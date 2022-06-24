@@ -9,6 +9,16 @@ title: Looper
 
 ![Bumm-Bumm-Garage-Looper](Bumm-Bumm-Garage-Looper.png)
 
+## Features
+
+* ✅ Endless overdubs per track
+* ✅ Quantised recording (via clock input)
+* ✅ Undo / redo and clear function per track
+* ✅ Loop length indication (via colors on the track LED)
+* ✅ Basic module that can be expanded (5 tracks overall)
+* ✅ Volume control per track
+* ✅ Performance oriented design (sufficient space between all control elements)
+
 ## Similar modules
 
 Mentioned by the community
