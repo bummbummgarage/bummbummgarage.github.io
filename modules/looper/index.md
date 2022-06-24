@@ -5,7 +5,7 @@ title: Looper
 
 <!-- Add description, image -->
 
-# Looper (concept)
+# Looper
 
 ![Bumm-Bumm-Garage-Looper](Bumm-Bumm-Garage-Looper.png)
 
@@ -41,13 +41,9 @@ Mentioned by the community
 
 
 
-
-
-
-
 <!--
 
-#### Sample rate and Bit Depth
+#### Sample Rate and Bit Depth
 
 **Basically**
 
@@ -56,9 +52,16 @@ https://electro-smith.github.io/libDaisy/md_doc_md__a3__getting__started__audio.
 * Typical CDs are at 44.1kHz, High-fidelity samplerates start at 96kHz.
 
 * typical CD audio is 16-bits
-* Audio File Size Calulcator: https://www.theaudioarchive.com/TAA_Resources_File_Size.htm
+* Audio File Size Calculator: https://www.theaudioarchive.com/TAA_Resources_File_Size.htm
 
-**BOSS RC-505**
+**Recording length and file sizes** 
+
+|      | Length          | … bei 130 BPM | File size (44,1kHz, 24bit, Mono) |
+| ---- | --------------- | ------------- | -------------------------------- |
+| Kick | 1 bar, 4 hits   | 1,8 s         | < 1MB                            |
+| Lead | 4 bars, 16 hits | 7,3 s         | 0,8 MB                           |
+
+**BOSS RC-505 MkII**
 
 https://www.musikhaus-korn.de/de/boss-rc-505-mk2-loop-station/pd/189900
 
@@ -66,12 +69,19 @@ https://www.musikhaus-korn.de/de/boss-rc-505-mk2-loop-station/pd/189900
 - AD/DA Wandlung: 32 bits
 - Prozessor: 32-bit floating point
 
+**BOSS RC-505**
+
+https://www.boss.info/global/products/rc-505/specifications/
+
+* 44.1 kHz, 16-bit linear, stereo
+
 **Daisy**
 
 https://electro-smith.github.io/libDaisy/md_doc_md__a3__getting__started__audio.html
 
 * On the daisy, the hardware uses **24-bit audio** … (beyond 16-bits, the difference becomes less and less noticeable)
 * Daisy's audio engine uses 32-bit floats to work with audio
+* 64MB Speicher
 
 #### Similiar projects
 
