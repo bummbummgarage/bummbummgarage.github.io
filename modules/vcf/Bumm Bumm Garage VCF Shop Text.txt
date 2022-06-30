@@ -1,0 +1,49 @@
+
+SOUND:
+
+The Bumm Bumm Garage VCF is a voltage controlled low and high pass filter. It features everything that you need for creating special timbres in your voices or giving them a designated place in the mix.
+
+
+
+
+
+It is based on the "late Korg MS20 filter" by René Schmitz 
+
+… with some chaotic … non-linear …
+
+BUILD:
+
+
+
+
+---
+
+Daisy is an embedded platform for music. It features everything you need for creating high fidelity audio hardware devices. Just plug in a USB cable and start making sound! Programming the Daisy is a breeze with support for a number of languages including C++, Arduino, and Max/MSP Gen~. To get started, simply upload an example program over USB, and start tweaking!
+
+Documentation, and examples are hosted on our GitHub for easy download. All firmware that we develop is released for free under a permissive open source license.
+
+---
+
+
+Voltage controlled filter that I built for my techno rack. It’s based on “Korg late MS20 filter” by René Schmitz.
+
+René explains in the description how to add the high pass input. I didn’t manage to make it a switch, so there are two separate inputs for high pass and low pass 🤷‍♂️
+
+Then I accidentally found out that if I remove one of the diodes in the original design, the resonance gets a crunchy color (which I find particularly nice for bass voices). So I implemented this function with a switch: Soft and hard resonance.
+
+
+Feedback:
+
+BUILD:
+- Few different components – I try to limit the values and types to few and simple. For example, I am very happy if the values of the resistors in a kit are limited to 1K, 10K, and 100K.
+- The usage is smooth, the build was easy
+- Hi :) finished the filter, worked on first plug :) well done, it was fun to solder it and it was well designed. 
+
+
+SOUND:
+- hard resonance klingt richtig nice. Ich mag das nicht-lineare.
+- Oh it works great, I love the sound
+- I like that it’s not perfect and has some character, and adding the resonance switch was a good idea
+- Actually it sounds amazing and the switch to hard/soft results in some great grit. All in all great filter, I’ll not be letting it go anytime soon.
+- Sounds cool, only tested it for a small session, the resonance is really nice.
+
