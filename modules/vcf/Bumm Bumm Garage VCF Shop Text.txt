@@ -1,17 +1,23 @@
 
 SOUND:
 
-The Bumm Bumm Garage VCF is a voltage controlled low and high pass filter. It features everything that you need for creating special timbres in your voices or giving them a designated place in the mix.
+The Bumm Bumm Garage VCF is a voltage controlled low and high pass filter. It features everything that you need for creating unique timbres in your voices or giving them a designated place in the mix. Just plug your audio in the HPF (high pass filter) or LPF (low pass filter) jack, connect the output to the next stage in your chain and start shaping your sound!
+
+Shaping blabla is a breeze … by using the CV and … the resonance switch for non-linear (chaotic) responses.
 
 
 
-
-
-It is based on the "late Korg MS20 filter" by René Schmitz 
-
-… with some chaotic … non-linear …
 
 BUILD:
+
+It is based on the "late Korg MS20 filter" by René Schmitz 
+- Few different components – I try to limit the values and types to few and simple. For example, I am very happy if the values of the resistors in a kit are limited to 1K, 10K, and 100K.
+- The usage is smooth, the build was easy
+- Hi :) finished the filter, worked on first plug :) well done, it was fun to solder it and it was well designed. 
+
+
+
+
 
 
 
