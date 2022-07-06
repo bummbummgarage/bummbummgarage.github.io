@@ -9,16 +9,9 @@ Features
 * Modular fun: Cutoff CV with attenuation
 * Linear & anarchic: Variable resonance with soft and hard response
 
-Power: 
 Width: 6 HP
-Depth: 
+Depth: 46 mm (with power jack plugged in)
 
 DIY level: medium. 
 
 All the documentation (schematics, BOM, assembly guide, …) is hosted on the [module's project page](https://www.bummbummgarage.com/modules/vcf/) for easy download.
-
--------
-
-Power: 65mA @+12V, 10mA @-12V
-Width: 6 HP
-Depth: Skiff friendly
