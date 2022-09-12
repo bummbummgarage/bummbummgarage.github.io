@@ -50,12 +50,18 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 ## TODOs
 
 * PCB und Panel setzen
-  * Beschriftung, Logos etc.
+  * ✅ PCB setzen
   * Panel setzen
-  * Übereinander legen
-* ISP mit Stromversorgung möglich?
-* Schematic auf Git sichern
+    * 1. ✅ Positionen checken auf dem PCB
+      2. SVG Exportieren aus Affinity Designer
+      3. in easyEDA setzen
+  * PCB + Panel als PDF übereinander legen und Positionen checken
+* Schematic und PCBs auf Git sichern
 * Kram bestellen
+  * Panel + PCB
+  * Komponenten
+
+* ISP mit Stromversorgung möglich?
 * Reverse Polarity Protection testen, Hardcore Test.
 * Use Cases finden
   * Fünftel Bass line über einen Takt

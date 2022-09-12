@@ -9,9 +9,9 @@ Features
 * Modular fun: Cutoff CV with attenuation
 * Linear & anarchic: Variable resonance with soft and hard response
 
-Power: 16 mA @ +12 V; 16 mA @ -12 V
 Width: 6 HP
 Depth: 46 mm (with power jack plugged in)
+Power: 16 mA @ +12 V; 16 mA @ -12 V
 
 DIY level: medium.
 
