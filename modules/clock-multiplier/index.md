@@ -39,6 +39,13 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 * Showcase and feedback on [Instagram](https://www.instagram.com/p/CZ1NLhLM4i7/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/spvbwu/clock_multiplier_with_variable_trigger/)
 * Improvement potential: Opamp buffer at the output and an ATMega 329 instead of an Arduino.
 
+**Revision 2 (PB prototype)**
+
+* [Schematic (PDF)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Schematic.pdf)
+* [Panel Gerber files (ZIP)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Panel.zip)
+* [Control board Gerber files (ZIP)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Control_Board.zip)
+* [Main board Gerber files (ZIP)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Main_Board.zip)
+
 <!--
 
 ## Testing / Use cases
@@ -49,19 +56,12 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 
 ## TODOs
 
-* PCB und Panel setzen
-  * ✅ PCB setzen
-  * Panel setzen
-    * 1. ✅ Positionen checken auf dem PCB
-      2. SVG Exportieren aus Affinity Designer
-      3. in easyEDA setzen
-  * PCB + Panel als PDF übereinander legen und Positionen checken
-* Schematic und PCBs auf Git sichern
+* Produktionsdaten auf GIT sichern
 * Kram bestellen
-  * Panel + PCB
+  * ✅ Panel + PCB
   * Komponenten
-
-* ISP mit Stromversorgung möglich?
+* Links der Docs online checken
+* Checken: ISP mit Stromversorgung möglich?
 * Reverse Polarity Protection testen, Hardcore Test.
 * Use Cases finden
   * Fünftel Bass line über einen Takt
