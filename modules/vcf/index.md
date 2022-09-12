@@ -1,13 +1,13 @@
 ---
 layout: module
 title: VCF
-image: modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3.jpg
+image: modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front-Side.jpg
 description: Voltage controlled filter (VCF) that I built for my techno rack.
 ---
 
 # VCF
 
-![](Rev3/Bumm-Bumm-Garage-VCF-Rev3.jpg)
+![](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front-Side.jpg)
 
 Voltage controlled filter that I built for my techno rack. It's based on ["Korg late MS20 filter" by René Schmitz](https://www.schmitzbits.de/ms20.html).
 
