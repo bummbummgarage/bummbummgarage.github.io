@@ -15,6 +15,12 @@ René explains in the description how to add the high pass input. I didn't manag
 
 Then I accidentally found out that if I remove one of the diodes in the original design, the resonance gets a crunchy color (which I find particularly nice for bass voices). So I implemented this function with a switch: **Soft and hard resonance**.
 
+## Specifications
+
+* **Width**: 6 HP
+* **Depth**: 46 mm (with power jack plugged in)
+* **Current Draw**: 16 mA @ +12 V; 16 mA @ -12 V
+
 ## Assembly
 
 **Right view on the module:**
