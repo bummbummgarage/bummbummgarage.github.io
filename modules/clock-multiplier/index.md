@@ -44,9 +44,11 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 What's new? Built around an ATMega 328p and brought to PCB level.
 
 * [Schematic (PDF)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Schematic.pdf)
+* [BOM (Numbers)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-BOM.numbers)
 * [Panel Gerber files (ZIP)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Panel.zip)
 * [Control board Gerber files (ZIP)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Control_Board.zip)
 * [Main board Gerber files (ZIP)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Main_Board.zip)
+* Improvement potential on [GitHub (issues)](https://github.com/bummbummgarage/bummbummgarage.github.io/issues?q=is%3Aissue+is%3Aopen+%5BClock+Multiplier+Rev2%5D)
 
 <!--
 
@@ -58,7 +60,14 @@ What's new? Built around an ATMega 328p and brought to PCB level.
 ## TODOs
 
 * BOM erstellen
-* Komponenten
+  * ✅ BOM aus easyEDA exportieren
+  * ✅ Sortieren
+  * ✅ Schön machen am Ende
+  * Bereitstellen
+
+* Komponenten bestellen
+* Code verlinken in Rev2
+* Switch Specs + Link in der BOM updaten + XLS bereitstellen
 * Checken: ISP mit Stromversorgung möglich?
 * Reverse Polarity Protection testen, Hardcore Test.
 * Use Cases finden
