@@ -59,13 +59,7 @@ What's new? Built around an ATMega 328p and brought to PCB level.
 
 ## TODOs
 
-* BOM erstellen
-  * ✅ BOM aus easyEDA exportieren
-  * ✅ Sortieren
-  * ✅ Schön machen am Ende
-  * Bereitstellen
-
-* Komponenten bestellen
+* ✅ Komponenten bestellen
 * Code verlinken in Rev2
 * Switch Specs + Link in der BOM updaten + XLS bereitstellen
 * Checken: ISP mit Stromversorgung möglich?
