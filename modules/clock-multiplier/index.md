@@ -39,7 +39,9 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 * Showcase and feedback on [Instagram](https://www.instagram.com/p/CZ1NLhLM4i7/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/spvbwu/clock_multiplier_with_variable_trigger/)
 * Improvement potential: Opamp buffer at the output and an ATMega 329 instead of an Arduino.
 
-**Revision 2 (PB prototype)**
+**Revision 2 (PCB prototype)**
+
+What's new? Built around an ATMega 328p and brought to PCB level.
 
 * [Schematic (PDF)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Schematic.pdf)
 * [Panel Gerber files (ZIP)](Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Panel.zip)
@@ -52,15 +54,11 @@ As a follow-up version, I'm building it around an ATMega, i.e. without a pre-bui
 
 * from 1khz to 9khz? -> https://www.reddit.com/r/synthdiy/comments/spvbwu/comment/hwhrxm8/?utm_source=share&utm_medium=web2x&context=3 und Rückmeldung geben.
 
-  
 
 ## TODOs
 
-* Produktionsdaten auf GIT sichern
-* Kram bestellen
-  * ✅ Panel + PCB
-  * Komponenten
-* Links der Docs online checken
+* BOM erstellen
+* Komponenten
 * Checken: ISP mit Stromversorgung möglich?
 * Reverse Polarity Protection testen, Hardcore Test.
 * Use Cases finden
