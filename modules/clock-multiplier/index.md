@@ -59,10 +59,9 @@ What's new? Built around an ATMega 328p and brought to PCB level.
 
 ## TODOs
 
-* ✅ Komponenten bestellen
 * Code verlinken in Rev2
 * Switch Specs + Link in der BOM updaten + XLS bereitstellen
-* Checken: ISP mit Stromversorgung möglich?
+* 
 * Reverse Polarity Protection testen, Hardcore Test.
 * Use Cases finden
   * Fünftel Bass line über einen Takt
