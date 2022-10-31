@@ -61,8 +61,13 @@ const int pushButtonDelay = 50; // The time the button will be insensitive after
 // Trigger IN
 const int triggerInPin = A5;
 const int triggerInLEDPin = 3;
+
+bool triggerIn = false; // Indicator that the current HIGH state has already been detected.
+
 long triggerInHigh; // Timestamp of the latest trigger high.
 long triggerInLow; // Timestamp of the latest trigger low.
+
+
 
 // Cycles & intervals
 long cycleStart = 0; // Timestamp of when the last cycle began (in microseconds).
@@ -109,7 +114,7 @@ void loop() {
 
 
   // Get the trigger IN state and the cycle time.
-  if ( getTriggerIn() ) {
+  if ( getTriggerIn() ) { // This all happens only when the trigger in is HIGH.
 
     // ------------------------ STOP & START ------------------------
     // Checking and setting the status of stop and start.
@@ -153,8 +158,9 @@ void loop() {
 
 
     // ------------------ CYCLES & INTERVALS ------------------
+    
     // Is it the beginning of a new cycle?
-    if ( triggerInLow > triggerInHigh ) { // Yes
+    if ( !triggerIn ) {
 
       // Log the latest cycle time.
       cycleTime = micros() - cycleStart;
@@ -178,10 +184,10 @@ void loop() {
       }
       Timer1.setPeriod(intervalMicroSeconds);
 
-    }
+      // Log the current HIGH phase.
+      triggerIn = true;
 
-    // Log the timestamp of this trigger high.
-    triggerInHigh = micros();
+    }
 
   } else {
 
@@ -193,8 +199,8 @@ void loop() {
       digitalWrite(midiClockOutLEDPin, LOW);
     }
 
-    // Log the timestamp of this trigger low.
-    triggerInLow = micros();
+    // Log the current DOWN phase.
+    triggerIn = false;
 
   }
 
