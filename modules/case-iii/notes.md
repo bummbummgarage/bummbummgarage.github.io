@@ -1,36 +1,54 @@
 
 
-# Case III
+# Case III (Flightcase)
+
+Das PSU wird innen an der Seite montiert.
 
 ## Fragen
 
-- Wie stark soll das Aluminium werden? **1,5mm** mal machen, mit Rayonik dann abklären.
-- Wie hoch soll es innen sein? 2 * Panelgröße nach Döpfer + 1mm pro Schlitz = ( 2 * 128,5mm ) + (3 * 2mm) = **260mm**
-- Wie breit wird es innen? 84 HP, das sind **427mm**
-- Wie tief wird das Case (innen)? Überstand (2mm) + Railhöhe (~17mm) + Doepferbreite (80mm) = **100mm**
+- Wie hoch soll es innen sein (Korpus)? Wie das alte: **266mm**
+- Wieviel Platz nehmen die [Flightcase Schienen am oberen Rand](https://www.adamhall.com/shop/de-de/flightcase-material/easy-case-system/easy-case-profile/5275/q-6502-f?c=15861)? 1,5mm pro Schiene, also **3mm in der Breite**.
+- Wie breit wird es innen inkl der Schienen? 84 HP, das sind **427mm** + etwas Futter für die Case Schienen und etwas Luft.
+- Welche Maße muss dann das Holz in der Breite haben? 427mm + 3mm = **430mm**
+- Wie stark ist das Korpus Material für die Schienen? **7mm**
+- Wie tief wird das Case (Korpus, innen)? [Railhöhe](https://image.jimcdn.com/app/cms/image/transf/dimension=1820x1280:format=png/path/sfae175d77ecacb54/image/i67898b5975a38c52/version/1591887677/image.png) + PSU-Breite = 27,5mm + 80 mm = **110mm**
 - Wie tief ragt das Netzteil inkl Kabel in den Raum? ~55mm
 - Cutaway für den Stromstecker? 48mm (2mm overlap) * 28mm (4mm overlap)
-
-
+- Maße vom Doepfer PSU3: Abmessungen: ca. 200 mm (Länge) x 80 mm (Breite) x 40 mm (Höhe) (https://doepfer.de/a100z_d.htm)
 
 ## Maße
 
-* Außen:
-  * Breite = 430mm
-  * Höhe = 263mm
-  * Tiefe = 101,5mm
-* Innen:
-  * Breite = 427mm
-  * Höhe = 260mm
-  * Tiefe = 100mm
+* Innen (Korpus):
+  * Höhe: 266mm
+  * Breite: 430mm
 
-## Vision
+* Außen (Korpus):
+  * Höhe: 280mm
+  * Breite: 444mm
+  * Tiefe: 123mm
+* Schienen
+  * 2 x Rücken lang = 444 - ( 2 * 28,5 ) = **387mm** (Q 6506)
+  * 2 x Rücken kurz = 280 - ( 2 * 28,5 ) = **223mm** (Q 6506)
+  * 4 x Deckel/Boden kurz = 123 - 28,5 - 28 = **66,5mm** (Q 6506)
+  * 2 x Öffnung lang = 444 - ( 2 * 28,5 ) = **387mm** (Q 6502 M)
+  * 2 x Öffnung kurz = 280 - ( 2 * 28,5 ) = **223mm** (Q 6502 M)
+* Ecken
+  * 4 x Q 4506 BLK
+  * 4 x Q 4502 MBLK
 
-* So soll es werden (mit Custom Maßen dann): https://schneidersladen.de/de/sector-sieben-berliner-7u-104hp-skiff-with-lid 
+## Bestellung
 
-* Die Rails hier: "Eurorack Rails - Type B - **Low Profile** - silver" auf https://www.exploding-shed.com/shop-catalogue/eurorack-rails-case-building/
+#### ✅ Q 6506
 
-* Maße vom Doepfer PSU3: Abmessungen: ca. 200 mm (Länge) x 80 mm (Breite) x 40 mm (Höhe) (https://doepfer.de/a100z_d.htm)
+( 2 * 387 ) + ( 2 * 223 ) + ( 4 * 66,5 ) = **1.486 mm**
+
+#### ✅ Q 6502 M
+
+( 2 * 387 ) + ( 2 * 223 ) = **1.220 mm**
+
+#### ✅ Ecken (8 Stück)
+
+## 
 
 
 
