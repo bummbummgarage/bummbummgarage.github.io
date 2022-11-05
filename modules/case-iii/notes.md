@@ -6,10 +6,19 @@ Das PSU wird innen an der Seite montiert.
 
 ## Fragen
 
-- Wie hoch soll es innen sein (Korpus)? Wie das alte: **266mm**
-- Wieviel Platz nehmen die [Flightcase Schienen am oberen Rand](https://www.adamhall.com/shop/de-de/flightcase-material/easy-case-system/easy-case-profile/5275/q-6502-f?c=15861)? 1,5mm pro Schiene, also **3mm in der Breite**.
-- Wie breit wird es innen inkl der Schienen? 84 HP, das sind **427mm** + etwas Futter für die Case Schienen und etwas Luft.
-- Welche Maße muss dann das Holz in der Breite haben? 427mm + 3mm = **430mm**
+* Welche Rails habe ich? https://schneidersladen.de/de/sb-rail-19-ohne-kante
+* Wie lange sind meine Rails nun? **433mm** laut [meiner Zeichnung](https://www.bummbummgarage.com/modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Technical-Drawing-And-Bimensions.pdf). Nachmessen kommt auch hin.
+
+* **Breite Schienen**: Wie lange müssen dann die langen Profile geschnitten werden? Rails - ( 2 * 20mm ) = 433 - ( 2 * 20 ) = **393mm**
+* **Hohe Schienen**: Wie lange müssen die Höhe Schienen geschnitten werden? Korpus Innen - ( 2 * 20mm ) = 266 - ( 2 * 20 ) = **226mm**
+* **Tiefe Schienen**: 116mm - 20mm - 28mm = **68mm**
+
+
+
+
+
+
+
 - Wie stark ist das Korpus Material für die Schienen? **7mm**
 - Wie tief wird das Case (Korpus, innen)? [Railhöhe](https://image.jimcdn.com/app/cms/image/transf/dimension=1820x1280:format=png/path/sfae175d77ecacb54/image/i67898b5975a38c52/version/1591887677/image.png) + PSU-Breite = 27,5mm + 80 mm = **110mm**
 - Wie tief ragt das Netzteil inkl Kabel in den Raum? ~55mm
