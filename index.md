@@ -13,7 +13,6 @@ Over a period of five months, I will release one module per month as a buyable D
 1. [A Dream Come True](#a-dream-come-true)
 2. [Roadmap (Modules)](#roadmap-modules)
 3. [Simple DIY Kits](#simple-diy-kits)
-4. [Become A Beta Tester](#become-a-beta-tester)
 
 ## A Dream Come True
 
@@ -43,6 +42,8 @@ I work with certain principles and constraints:
 2. **Components that are always available** – I like to have all the components for a new kit already in my modest box. For example, that's why I like to use widely available op amps, like uA741 and TL072.
 3. **Compact module design** – I don't want to break or change my case. I need modules with as much functionality as possible in a limited space.
 
+<!--
+
 ## Become A Beta Tester
 
 Each module will go through certain stages in its development:
@@ -54,3 +55,5 @@ Each module will go through certain stages in its development:
 For the second stage, **I am looking for eager people to test one or more DIY kits** at the given time. At this stage I will ship the kits at cost (around 12 € for PCB, panel and shipping worldwide). You then have to source the components yourself and I would ask you for feedback within four weeks.
 
 If you're generally interested, **[please send me your data to become a beta tester](become-a-beta-tester).**
+
+-->
