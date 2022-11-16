@@ -1,0 +1,559 @@
+{
+  "uuid": "8c389a4d6bd823d4a83667e79c9c97a6",
+  "path": "Offline/Envelope%20Follower%20Rev4",
+  "name": "Envelope Follower Rev4",
+  "content": "",
+  "created_at": "2022-02-13 12:07:15",
+  "updated_at": "2022-03-06 10:37:38",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "2ac7a71635a5c8e8d4071ba3434347cd",
+      "title": "Main_Board",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "b0248eb51e084227889f2cb84eab79c4": 7,
+        "24eeb2ceca08480b92b847b6a310acda": 1,
+        "b6ae6272f8984e8cb7007033c143794a": 1,
+        "79f3d914709f44aea6b512f3f21df7c6": 1,
+        "4ffe184da3e5496c99b535a8d8f6f2e2": 1,
+        "4d4e80dedbe949ff9476e135198a841d": 1,
+        "16fc6c94c1b34154892af856e7078641": 4,
+        "f61484a4135e4c54861fddbd29c3b8d5": 2,
+        "601446e334a0459ab6e4cb43c0fedd79": 1,
+        "647e2e839be546579fbb7a495d0a9fd0": 3
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100nF",
+          1,
+          "CAPACITOR",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "24484ce7d5e247dea1fd786ac7f78b82",
+            "uuid": "24eeb2ceca08480b92b847b6a310acda"
+          }
+        ],
+        [
+          "100nF",
+          4,
+          "CAPACITOR",
+          "C2,C3,C6,C7",
+          {
+            "BOM_Supplier Part": "undefined",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ReliaPro",
+            "BOM_Manufacturer Part": "0.22uF 5% 100VCalibration capacitor",
+            "puuid": "24484ce7d5e247dea1fd786ac7f78b82",
+            "uuid": "16fc6c94c1b34154892af856e7078641"
+          }
+        ],
+        [
+          "10uF",
+          2,
+          "CAPACITOR ELECTROLYTIC 5MM",
+          "C4,C5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "e4fd49acd9ec4d3fb986d41000a97267",
+            "uuid": "f61484a4135e4c54861fddbd29c3b8d5"
+          }
+        ],
+        [
+          "CONNECTOR 1X3 PIN",
+          3,
+          "CONNECTOR 1X3 PIN",
+          "J1,J2,J3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ae56455a4f4d44878b0386a7aa2b02c9",
+            "uuid": "647e2e839be546579fbb7a495d0a9fd0"
+          }
+        ],
+        [
+          "Box Header, 10 Pin",
+          1,
+          "BOX HEADER 2X5 EURORACK POWER 10 PIN",
+          "J4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "e0b52d29c5804af19b8ce6670cdb0fa8",
+            "uuid": "601446e334a0459ab6e4cb43c0fedd79"
+          }
+        ],
+        [
+          "100k",
+          3,
+          "RESISTOR THIN PADS",
+          "R1,R6,R7",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1M",
+          3,
+          "RESISTOR THIN PADS",
+          "R2,R3,R5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "10k",
+          1,
+          "RESISTOR THIN PADS",
+          "R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "TL074",
+          1,
+          "INTEGRATED CIRCUIT 14 PIN THIN PADS",
+          "IC1",
+          {
+            "BOM_Supplier Part": "C107644",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TL074IDT",
+            "BOM_Manufacturer Part": "STMicroelectronics",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "06739f0a6d1f443ba2a621c34e1c8cf7",
+            "uuid": "b6ae6272f8984e8cb7007033c143794a"
+          }
+        ],
+        [
+          "100nF",
+          1,
+          "CAPACITOR",
+          "C8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "24484ce7d5e247dea1fd786ac7f78b82",
+            "uuid": "24eeb2ceca08480b92b847b6a310acda"
+          }
+        ],
+        [
+          "1N4148",
+          1,
+          "DIODE THIN PADS",
+          "D1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "1N4148",
+            "BOM_Manufacturer": "SEMTECH",
+            "BOM_Supplier Part": "C14516",
+            "puuid": "a19cbe29e9504f6285c65db23390dd16",
+            "uuid": "ed535c8fe56245c1a5180026fdcb7303"
+          }
+        ],
+        [
+          "Jack Socket Thonkiconn Mono 3 Pin",
+          3,
+          "THONKICONN MONO",
+          "J5,J6,J7",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "Reichelt",
+            "puuid": "4281cbf82f4e48219c8f1632a4dce6bc",
+            "uuid": "317e8b3d305642b3b81e52b447276ad8"
+          }
+        ],
+        [
+          "CONNECTOR 1X3 PIN",
+          3,
+          "CONNECTOR 1X3 PIN",
+          "J8,J9,J10",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ae56455a4f4d44878b0386a7aa2b02c9",
+            "uuid": "647e2e839be546579fbb7a495d0a9fd0"
+          }
+        ],
+        [
+          "LED-0603_G",
+          1,
+          "LED 3MM TOP",
+          "LED1",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "19-217/GHC-YR1S2/3T",
+            "BOM_Supplier Part": "C72043",
+            "BOM_Supplier": "LCSC",
+            "puuid": "1a1530991f33495e973bc7589eaaf3a8",
+            "uuid": "cf6eca9c9efe444882712b3d5cec1885"
+          }
+        ],
+        [
+          "1k",
+          4,
+          "RESISTOR THIN PADS",
+          "R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1M",
+          3,
+          "ALPS POTI STEHEND 2HP",
+          "RV1,RV2,RV3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "98c77ace27cc4ec9b9a26791eb792ac6",
+            "uuid": "ecd8969dfca7498ea379ff3336e359f5"
+          }
+        ]
+      ],
+      "updateTime": 1644770332,
+      "createTime": 1644750435,
+      "histories": [],
+      "created_at": "2022-02-13 12:07:15",
+      "updated_at": "2022-02-13 17:38:52"
+    },
+    {
+      "uuid": "4aa3e114f74a70c3d6c57d4a4cc56c77",
+      "title": "Control_Board",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "647e2e839be546579fbb7a495d0a9fd0": 3,
+        "317e8b3d305642b3b81e52b447276ad8": 3,
+        "ecd8969dfca7498ea379ff3336e359f5": 3,
+        "b0248eb51e084227889f2cb84eab79c4": 4,
+        "24eeb2ceca08480b92b847b6a310acda": 1,
+        "ed535c8fe56245c1a5180026fdcb7303": 1,
+        "cf6eca9c9efe444882712b3d5cec1885": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100nF",
+          1,
+          "CAPACITOR",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "24484ce7d5e247dea1fd786ac7f78b82",
+            "uuid": "24eeb2ceca08480b92b847b6a310acda"
+          }
+        ],
+        [
+          "100nF",
+          4,
+          "CAPACITOR",
+          "C2,C3,C6,C7",
+          {
+            "BOM_Supplier Part": "undefined",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ReliaPro",
+            "BOM_Manufacturer Part": "0.22uF 5% 100VCalibration capacitor",
+            "puuid": "24484ce7d5e247dea1fd786ac7f78b82",
+            "uuid": "16fc6c94c1b34154892af856e7078641"
+          }
+        ],
+        [
+          "10uF",
+          2,
+          "CAPACITOR ELECTROLYTIC 5MM",
+          "C4,C5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "e4fd49acd9ec4d3fb986d41000a97267",
+            "uuid": "f61484a4135e4c54861fddbd29c3b8d5"
+          }
+        ],
+        [
+          "CONNECTOR 1X3 PIN",
+          3,
+          "CONNECTOR 1X3 PIN",
+          "J1,J2,J3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ae56455a4f4d44878b0386a7aa2b02c9",
+            "uuid": "647e2e839be546579fbb7a495d0a9fd0"
+          }
+        ],
+        [
+          "Box Header, 10 Pin",
+          1,
+          "BOX HEADER 2X5 EURORACK POWER 10 PIN",
+          "J4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "e0b52d29c5804af19b8ce6670cdb0fa8",
+            "uuid": "601446e334a0459ab6e4cb43c0fedd79"
+          }
+        ],
+        [
+          "100k",
+          3,
+          "RESISTOR THIN PADS",
+          "R1,R6,R7",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1M",
+          3,
+          "RESISTOR THIN PADS",
+          "R2,R3,R5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "10k",
+          1,
+          "RESISTOR THIN PADS",
+          "R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "TL074",
+          1,
+          "INTEGRATED CIRCUIT 14 PIN THIN PADS",
+          "IC1",
+          {
+            "BOM_Supplier Part": "C107644",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TL074IDT",
+            "BOM_Manufacturer Part": "STMicroelectronics",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "06739f0a6d1f443ba2a621c34e1c8cf7",
+            "uuid": "b6ae6272f8984e8cb7007033c143794a"
+          }
+        ],
+        [
+          "100nF",
+          1,
+          "CAPACITOR",
+          "C8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "24484ce7d5e247dea1fd786ac7f78b82",
+            "uuid": "24eeb2ceca08480b92b847b6a310acda"
+          }
+        ],
+        [
+          "1N4148",
+          1,
+          "DIODE THIN PADS",
+          "D1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "1N4148",
+            "BOM_Manufacturer": "SEMTECH",
+            "BOM_Supplier Part": "C14516",
+            "puuid": "a19cbe29e9504f6285c65db23390dd16",
+            "uuid": "ed535c8fe56245c1a5180026fdcb7303"
+          }
+        ],
+        [
+          "Jack Socket Thonkiconn Mono 3 Pin",
+          3,
+          "THONKICONN MONO",
+          "J5,J6,J7",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "Reichelt",
+            "puuid": "4281cbf82f4e48219c8f1632a4dce6bc",
+            "uuid": "317e8b3d305642b3b81e52b447276ad8"
+          }
+        ],
+        [
+          "CONNECTOR 1X3 PIN",
+          3,
+          "CONNECTOR 1X3 PIN",
+          "J8,J9,J10",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ae56455a4f4d44878b0386a7aa2b02c9",
+            "uuid": "647e2e839be546579fbb7a495d0a9fd0"
+          }
+        ],
+        [
+          "LED-0603_G",
+          1,
+          "LED 3MM TOP",
+          "LED1",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "19-217/GHC-YR1S2/3T",
+            "BOM_Supplier Part": "C72043",
+            "BOM_Supplier": "LCSC",
+            "puuid": "1a1530991f33495e973bc7589eaaf3a8",
+            "uuid": "cf6eca9c9efe444882712b3d5cec1885"
+          }
+        ],
+        [
+          "1k",
+          4,
+          "RESISTOR THIN PADS",
+          "R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "7bd58dd5886248529cded9acb82f0965",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "1M",
+          3,
+          "ALPS POTI STEHEND 2HP",
+          "RV1,RV2,RV3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "98c77ace27cc4ec9b9a26791eb792ac6",
+            "uuid": "ecd8969dfca7498ea379ff3336e359f5"
+          }
+        ]
+      ],
+      "updateTime": 1646559458,
+      "createTime": 1644750435,
+      "histories": [],
+      "created_at": "2022-02-13 12:07:15",
+      "updated_at": "2022-03-06 10:37:38"
+    },
+    {
+      "uuid": "3dbef3bfaedb92d97cef69c2c94ef1a2",
+      "puuid": "8c389a4d6bd823d4a83667e79c9c97a6",
+      "title": "Panel",
+      "filename": "Panel.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {},
+      "BOM": [],
+      "updateTime": 1645723661,
+      "createTime": 1644750455,
+      "histories": [],
+      "created_at": "2022-02-13 12:07:35",
+      "updated_at": "2022-02-24 18:27:41"
+    },
+    {
+      "uuid": "51484caaf84e6bdaf44e19531aaf6fac",
+      "puuid": "8c389a4d6bd823d4a83667e79c9c97a6",
+      "title": "PCB",
+      "filename": "PCB.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "e0b52d29c5804af19b8ce6670cdb0fa8": 1,
+        "ae56455a4f4d44878b0386a7aa2b02c9": 6,
+        "98c77ace27cc4ec9b9a26791eb792ac6": 3,
+        "4281cbf82f4e48219c8f1632a4dce6bc": 3,
+        "a19cbe29e9504f6285c65db23390dd16": 1,
+        "e4fd49acd9ec4d3fb986d41000a97267": 2,
+        "24484ce7d5e247dea1fd786ac7f78b82": 6,
+        "06739f0a6d1f443ba2a621c34e1c8cf7": 1,
+        "7bd58dd5886248529cded9acb82f0965": 11,
+        "1a1530991f33495e973bc7589eaaf3a8": 1
+      },
+      "BOM": [],
+      "updateTime": 1646377336,
+      "createTime": 1644750484,
+      "histories": [],
+      "created_at": "2022-02-13 12:08:04",
+      "updated_at": "2022-03-04 08:02:16"
+    }
+  ],
+  "sort": [
+    "2ac7a71635a5c8e8d4071ba3434347cd",
+    "4aa3e114f74a70c3d6c57d4a4cc56c77"
+  ],
+  "title": "Envelope Follower Rev4",
+  "foldername": "Envelope Follower Rev4",
+  "schfilename": "Envelope Follower Rev4.json",
+  "schfilemtime": 1646559459011
+}
