@@ -8,6 +8,8 @@ description: Over a period of five months I will release one module per month as
 
 Over a period of five months, I will release one module per month as a buyable DIY kit (through-hole).
 
+**Update November 2022**: I walked through the project plan quite some weeks. At some point by the beginning of this year I realized that it causes more stress than fun. So I decided to drive the development as it fits ot my flow. Still all the modules are in progress and maybe somewhere in the futures they'll all be emitted 😌
+
 **Contents**
 
 1. [A Dream Come True](#a-dream-come-true)
