@@ -5,6 +5,7 @@ title: Projects
 
 # Projects
 
+* [**Ten Thousand Minutes Of Songs** Published](/projects/ten-thousand-minutes-published) – *in progress*
 * [**One Module Per Month**](/projects/one-module-per-month) – *in progress*
 * [My **Vision Of Sound**](/projects/my-vision-of-sound) – *March to November 2022*
 * [**One Thousand Minutes** Of Practice](/projects/one-thousand-minutes-of-practice) – *November 2021 to November 2022*

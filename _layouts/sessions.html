@@ -4,13 +4,43 @@
 {{ content }}
 
 
-{% assign total = 0 %}
+{% assign overall_sessions = 0 %}
 
 {% for session in site.data.sessions %}
-  {% assign total = total | plus: session.minutes %}
+
+  {% assign overall_sessions = forloop.length %}
+
+{% endfor %}
+  
+<!-- How many sessions are there in the data? -->
+<!-- Overall Sessions: {{ overall_sessions }} <br> -->
+
+
+{% assign total = 0 %}
+
+{% assign offset = 0 %}
+
+{% for session in site.data.sessions %}
+  
+  {% if total <= page.goal %}
+
+    {% assign total = total | plus: session.minutes %}
+
+    {% assign offset = offset | plus: 1 %}
+
+  {% else %}
+
+    {% break %}
+
+  {% endif %}
+    
 {% endfor %}
 
-<p>Current total: {{ total }} minutes</p>
+<!-- How many sessions were needed to reach the goal given by the page variable -->
+<!-- Offset: {{ offset }} <br> -->
+
+
+<p>Total: {{ total }} minutes</p>
 
 <h2>Sessions</h2>
 
@@ -32,20 +62,26 @@
 
     {% assign sorted = site.data.sessions | sort: 'date' | reverse %}
 
-    {% for session in sorted %}
-    <tr>
-      <td>
-        {{ session.date | date: "%d" | plus:'0' }}.{{ session.date | date: "%m" | plus:'0' }}.{{ session.date | date: "%y" | plus:'0' }}
-      </td>
-      <td>
-        {{ session.minutes }}
-      </td>
-      <td>
-        <a href='{{ session.link }}'>
-          {{ session.link | replace: "https://", "" }}
-        </a>
-      </td>
-    </tr>
+    {% assign reverse_offset = overall_sessions | minus: offset %}
+    
+    {% for session in sorted offset: reverse_offset %}
+
+      <tr>
+        <td>
+          {{ session.date | date: "%d" | plus:'0' }}.{{ session.date | date: "%m" | plus:'0' }}.{{ session.date | date: "%y" | plus:'0' }}
+        </td>
+        <td>
+          {{ session.minutes }}
+        </td>
+        <td>
+          <a href='{{ session.link }}'>
+            {{ session.link | replace: "https://", "" }}
+          </a>
+        </td>
+      </tr>
+
+      {% assign total = total | plus: session.minutes %}
+
     {% endfor %}
   </tbody>
 </table>
