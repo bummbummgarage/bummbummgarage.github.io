@@ -1,7 +1,7 @@
 
 
 // General
-const bool debug = false; // Enables the Serial print in several functions. Slows down the frontend.
+const bool debug = true; // Enables the Serial print in several functions. Slows down the frontend.
 const bool internalClock = false; // Refuses the triggers and starts the internal clock. Meant for developing / debugging.
 const int internalClockBpm = 480; // The speed for the internal clock.
 
@@ -12,7 +12,7 @@ int triggerInLEDPin = 3;
 int triggerInPin = A5;
 
 
-// PATTERN
+// Pattern
 int patternLength;
 int patternDensity;
 const int densityPotiPin = A3;
