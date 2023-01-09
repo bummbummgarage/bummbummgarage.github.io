@@ -1,4 +1,4 @@
-date,minutes,link
+date,minutes,link,rating
 2021-11-12, 50, https://www.youtube.com/watch?v=axqlnZALASk&t=331s
 2021-11-12, 20, https://www.youtube.com/watch?v=tzVAXrfujbU
 2021-11-13, 58, https://www.youtube.com/watch?v=2Sjtxa0JPrk
@@ -125,14 +125,14 @@ date,minutes,link
 2022-12-22, 6, https://soundcloud.com/stiwahn/20221222-live-recording
 2022-12-29, 52, https://soundcloud.com/stiwahn/20221229-long-recording-m4a
 2022-12-30, 53, https://soundcloud.com/stiwahn/20221230-practice-m4a
-2023-01-01, 52, https://soundcloud.com/stiwahn/20230101-practice-m4a
-2023-01-03, 40, https://soundcloud.com/stiwahn/20230103-practice
+2023-01-01, 52, https://soundcloud.com/stiwahn/20230101-practice-m4a, 3
+2023-01-03, 40, https://soundcloud.com/stiwahn/20230103-practice, 3
 2023-01-03, 6, https://soundcloud.com/stiwahn/20230103-live-recording
 2023-01-04, 4, https://soundcloud.com/stiwahn/20230104-live-recording
 2023-01-04, 44, https://soundcloud.com/stiwahn/20230104-practice
 2023-01-04, 6, https://soundcloud.com/stiwahn/20230104b-live-recording
-2023-01-05, 13, https://soundcloud.com/stiwahn/20230105-practice
-2023-01-06, 10, https://www.youtube.com/watch?v=PF_8UIffMDw
+2023-01-05, 13, https://soundcloud.com/stiwahn/20230105-practice, 1
+2023-01-06, 10, https://www.youtube.com/watch?v=PF_8UIffMDw, 3
 2023-01-07, 4, https://soundcloud.com/stiwahn/20230107-live-recording
 2023-01-07, 4, https://soundcloud.com/stiwahn/20230107b-live-recording
 2023-01-08, 5, https://soundcloud.com/stiwahn/20230108-live-recording

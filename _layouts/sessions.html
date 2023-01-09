@@ -56,6 +56,9 @@
       <td>
         Link
       </td>
+      <td>
+        Rating
+      </td>
     </tr>
   </thead>
   <tbody>
@@ -77,6 +80,27 @@
           <a href='{{ session.link }}'>
             {{ session.link | replace: "https://", "" }}
           </a>
+        </td>
+        <td class="rating" style="font-size: 18px;">
+
+          {% if session.rating %}
+
+            {% assign rating = session.rating | plus: 0 %}
+
+            {% assign stars = "" %}
+
+            {% for i in (1..5) %}
+              {% if i <= rating %}
+                {% assign stars = stars | append: "<span style='color: orange;'>&#9733;</span>" %}
+              {% else %}
+                {% assign stars = stars | append: "<span style='color: #7d7d7d;'>&#9734;</span>" %}
+              {% endif %}
+            {% endfor %}
+
+            {{ stars }}
+
+          {% endif %}
+
         </td>
       </tr>
 
