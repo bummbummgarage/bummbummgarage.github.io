@@ -18,7 +18,7 @@
     {% for module in site.data.modules %}
     <tr>
       <td>
-        <a href='modules/{{ module.name | replace: " ", "-" | replace: "(", "" | replace: ")", "" | downcase }}'>
+        <a href='/modules/{{ module.name | replace: " ", "-" | replace: "(", "" | replace: ")", "" | downcase }}'>
         {{ module.name }}
         </a>
       </td>
