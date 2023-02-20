@@ -13,7 +13,7 @@ Endersstraße 41
 
 ## Contact
 
-Email: support@bummbummgarage.com
+Email: bummbummgarage@posteo.de
 
 ## Person responsible for editorial
 
