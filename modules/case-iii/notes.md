@@ -2,9 +2,56 @@
 
 # Case III (Flightcase)
 
+
+
+## Deckel
+
+### Maximale Höhe insgesamt: 20cm
+
+* easyJet: 45 x 36 x 20 cm (keine extra Hand- oder Laptoptasche), zusätzlich 56 x 45 x 25 cm bei Plus-Karte, Flexi-Tarif und speziellen Sitzen
+* Eurowings: 55 x 40 x 23 cm (bei Basic-Tarif gegen Gebühr), extra Tasche 40 x 30 x 25 cm 
+* Ryanair: 40 x 25 x 20 cm, extra 55 x 40 x 20 cm nur bei Priority (Erklärung neue Bestimmungen)40 x 25 x 20 cm
+
+
+
+**Was brauche ich alles?**
+
+- Platten
+- Nieten
+
+
+
+**Hersteller**
+
+* https://www.adamhall.com/shop/de-de/flightcase-material/
+
+**Lieferant**
+
+* https://www.huss-licht-ton.de/
+
+
+
+### Einkaufsliste
+
+1x https://www.amazon.de/Butterfly-Verschluss-klein-Schlo%C3%9F-Catch/dp/B07FVYQGGC/ (Butterfly)
+
+1x Schließprofil: https://www.huss-licht-ton.de/product_info.php/Adam-Hall-Q6502F-Easy-Case-Schliessprofil-female/info/26033.html
+
+4 x Female Ecke: https://www.huss-licht-ton.de/product_info.php/Adam-Hall-Q4502FBLK-Easy-Case-Ecke-fuer-Schliessprofil-female/info/26034.html
+
+4 x Ecke: https://www.huss-licht-ton.de/product_info.php/Adam-Hall-Q4506BLK-Easy-Case-Ecke-fuer-Schliessprofil-schwarz/info/21133.html
+
+
+
+
+
+---
+
+## Korpus
+
 Das PSU wird innen an der Seite montiert.
 
-## Fragen
+### Fragen
 
 * Welche Rails habe ich? https://schneidersladen.de/de/sb-rail-19-ohne-kante
 * Wie lange sind meine Rails nun? **433mm** laut [meiner Zeichnung](https://www.bummbummgarage.com/modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Technical-Drawing-And-Bimensions.pdf). Nachmessen kommt auch hin.
@@ -25,7 +72,7 @@ Das PSU wird innen an der Seite montiert.
 - Cutaway für den Stromstecker? 48mm (2mm overlap) * 28mm (4mm overlap)
 - Maße vom Doepfer PSU3: Abmessungen: ca. 200 mm (Länge) x 80 mm (Breite) x 40 mm (Höhe) (https://doepfer.de/a100z_d.htm)
 
-## Maße
+### Maße
 
 * Innen (Korpus):
   * Höhe: 266mm
@@ -45,7 +92,7 @@ Das PSU wird innen an der Seite montiert.
   * 4 x Q 4506 BLK
   * 4 x Q 4502 MBLK
 
-## Bestellung
+### Bestellung
 
 #### ✅ Q 6506
 
@@ -57,11 +104,11 @@ Das PSU wird innen an der Seite montiert.
 
 #### ✅ Ecken (8 Stück)
 
-## 
 
 
 
-## Cases
+
+# Cases
 
 | Case                                                         | Einbautiefe [mm] | Material                                          | Stärke | Notes                                            |
 | ------------------------------------------------------------ | ---------------- | ------------------------------------------------- | ------ | ------------------------------------------------ |
