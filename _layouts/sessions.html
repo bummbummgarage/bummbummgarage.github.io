@@ -70,7 +70,7 @@
     {% for session in sorted offset: reverse_offset %}
 
       <tr>
-        <td>
+        <td class="date">
           {{ session.date | date: "%d" | plus:'0' }}.{{ session.date | date: "%m" | plus:'0' }}.{{ session.date | date: "%y" | plus:'0' }}
         </td>
         <td>
@@ -113,3 +113,28 @@
 <br>
 
 {% include footer.html %}
+
+
+<script type="text/javascript">
+
+// Check if the single submits are younger than 5 days.
+// Then I won't listen back to them yet.
+// Therefore I make the date color red.
+$(document).ready(function() {
+  $('td.date').each(function() {
+    const dateString = $(this).text();
+    if (!isDateOlderThanFiveDays(dateString)) {
+      $(this).css("color", "rgb(241,63,87)");
+    }
+  });
+
+  function isDateOlderThanFiveDays(dateString) {
+    const [day, month, year] = dateString.split('.').map(Number);
+    const date = new Date(year < 100 ? year + 2000 : year, month - 1, day);
+    const currentDate = new Date();
+    const fiveDaysAgo = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - 5);
+    return date < fiveDaysAgo;
+  }
+});
+
+</script>
