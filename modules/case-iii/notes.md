@@ -16,7 +16,15 @@
 
 **Was brauche ich alles?**
 
-- Platten
+- Platten (Endformat)
+  - Deckel: 42,5cm * 26cm
+  - Seiten: 26cm * 7,5cm
+  - Vorne und hinten: 42,5cm * 7,5cm
+
+- Platten kaufen (mit 1,5mm Beschnittzugabe pro Schnitt), **Stärke 6mm**
+  - Deckel und Seiten: (42,5cm +  7,5cm +  7,5cm + 0,5cm)  * 26cm = **58cm * 26cm**
+  - Vorne und hinten: (7,5cm +  7,5cm + 0,15cm) * 42,5cm = **15cm * 42,5cm**
+
 - Nieten
 
 
