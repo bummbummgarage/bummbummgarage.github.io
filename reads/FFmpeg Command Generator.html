@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FFmpeg Command Generator</title>
-    <style>
-        .form-group {
-            margin-bottom: 1rem;
-        }
-    </style>
-    <script>
-        function generateCommand() {
-            const startTime = document.getElementById("start-time").value;
-            const duration = document.getElementById("duration").value;
-            const inputAudioFile = document.getElementById("input-audio-file").value;
-            const inputImageFile = document.getElementById("input-image-file").value;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFmpeg Command Generator</title>
 
-            const command = `ffmpeg -ss ${startTime} -t ${duration} -i ${inputAudioFile} -loop 1 -i ${inputImageFile} -filter_complex "[1:v]scale=iw*min(1\\,min(1080/iw\\,1080/ih)):ih*min(1\\,min(1080/iw\\,1080/ih)),crop=w='if(gte(iw,1080),1080,iw)':h='if(gte(ih,1080),1080,ih)':x=(iw-1080)/2:y=(ih-1080)/2,setsar=1,zoompan=z='1+(50/100)*on/400':x='iw/2-(iw/(2*zoom))':y='ih/2-(ih/(2*zoom))':s=1080x1080:d=400[final]" -map "[final]" -map 0:a -shortest -to ${duration} output.mp4`;
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-            document.getElementById("command-output").value = command;
-        }
-    </script>
+  <style>
+    .form-group {
+      margin-bottom: 1rem;
+    }
+  </style>
+  <script>
+    function generateCommand() {
+      const startTime = document.getElementById("start-time").value;
+      const duration = document.getElementById("duration").value;
+      const inputAudioFile = document.getElementById("input-audio-file").value;
+      const inputImageFile = document.getElementById("input-image-file").value;
+
+      const command = `ffmpeg -ss ${startTime} -t ${duration} -i ${inputAudioFile} -loop 1 -i ${inputImageFile} -filter_complex "[1:v]scale=iw*min(1\\,min(1080/iw\\,1080/ih)):ih*min(1\\,min(1080/iw\\,1080/ih)),crop=w='if(gte(iw,1080),1080,iw)':h='if(gte(ih,1080),1080,ih)':x=(iw-1080)/2:y=(ih-1080)/2,setsar=1,zoompan=z='1+(50/100)*on/400':x='iw/2-(iw/(2*zoom))':y='ih/2-(ih/(2*zoom))':s=1080x1080:d=400[final]" -map "[final]" -map 0:a -shortest -to ${duration} output.mp4`;
+
+      document.getElementById("command-output").value = command;
+    }
+  </script>
 </head>
-<body>
-    <h1>FFmpeg Command Generator</h1>
 
-    <div class="form-group">
-        <label for="start-time">Start Time (hh:mm:ss.ms):</label>
-        <input type="text" id="start-time" value="00:03:45.0">
-    </div>
+<body class="container">
+  <h1 class="mt-5 mb-4">FFmpeg Command Generator</h1>
 
-    <div class="form-group">
-        <label for="duration">Duration (hh:mm:ss.ms):</label>
-        <input type="text" id="duration" value="00:00:10.0">
-    </div>
+  <div class="form-group">
+    <label for="start-time">Start Time (hh:mm:ss.ms):</label>
+    <input type="text" id="start-time" class="form-control" value="00:03:45.0">
+  </div>
 
-    <div class="form-group">
-        <label for="input-audio-file">Input Audio File:</label>
-        <input type="text" id="input-audio-file" value="input.wav">
-    </div>
+  <div class="form-group">
+    <label for="duration">Duration (hh:mm:ss.ms):</label>
+    <input type="text" id="duration" class="form-control" value="00:00:10.0">
+  </div>
 
-    <div class="form-group">
-        <label for="input-image-file">Input Image File:</label>
-        <input type="text" id="input-image-file" value="promo.png">
-    </div>
+  <div class="form-group">
+    <label for="input-audio-file">Input Audio File:</label>
+    <input type="text" id="input-audio-file" class="form-control" value="input.wav">
+  </div>
 
-    <button onclick="generateCommand()">Generate Command</button>
+  <div class="form-group">
+    <label for="input-image-file">Input Image File:</label>
+    <input type="text" id="input-image-file" class="form-control" value="promo.png">
+  </div>
 
-    <h2>Generated Command</h2>
-    <textarea id="command-output" rows="5" cols="100" readonly></textarea>
+  <button onclick="generateCommand()" class="btn btn-primary mb-3">Generate Command</button>
+
+  <h2 class="mt-5 mb-4">Generated Command</h2>
+  <textarea id="command-output" class="form-control" rows="5" cols="100" readonly></textarea>
+
+  <h2 class="mt-5 mb-4">Documentation</h2>
+  <p>
+    Generate an FFmpeg command that will create a video file from an audio file and an image file.
+  </p>
+  <ul>
+    <li><strong>Start Time:</strong> The time (in hh:mm:ss.ms format) at which the video should start playing the audio file. The default value is 00:03:45.0.</li>
+    <li><strong>Duration:</strong> The length of time (in hh:mm:ss.ms format) that the video should play the audio file. The default value is 00:00:10.0.</li>
+    <li><strong>Input Audio File:</strong> The name of the audio file that you want to use to create the video. The default value is input.wav.</li>
+    <li><strong>Input Image File:</strong> The name of the image file that you want to use as the background of the video. The default value is promo.png.</li>
+  </ul>
+  <p>To use the FFmpeg command-line interface with the generated command, do the following:</p>
+  <ol>
+    <li>Copy the command that is output in the "Generated Command" field.</li>
+    <li>Open a terminal or command prompt.</li>
+    <li>Navigate to the directory where your audio file and image file are stored.</li>
+    <li>Paste the copied command into the terminal or command prompt and press Enter.</li>
+    <li>Wait for the command to finish executing. The output file (named output.mp4) will be stored in the same directory as your audio and image files.</li>
+  </ol>
+
+  <p>Note: If you do not have FFmpeg installed on your system, please visit the <a href="https://ffmpeg.org/" target="_blank">FFmpeg page</a> to download and install it before using this tool.</p>
+
+<br>
+
 </body>
 </html>
