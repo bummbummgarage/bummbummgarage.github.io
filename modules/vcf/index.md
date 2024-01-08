@@ -57,7 +57,7 @@ You can find a detailed [step-by-step assembly on Imgur](https://imgur.com/galle
 
 **Revision 4**
 
-What's new? Optimized footprints, updated panel design and information on the PCB. It's the commercialized version available as a DIY kit at [Exploding Shed](https://www.exploding-shed.com/).
+What's new? Optimized footprints, updated panel design and information on the PCB. It's the commercialized version available as a DIY kit at [Exploding Shed](https://www.exploding-shed.com/bumm-bumm-garage-voltage-controlled-filter-vcf/100192).
 
 * [Build Document (PDF)](Rev4/Bumm-Bumm-Garage-VCF-Rev4-Build_Doc.pdf)
 * Step-by-step assembly on [Imgur (images)](https://imgur.com/gallery/s64xE1T)
