@@ -1,0 +1,16 @@
+
+Module		Depth bis Unterkante (des Steckers)
+
+Disting		42mm
+2hp Verb	45mm
+ECHOZ		43mm
+VCF			46mm
+a-138 mixer	30mm
+mixer II	45mm
+909 hats	34mm
+Nijel		31mm
+SY.05		32mm
+Crater		35mm
+LL8			27mm
+308 VCO		67mm
+Midi I/O 	46mm
