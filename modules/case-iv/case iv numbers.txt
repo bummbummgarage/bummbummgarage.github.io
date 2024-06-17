@@ -1,16 +1,56 @@
+# Order
 
-Module		Depth bis Unterkante (des Steckers)
+## Must
 
-Disting		42mm
-2hp Verb	45mm
-ECHOZ		43mm
-VCF			46mm
-a-138 mixer	30mm
-mixer II	45mm
-909 hats	34mm
-Nijel		31mm
-SY.05		32mm
-Crater		35mm
-LL8			27mm
+- ✅ Wanne
+- ✅ Rails
+- ✅ Brackets
+- ✅ Clock oder LFO -> https://www.exploding-shed.com/feedback-modules-lfo-10/100296
+- ✅ Blank Plates -> China
+- ✅ Flying Bus Kabel -> Modularsynth Lab angeschrieben, um das in die Order zu packen
+- ✅ 6,3 mm Klinken Buchsen auch checken ob noch 3,5mm Buchsen da sind.
+- ✅ IC für den Doepfner Mixer
+- PSU -> Spanier auf Modulargrid angeschrieben
+- M5 Schrauben (ggf Washers)
+
+
+
+# Depth & Power
+
+Module		HP	Depth	Power (+/-)
+
+Disting			42mm	51mA / 19mA
+2hp Verb	2	45mm	81mA / 28mA
+ECHOZ		8 	43mm	100 mA / 20 mA
+VCF			6 	46mm	16 mA / 16 mA
+a-138 mixer	8 	30mm	10mA / 10mA
+909 hats	8 	34mm	33 mA / 22 mA
+Nijel		4 	31mm	12 mA / 12 mA
+SY0.5		10 	32mm	130 mA / 20 mA
+Crater		8 	35mm	120 mA / 80 mA
+LL8 		10 	27mm	20 mA / 0
+Clock (2hp)	2			38 mA / 7 mA
+
+SUM			66			611 mA / 234 mA
+
+
+Midi I/O 		46mm	?
+mixer II		45mm	?
+
+
+OUT
+
 308 VCO		67mm
-Midi I/O 	46mm
+
+
+
+Insgesamt hab ich 102 HP
+
+Also brauche ich nach einem Dreisatz:
+	+12V: 66 -> 611 mA, 102 -> 944 mA
+	-12V: 66 -> 234 mA, 102 -> 361 mA
+
+	-> https://schneidersladen.de/en/4ms-row-power-35
+	-> https://schneidersladen.de/en/konstant-lab-strongpwr
+	-> https://modulargrid.net/e/befaco-powskiff
+	-> https://www.thomann.de/intl/behringer_cp1a.htm
