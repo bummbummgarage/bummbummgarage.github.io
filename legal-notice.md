@@ -8,8 +8,7 @@ title: Legal Notice
 ## Information pursuant to Sect. 5 German Telemedia Act (TMG)
 
 Steffen Lohaus
-Endersstraße 41
-04177 Leipzig
+04179 Leipzig (Leutzsch)
 
 ## Contact
 
