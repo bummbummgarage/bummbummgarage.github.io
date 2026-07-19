@@ -31,7 +31,7 @@
     This is the code for an Eurorack synth module.
     It's built and tested on an Arduino Uno.
     
-    Find out more on: https://www.bummbummgarage.com/modules/clock-multiplier/
+    Find out more on: https://bummbummgarage.github.io/modules/clock-multiplier/
 
     Creative Commons yeah! License: CC BY-SA 4.0
     

@@ -15,4 +15,4 @@ Power: 16 mA @ +12 V; 16 mA @ -12 V
 
 DIY level: medium.
 
-All the documentation (schematics, BOM, assembly guide, …) is hosted on the [module's project page](https://www.bummbummgarage.com/modules/vcf/) for easy download.
+All the documentation (schematics, BOM, assembly guide, …) is hosted on the [module's project page](https://bummbummgarage.github.io/modules/vcf/) for easy download.

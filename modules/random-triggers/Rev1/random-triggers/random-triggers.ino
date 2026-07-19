@@ -31,7 +31,7 @@
     This is the code for an Eurorack synth module.
     It's built and tested on an ATMega 328p.
     
-    Find out more on: https://www.bummbummgarage.com/modules/random-triggers/
+    Find out more on: https://bummbummgarage.github.io/modules/random-triggers/
 
     Creative Commons yeah! License: CC BY-NC 4.0
     

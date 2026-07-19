@@ -62,7 +62,7 @@ Das PSU wird innen an der Seite montiert.
 ### Fragen
 
 * Welche Rails habe ich? https://schneidersladen.de/de/sb-rail-19-ohne-kante
-* Wie lange sind meine Rails nun? **433mm** laut [meiner Zeichnung](https://www.bummbummgarage.com/modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Technical-Drawing-And-Bimensions.pdf). Nachmessen kommt auch hin.
+* Wie lange sind meine Rails nun? **433mm** laut [meiner Zeichnung](https://bummbummgarage.github.io/modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Technical-Drawing-And-Bimensions.pdf). Nachmessen kommt auch hin.
 
 * **Breite Schienen**: Wie lange müssen dann die langen Profile geschnitten werden? Rails - ( 2 * 20mm ) = 433 - ( 2 * 20 ) = **393mm**
 * **Hohe Schienen**: Wie lange müssen die Höhe Schienen geschnitten werden? Korpus Innen - ( 2 * 20mm ) = 266 - ( 2 * 20 ) = **226mm**
