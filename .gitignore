@@ -1,4 +1,5 @@
 .DS_Store
+.claude/
 _site/
 .sass-cache/
 .jekyll-cache/
